@@ -2,7 +2,7 @@
 
 When your crush be online on Whatsapp get notification in your Ubuntu Desktop.
 
-# Video
+# Video Click to play
    [![video](https://user-images.githubusercontent.com/29729380/59044166-4296d380-889b-11e9-9848-7f6b97d75f63.png)](https://www.youtube.com/watch?v=qFrtFRfi4Xk)
 
 
