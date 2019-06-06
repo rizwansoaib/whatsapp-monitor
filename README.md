@@ -2,6 +2,8 @@
 
 When your crush be online on Whatsapp get notification in your Ubuntu Desktop.
 
+# Video
+   [![video](https://user-images.githubusercontent.com/29729380/59044166-4296d380-889b-11e9-9848-7f6b97d75f63.png)](https://www.youtube.com/watch?v=qFrtFRfi4Xk)
 
 
 # Requirements
@@ -33,8 +35,6 @@ Open chat window that want to track you should be on top of chat.
 
 Enjoy Now you will get notification when your friend be Online.
   
-# Video
-   [![video](https://user-images.githubusercontent.com/29729380/58380408-4cccee00-7fce-11e9-8e21-5e940188162c.jeepg)](https://www.youuutube.com/watch?v=Y6P1_nWpaUs)
 
 # Screenshot
    ![online](https://user-images.githubusercontent.com/29729380/59040056-96052380-8893-11e9-8ea4-318a2d0d2404.png)
