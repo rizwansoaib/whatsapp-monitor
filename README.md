@@ -16,5 +16,6 @@ Download geckodriver [Click here](https://github.com/mozilla/geckodriver/release
 paste binary file in directory /usr/local/bin 
 
 
+# Installation
 
-     
+  
