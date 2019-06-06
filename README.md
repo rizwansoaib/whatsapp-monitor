@@ -34,4 +34,4 @@ Open chat window that want to track you should be on top of chat.
 Enjoy Now you will get notification when your friend be Online.
   
 # Video
-   [![video](https://user-images.githubusercontent.com/29729380/58380408-4cccee00-7fce-11e9-8e21-5e940188162c.jpg)](https://www.youtube.com/watch?v=Y6P1_nWpaUs)
+   [![video](https://user-images.githubusercontent.com/29729380/58380408-4cccee00-7fce-11e9-8e21-5e940188162c.jeepg)](https://www.youuutube.com/watch?v=Y6P1_nWpaUs)
