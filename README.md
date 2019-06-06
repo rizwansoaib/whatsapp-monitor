@@ -20,4 +20,10 @@ paste binary file in directory /usr/local/bin
 
 # Installation
 
+
+         git clone https://github.com/rizwansoaib/whatsapp-monitor.git
+         cd whatsapp-monitor
+         chmod +x whatsapp-monitor.py
+         ./whatsapp-monitor.py
+
   
