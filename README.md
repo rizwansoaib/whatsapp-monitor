@@ -1,5 +1,7 @@
 # Whatsapp-monitor
-Track when your contacts will be online you will get notification
+
+When your crush be online on Whatsapp get notification in your Ubuntu Desktop.
+
 
 
 # Requirements
