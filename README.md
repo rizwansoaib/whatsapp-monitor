@@ -37,6 +37,6 @@ Enjoy Now you will get notification when your friend be Online.
    [![video](https://user-images.githubusercontent.com/29729380/58380408-4cccee00-7fce-11e9-8e21-5e940188162c.jeepg)](https://www.youuutube.com/watch?v=Y6P1_nWpaUs)
 
 # Screenshot
-   ![class](https://user-images.githubusercontent.com/29729380/59040056-96052380-8893-11e9-8ea4-318a2d0d2404.png)
-   ![class](https://user-images.githubusercontent.com/29729380/59040067-9a314100-8893-11e9-8a02-a7e6e9a60ada.png)
-   ![class](https://user-images.githubusercontent.com/29729380/59040073-9d2c3180-8893-11e9-9260-81375c316437.png)
+   ![online](https://user-images.githubusercontent.com/29729380/59040056-96052380-8893-11e9-8ea4-318a2d0d2404.png)
+  
+   ![typing](https://user-images.githubusercontent.com/29729380/59040073-9d2c3180-8893-11e9-9260-81375c316437.png)
