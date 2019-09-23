@@ -36,7 +36,7 @@ def offline(title):
 
 
         elif title.text!='online' and title.text!='typing...':
-            user = driver.find_element_by_class_name("_19RFN")
+            user = driver.find_element_by_class_name("_19vo_")
             name=user.text
             offline=title.text
             os.system('notify-send  "-i" call-start "Whatsapp Monitor" "{0}  {1} "'.format(name,offline))
@@ -58,7 +58,7 @@ def online(title):
     if title.text=='online':
         try:
             title = driver.find_element_by_class_name("_315-i")
-            user = driver.find_element_by_class_name("_19RFN")
+            user = driver.find_element_by_class_name("_19vo_")
             name=user.text
             os.system('notify-send  "-i" call-start "Whatsapp Monitor" "{0} is online now"'.format(name))
             offline(title)
@@ -83,4 +83,3 @@ while True:
 
 
         
-
