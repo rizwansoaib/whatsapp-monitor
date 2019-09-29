@@ -8,7 +8,7 @@ download https://github.com/mozilla/geckodriver/releases
 
 set path paste binary file /usr/local/bin 
 
-sudo apt-get install libnotify-bin
+sudo apt-get install libnotify-bin espeak
 
 '''
 
