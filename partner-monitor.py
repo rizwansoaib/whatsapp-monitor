@@ -57,7 +57,7 @@ while True:
 	if h1-h2==0 and abs(m1-m2)<3:
 		check=True
 		ct=str(min(h1,h2))+":"+str(min(m1,m2))
-		per=100-(5*abs(m1-m2))
+		per=100-(20*abs(m1-m2))
 
 	if check:
 		print("{0}% chances are there chat among {1} and {2} at {3}".format(per,name1,name2,ct))
