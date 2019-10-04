@@ -30,7 +30,7 @@ def close():
 
 
 print("QR Code Generating")
-
+sleep(10)
 
 with open('qr.png', 'wb') as file:
     file.write(driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[1]/div/div[2]/div/img').screenshot_as_png)
