@@ -1,6 +1,18 @@
 #! /usr/bin/python3
 
 
+'''
+
+
+Under Developement Please dont trust this script...
+
+accuracy is very low..
+
+
+'''
+
+
+
 from selenium.webdriver.firefox.options import Options
 from selenium import webdriver
 import os
