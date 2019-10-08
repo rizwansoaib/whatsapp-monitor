@@ -26,8 +26,8 @@ paste binary file in directory /usr/local/bin
          git clone https://github.com/rizwansoaib/whatsapp-monitor.git
          cd whatsapp-monitor
          pip3 install -r requirements.txt
-         chmod +x whatsapp-monitor.py
-         ./whatsapp-monitor.py
+         chmod +x monitor+log.py
+         ./monitor+log.py
          
 
 Enjoy Now you will get notification when your friend be Online.
