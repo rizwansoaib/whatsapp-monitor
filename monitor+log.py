@@ -83,11 +83,12 @@ while True:
                     speako=False
                     speakf=True
                 if status!='online':
-                    speak=True
-                    os.system('espeak -ven-us+f4 -s120 -a 500 "{0} is Offline in whatsapp"'.format(name))
-                    print("{} : offline".format(t[11:])+'\n')
+                    speako=True
+                    os.system('notify-send  "-i" call-start "Whatsapp Monitor" "{2} :  {0} is {1} "'.format(name,status,t[11:]))
+                    os.system('espeak -ven-us+f4 -s120 -a 500 "{0} is {1} in whatsapp"'.format(name,status))
+                    print("{} : {}".format(t[11:],status)+'\n')
                     log.write("{}".format(t[11:])+'\n')
-                    speakf=False
+                    speakf=True
                 sleep(1)
             except:
                 status="Offline"
@@ -95,9 +96,10 @@ while True:
                 t = strftime("%Y-%m-%d %H:%M:%S")
 
                 if speakf:
+                    os.system('notify-send  "-i" call-start "Whatsapp Monitor" "{2} :  {0} is {1} "'.format(name,status,t[11:]))
                     os.system('espeak -ven-us+f4 -s120 -a 500 "{0} is Offline in whatsapp"'.format(name))
                     print("{} : offline".format(t[11:])+'\n')
-                    log.write("{}".format(t[11:])+'\n')
+                    log.write("{} > typing....".format(t[11:])+'\n')
                     speakf=False
                 print("{1} :  {2} is  {0}".format(status, t[11:],name))
                 sleep(1)
