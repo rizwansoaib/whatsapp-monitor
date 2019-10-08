@@ -1,19 +1,17 @@
 # Whatsapp-monitor
 
-When your crush be online on Whatsapp get notification in your Ubuntu Desktop.
+When your crush be online on Whatsapp get notification in your Ubuntu Desktop and voice notification.
 
 # Video Click to play
    [![video](https://user-images.githubusercontent.com/29729380/59044166-4296d380-889b-11e9-9848-7f6b97d75f63.png)](https://www.youtube.com/watch?v=qFrtFRfi4Xk)
 
 
 # Requirements
-
-     Python3
-     Ubuntu
+     geckodriver or chromedriver
      selenium module {pip3 install selenium}
-     geckodriver
      notifier {sudo apt-get install libnotify-bin}
-     firefox
+     espeak {sudo apt-get install espeak}
+     pillow {pip3 install pillow}
      
      
 Download geckodriver [Click here](https://github.com/mozilla/geckodriver/releases)
@@ -24,14 +22,13 @@ paste binary file in directory /usr/local/bin
 
  Open Terminal and run-
 
-
+         sudo apt install libnotify-bin espeak 
          git clone https://github.com/rizwansoaib/whatsapp-monitor.git
          cd whatsapp-monitor
+         pip3 install -r requirements.txt
          chmod +x whatsapp-monitor.py
          ./whatsapp-monitor.py
-
-
-Open chat window that want to track you should be on top of chat.
+         
 
 Enjoy Now you will get notification when your friend be Online.
   
