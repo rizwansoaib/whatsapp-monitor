@@ -15,7 +15,7 @@
   
 ### Notification
         notify-run register
-  run command from terminal and send user to subcribe notification from given link
+  Run command from terminal and send user to subcribe notification from given link
   User can Subcribed many devices and able to see log from that url
      
 
