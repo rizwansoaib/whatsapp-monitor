@@ -1,5 +1,6 @@
 # Deploy on AWS
 ## Architecture
+### AWS
 ![architecture](/DeployAWS/architecture.jpg)
 
 
