@@ -12,6 +12,11 @@
 #### 2. User
   * Smartphone or Desktop with internet
   * Victim Whatsapp Contact Number Whose want to track user
+  
+### Notification
+        notify-run register
+  run command from terminal and send user to subcribe notification from given link
+  User can Subcribed many devices and able to see log from that url
      
 
 
