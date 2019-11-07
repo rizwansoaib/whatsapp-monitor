@@ -2,6 +2,9 @@
 ## Architecture
 ### AWS
 ![architecture](/DeployAWS/architecture.jpg)
+### Overall
+
+![overall](/DeployAWS/arc%20-%201.jpg)
 
 
 ###### Let's Deploy this Script on AWS EC2 instances before deploy please setup in local first to save your Session Whatsapp data first run this script in local change your contact name in given script. To setup local follow same method (Skip 4th step) but atleast run local only one time for building profile (Save Whatsapp Session).
