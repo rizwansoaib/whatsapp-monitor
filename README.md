@@ -1,6 +1,6 @@
 # Whatsapp-monitor
 
-When your crush be online on Whatsapp get notification in your Ubuntu Desktop and voice notification.
+When your crush be online on Whatsapp get notification in your Ubuntu Desktop and voice notification and in smartphone without any installed app.
 
 # Video Click to play
    [![video](https://user-images.githubusercontent.com/29729380/59044166-4296d380-889b-11e9-9848-7f6b97d75f63.png)](https://youtu.be/3Xo45yhncwg)
