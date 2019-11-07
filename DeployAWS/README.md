@@ -6,6 +6,15 @@
 
 ![overall](/DeployAWS/arc%20-%201.jpg)
 
+#### 1. Developer Setup
+     * A Desktop 24/7 with internet Connectivity or use Cloud(AWS/GCP/DigitalOcean etc.)
+     * Smartphone with whatsapp installed
+#### 2. User
+     * Smartphone or Desktop 
+     * Victim Whatsapp Contact Number Whose want to track user
+     
+
+
 
 ###### Let's Deploy this Script on AWS EC2 instances before deploy please setup in local first to save your Session Whatsapp data first run this script in local change your contact name in given script. To setup local follow same method (Skip 4th step) but atleast run local only one time for building profile (Save Whatsapp Session).
 
