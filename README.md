@@ -15,7 +15,11 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
      
      
 Download geckodriver [Click here](https://github.com/mozilla/geckodriver/releases)
-paste binary file in directory /usr/local/bin 
+paste binary file in directory /usr/local/bin/ 
+
+
+Download Chrome Webdriver [Click here](https://chromedriver.chromium.org/downloads)
+paste chromedriver binary file in directory /usr/bin/ 
 
 
 # Installation
