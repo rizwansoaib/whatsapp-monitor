@@ -39,6 +39,7 @@ Enjoy Now you will get notification when your friend be Online.
 
 # Screenshot
 ## Smartphone Notification
+    See DeployAWS Folder for more
   ![mobile](/DeployAWS/noti.png)
   
 ## Desktop Notification
