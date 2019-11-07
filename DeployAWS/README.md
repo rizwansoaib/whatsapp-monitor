@@ -7,11 +7,11 @@
 ![overall](/DeployAWS/arc%20-%201.jpg)
 
 #### 1. Developer Setup
-  *A Desktop 24/7 with internet Connectivity or use Cloud(AWS/GCP/DigitalOcean etc.)
-     * Smartphone with whatsapp installed
+  * A Desktop 24/7 with internet Connectivity or use Cloud(AWS/GCP/DigitalOcean etc.)
+  * Smartphone with whatsapp installed
 #### 2. User
   * Smartphone or Desktop 
-     * Victim Whatsapp Contact Number Whose want to track user
+  * Victim Whatsapp Contact Number Whose want to track user
      
 
 
