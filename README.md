@@ -37,7 +37,7 @@ paste chromedriver binary file in directory /usr/bin/
 Enjoy Now you will get notification when your friend be Online.
   
 
-# Screenshot
+
 ## Smartphone Notification
   Successfully Tested on Android
     
