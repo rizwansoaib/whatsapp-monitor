@@ -18,7 +18,7 @@
       pip3 install selenium notify_run --user
 
 ## 4. Upload Your Session and Script to Instance
-      scp -i rizwan.pem whatsapp.zip ubuntu@ec2-52-207-136-37.compute-1.amazonaws.com:/home/ubuntu/
+      scp -i {pem file path} {your file path} {ubuntu@your_instance_address}:/home/ubuntu/
 
 ## 5. Register Push Notification
 
