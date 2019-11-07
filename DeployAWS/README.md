@@ -2,7 +2,7 @@
 ## Architecture
 ### AWS
 ![architecture](/DeployAWS/architecture.jpg)
-### Overall
+### Complete
 
 ![overall](/DeployAWS/arc%20-%201.jpg)
 
