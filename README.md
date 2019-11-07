@@ -39,7 +39,7 @@ Enjoy Now you will get notification when your friend be Online.
 
 # Screenshot
 ## Smartphone Notification
-    See DeployAWS Folder for more
+   [Click for more](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/DeployAWS)
   ![mobile](/DeployAWS/noti.png)
   
 ## Desktop Notification
