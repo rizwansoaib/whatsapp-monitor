@@ -10,7 +10,7 @@
   * A Desktop 24/7 with internet Connectivity or use Cloud(AWS/GCP/DigitalOcean etc.)
   * Smartphone with whatsapp installed
 #### 2. User
-  * Smartphone or Desktop 
+  * Smartphone or Desktop with internet
   * Victim Whatsapp Contact Number Whose want to track user
      
 
