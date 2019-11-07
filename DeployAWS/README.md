@@ -1,5 +1,7 @@
 # Deploy on AWS
 
+###### Let's Deploy this Script on AWS EC2 instances before deploy please setup in local first to save your Session Whatsapp data first run this script in local change your contact name in given script. To setup local follow same method but atleast run local only one time for building profile (Save Whatsapp Session).
+
 ## 1. Install Chrome 
      sudo nano /etc/apt/sources.list.d/google-chrome.list
      paste deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
