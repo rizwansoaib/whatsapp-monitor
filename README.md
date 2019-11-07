@@ -49,3 +49,11 @@ Successfully Tested on Ubuntu 18.04
    ![online](https://user-images.githubusercontent.com/29729380/59040056-96052380-8893-11e9-8ea4-318a2d0d2404.png)
   
    ![typing](https://user-images.githubusercontent.com/29729380/59040073-9d2c3180-8893-11e9-9260-81375c316437.png)
+   
+   
+   
+ 
+## Donation
+If this project help you reduce time to develop, you can give me a cup of coffee :) 
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8YE92K9QM7NA)
