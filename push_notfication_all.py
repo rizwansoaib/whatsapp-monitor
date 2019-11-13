@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-
+#! /usr/bin/python3
 '''
 Author- RIZWAN AHMAD
 download https://github.com/mozilla/geckodriver/releases
