@@ -14,6 +14,7 @@ install requirements: pip3 install selenium
 from selenium import webdriver
 import os
 import time
+from time import sleep
 driver = webdriver.Firefox()
 driver.get("http://web.whatsapp.com")
 name=input("Please Enter Name for search online status: ")
