@@ -53,7 +53,7 @@ Successfully Tested on Ubuntu 18.04
    
    
 ## License
-As of November 2020 Whatsapp-Monitor is Licensed under the Private License
+As of November 2019 Whatsapp-Monitor is Licensed under the Private License: [Read License Click ][/LICENSE]
 
 ## Terms and conditions
 * You will NOT use this software for marketing purposes and commercial usage.
