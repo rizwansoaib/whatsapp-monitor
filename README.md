@@ -16,6 +16,7 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
      notifier {sudo apt-get install libnotify-bin}
      espeak {sudo apt-get install espeak}
      pillow {pip3 install pillow}
+     Web Push notification cross platform {pip3 install notify_run}
      
      
 Download geckodriver [Click here](https://github.com/mozilla/geckodriver/releases)
