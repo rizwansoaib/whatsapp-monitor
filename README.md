@@ -1,3 +1,7 @@
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+
 # Whatsapp-monitor
 
 When your crush be online on Whatsapp get notification in your Desktop and voice notification and  smartphone notification without any installed app.
