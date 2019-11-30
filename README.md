@@ -27,6 +27,8 @@ paste binary file in directory /usr/local/bin/
 Download Chrome Webdriver [Click here](https://chromedriver.chromium.org/downloads)
 paste chromedriver binary file in directory /usr/bin/ 
 
+# Architecture
+![architecture](/DeployAWS/architecture.jpg)
 
 # Installation
 
