@@ -28,6 +28,7 @@ Download Chrome Webdriver [Click here](https://chromedriver.chromium.org/downloa
 paste chromedriver binary file in directory /usr/bin/ 
 
 # Architecture
+![overall](/DeployAWS/arc%20-%201.jpg)
 ![architecture](/DeployAWS/architecture.jpg)
 
 # Installation
