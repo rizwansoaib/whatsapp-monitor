@@ -1,6 +1,7 @@
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)  [![star this repo](http://githubbadges.com/star.svg?user=rizwansoaib&repo=whatsapp-monitor)](https://github.com/rizwansoaib/whatsapp-monitor)
 [![fork this repo](http://githubbadges.com/fork.svg?user=rizwansoaib&repo=whatsapp-monitor)](http://github.com/rizwansoaib/whatsapp-monitor/fork)
+[![HitCount](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor.svg)](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor)
 
 
 # Whatsapp Monitor
