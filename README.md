@@ -66,12 +66,17 @@ Successfully Tested on Ubuntu 18.04
 As of November 2019 Whatsapp-Monitor is Licensed under the Private License: [Read License](/LICENSE)
 
 ## Terms and conditions
-* You will NOT use this software for marketing purposes and commercial usage.
+* You will NOT use this software for marketing purposes and commercial usage allow only for self usage.
 * We reserve the right to block any user of this repository that does not meet these conditions.
 
 ## Legal
    This code is in no way affiliated with, authorized, maintained, sponsored or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code. Use at your own risk.
    
+## Author:
+## <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN Ahmad</a>
+rizwansoaib@gmail.com
+
+Feel free to mail me for any queries.
  
 # Donation
 If this project help you , you can give me a cup of coffee :) 
