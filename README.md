@@ -8,6 +8,19 @@
 
 When your crush be online on Whatsapp get notification in your Desktop and voice notification and  in smartphone notification without any installed app.
 
+## Use Case:
+
+* When your girlfriend or boyfriend become online
+* Compare two people history and predict whether coversation(chat) had done between them or not
+* Get notification when two people become online at same time
+* Parents uses to track your child when child sleep at night or whether whole night chatting with someone
+* Message Scheduler option adding soon with GUI
+* Send same messages multiple times
+
+# Future Enhancement
+* Tkinter based GUI Desktop App with more features
+
+
 # Video Click to play
    [![video](https://user-images.githubusercontent.com/29729380/59044166-4296d380-889b-11e9-9848-7f6b97d75f63.png)](https://youtu.be/3Xo45yhncwg)
 
