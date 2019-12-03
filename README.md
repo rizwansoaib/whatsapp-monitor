@@ -60,6 +60,10 @@ Successfully Tested on Ubuntu 18.04
   
    ![typing](https://user-images.githubusercontent.com/29729380/59040073-9d2c3180-8893-11e9-9260-81375c316437.png)
    
+## Contributions
+<a href="https://github.com/rizwansoaib/whatsapp-monitor/issues"> Issues </a>
+and <a href ="https://github.com/rizwansoaib/whatsapp-monitor/pulls"> Pull
+requests </a> are most welcome.
    
    
 ## License
