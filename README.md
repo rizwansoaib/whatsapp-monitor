@@ -77,7 +77,7 @@ As of November 2019 Whatsapp-Monitor is Licensed under the Private License: [Rea
    This code is in no way affiliated with, authorized, maintained, sponsored or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code. Use at your own risk.
    
 ## Author:
-## <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN Ahmad</a>
+## <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a>
 rizwansoaib@gmail.com
 
 Feel free to mail me for any queries.
