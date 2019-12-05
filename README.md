@@ -15,7 +15,7 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
 * When your girlfriend or boyfriend become online and history of online-offline
 * Compare two people history and predict whether coversation(chat) had done between them or not
 * Get notification when two people become online at same time
-* Parents uses to track your child when child gone into bed in night or whether whole night chatting with someone
+* Parents uses to track your child when child gone for bed in night or whether whole night chatting with someone
 * Message Scheduler option adding soon with GUI
 * Send same messages multiple times
 
