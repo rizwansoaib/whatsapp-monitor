@@ -93,7 +93,6 @@ As of November 2019 Whatsapp-Monitor is Licensed under the Private License: [Rea
    
 ## FAQ (Frequently Asked Question)
 **Question:**  QR code is showing but in my phone not scanned successfully?
-
 **Answer:** Change your Default Image Viewer Image Background should be White not in black you can use Magisk image Viewer.
 ## Author:
 ## <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a>
