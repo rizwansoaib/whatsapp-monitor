@@ -91,6 +91,9 @@ As of November 2019 Whatsapp-Monitor is Licensed under the Private License: [Rea
 ## Legal
    This code is in no way affiliated with, authorized, maintained, sponsored or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code. Use at your own risk.
    
+## FAQ (Frequently Asked Question)
+**Question:**  QR code is showing but in my phone not scanned successfully
+**Answer:** Change your Default Image Viewer Image Background should be White not in black you can use Magisk image Viewer
 ## Author:
 ## <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a>
 rizwan.178208@knit.ac.in
