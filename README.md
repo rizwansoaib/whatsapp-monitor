@@ -18,8 +18,8 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
 * Message Scheduler option adding soon with GUI
 * Send same messages multiple times
 
-# Future Enhancement
-* Tkinter based GUI Desktop App with more features
+# Windows
+* Tkinter based GUI Desktop App released Beta Version install setup and find issue and report 
 
 
 # Video Click to play
