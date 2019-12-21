@@ -20,7 +20,7 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
 
 # Windows
 * Tkinter based GUI Desktop App released Beta Version install setup and find issue and report
-![Click here for more details](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
+[Click here for more details](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
 
 
 # Video Click to play
