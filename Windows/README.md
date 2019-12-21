@@ -15,4 +15,12 @@
       6. Scan QR code and open chat window of person that you want to track
       7. After open chat window Start Monitor click
       8. Now when online offline history will show on your window
+      
+   ## Cross Platform Notification
+      
+         1. First time generate url from Notification Menu
+         2. Click on Activate from Notification Menu when start WhatsApp-Monitor
+         3. For Subcription url click show url from Notification Menu 
+         4. Visit url which get you from show url and subscribe from any device e.g. Android,Ubuntu
+         5. Now when your contact become online you will get Notification in your smartphone and subscribed Devices
         
