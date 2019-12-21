@@ -20,7 +20,7 @@
       
          1. First time generate url from Notification Menu
          2. Click on Activate from Notification Menu when start WhatsApp-Monitor
-         3. For Subcription url click show url from Notification Menu 
+         3. For Subcription click show url from Notification Menu 
          4. Visit url which get you from show url and subscribe from any device e.g. Android,Ubuntu
          5. Now when your contact become online you will get Notification in your smartphone and subscribed Devices
         
