@@ -3,6 +3,10 @@
  ## [Download setup.exe](https://github.com/rizwansoaib/whatsapp-monitor/raw/master/Windows/WhatsApp-Monitor.exe)
  
  # INSTALLATION
+ 
+   ## Requirements
+   Chrome Browser version79
+   
       1. Download setup
       2. Install setup in your Windows
       3. Go to Desktop open Whatsapp-Monitor 
