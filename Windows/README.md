@@ -14,7 +14,7 @@
       5. Open WhatsApp Web 
       6. Scan QR code and open chat window of person that you want to track
       7. After open chat window Start Monitor click
-      8. Now when online offline history will show on your window
+      8. Now online offline history will show on your window
       
    ## Cross Platform Notification
       
