@@ -48,7 +48,7 @@
 ## 5. Register Push Notification
 
      notify-run register 
-   subscribe from url 
+   Subscribe from url 
      
 ## 6. Run Script aws.py
 
