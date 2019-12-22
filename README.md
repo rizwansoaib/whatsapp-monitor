@@ -26,7 +26,8 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
   [Click here for more details](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
 
 
-# Video Click to play
+# Video 
+ ## Linux
    [![video](https://user-images.githubusercontent.com/29729380/59044166-4296d380-889b-11e9-9848-7f6b97d75f63.png)](https://youtu.be/3Xo45yhncwg)
 
 
