@@ -41,7 +41,9 @@
       pip3 install selenium notify_run --user
 
 ## 4. Upload Your Session and Script to Instance
-      scp -i {pem file path} {your file path} {ubuntu@your_instance_address}:/home/ubuntu/
+  your file path= it's contain aws.py and please setup in local first to save your Session Whatsapp data first run this script in local and change your contact name in given script. and zip all folder 
+  
+            scp -i {pem file path} {all_file.zip} {ubuntu@your_instance_address}:/home/ubuntu/
 
 ## 5. Register Push Notification
 
