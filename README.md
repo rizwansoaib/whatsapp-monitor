@@ -21,7 +21,7 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
 * Send same messages multiple times
 
 # Windows
-* Tkinter based GUI Desktop App released Beta Version install setup and find issue and report
+* Tkinter based GUI Desktop App released Beta Version 
 
   [Click here for more details](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
 
