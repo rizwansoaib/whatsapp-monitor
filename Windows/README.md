@@ -2,6 +2,12 @@
  
  ## [Download setup.exe](https://github.com/rizwansoaib/whatsapp-monitor/raw/master/Windows/WhatsApp-Monitor.exe)
  
+ ### Warning:-
+   Thanks [elanozturk](https://github.com/elanozturk) for telling Some Antivirus detect trojan in WhatsApp-Monitor.exe
+ I used pyinstaller and NSIS to generate .exe from .py 
+ I suggest to you please run from source code whatsapp-monitor.py 
+ If anybody can help to solve this issue i will be thankfull to you...
+ 
  # INSTALLATION
  
    ## Requirements
