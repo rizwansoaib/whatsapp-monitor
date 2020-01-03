@@ -102,6 +102,10 @@ As of November 2019 Whatsapp-Monitor is Licensed under the Private License: [Rea
 ## Legal
    This code is in no way affiliated with, authorized, maintained, sponsored or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code. Use at your own risk.
    
+## Disclaimer
+  This software is for educational purpose only. Keeping eye on a innocent person can make person's life stressful and don't blackmail to someone for fun in your life. Give respect of privacy of every person.
+
+   
 ## FAQ (Frequently Asked Question)
 **Question:**  QR code is showing but in my phone not scanned successfully?
 
