@@ -117,7 +117,7 @@ As of November 2019 Whatsapp-Monitor is Licensed under the Private License: [Rea
 ## <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a>
 rizwan.178208@knit.ac.in
 
-Feel free to mail me for any queries.
+**Feel free to mail me for any queries.**
  
 # Donation
 If this project help you , you can give me a cup of coffee :) 
