@@ -17,8 +17,6 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
 * Compare two people history and predict whether coversation(chat) had done between them or not [ if both will be online same time and close Whatsapp within 1-3 minute difference ]
 * Get notification when two people become online at same time
 * Parents uses to track your child when child gone for bed in night or whether whole night chatting with someone
-* Message Scheduler option adding soon with GUI
-* Send same messages multiple times
 
 # Windows
 * Tkinter based GUI Desktop App released Beta Version 
