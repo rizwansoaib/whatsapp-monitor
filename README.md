@@ -18,7 +18,7 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
 * Parents uses to track your child when child gone for bed in night or whether whole night chatting with someone
 
 
-## [WhatsApp-Bomber (Chrome Extension)](https://github.com/rizwansoaib/WhatsApp-Bomber)
+### [WhatsApp-Bomber (Chrome Extension)](https://github.com/rizwansoaib/WhatsApp-Bomber)
 
 # Windows
 * Tkinter based GUI Desktop App released Beta Version 
