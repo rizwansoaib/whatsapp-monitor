@@ -4,7 +4,6 @@
 [![fork this repo](http://githubbadges.com/fork.svg?user=rizwansoaib&repo=whatsapp-monitor)](http://github.com/rizwansoaib/whatsapp-monitor/fork)
 [![HitCount](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor.svg)](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor)
 
-[WhatsApp-Bomber (Chrome Extension)](https://github.com/rizwansoaib/WhatsApp-Bomber)
 # Whatsapp Monitor
 
 When your crush be online on Whatsapp get notification in your Desktop and voice notification and  in smartphone notification without any installed app.
@@ -17,6 +16,9 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
 * Compare two people history and predict whether coversation(chat) had done between them or not [ if both will be online same time and close Whatsapp within 1-3 minute difference ]
 * Get notification when two people become online at same time
 * Parents uses to track your child when child gone for bed in night or whether whole night chatting with someone
+
+
+## [WhatsApp-Bomber (Chrome Extension)](https://github.com/rizwansoaib/WhatsApp-Bomber)
 
 # Windows
 * Tkinter based GUI Desktop App released Beta Version 
