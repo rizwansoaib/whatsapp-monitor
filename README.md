@@ -4,7 +4,7 @@
 [![fork this repo](http://githubbadges.com/fork.svg?user=rizwansoaib&repo=whatsapp-monitor)](http://github.com/rizwansoaib/whatsapp-monitor/fork)
 [![HitCount](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor.svg)](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor)
 
-
+[WhatsApp-Bomber (Chrome Extension)](https://github.com/rizwansoaib/WhatsApp-Bomber)
 # Whatsapp Monitor
 
 When your crush be online on Whatsapp get notification in your Desktop and voice notification and  in smartphone notification without any installed app.
