@@ -23,10 +23,10 @@ When your crush be online on Whatsapp get notification in your Desktop and and i
 # Video 
 
 
- ## Linux
+ ## 1. Linux
   ### [Python Script](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Script)
    [![video1](https://user-images.githubusercontent.com/29729380/59044166-4296d380-889b-11e9-9848-7f6b97d75f63.png)](https://youtu.be/3Xo45yhncwg)
- ## Windows
+ ## 2. Windows
  Desktop App with Cross platform Notification send via web and receive in subscribed devices e.g. Android,Ubuntu etc. without installed any App in your Android and Ubuntu.
  ### [Windows Desktop App](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
 
@@ -35,7 +35,7 @@ When your crush be online on Whatsapp get notification in your Desktop and and i
 
 
 
-## Chrome Extension
+## 3. Chrome Extension
 
 **Play Sound when Contact become Online**
 ### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension)
