@@ -78,7 +78,6 @@ Enjoy Now you will get notification when your friend be Online.
 
    ![online](https://user-images.githubusercontent.com/29729380/59040056-96052380-8893-11e9-8ea4-318a2d0d2404.png)
   
-   ![typing](https://user-images.githubusercontent.com/29729380/59040073-9d2c3180-8893-11e9-9260-81375c316437.png)
    
 ## Contributions
 <a href="https://github.com/rizwansoaib/whatsapp-monitor/issues"> Issues </a>
