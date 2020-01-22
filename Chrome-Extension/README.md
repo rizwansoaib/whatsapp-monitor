@@ -14,5 +14,5 @@ This extension is not available in the Chrome store. You have to install it manu
 9. Open Contact chat window and Click WhatsApp Monitor Extension icon 
 10. Hit start button 
 
-Now When Your Contact become online then sound will play  in your Desktop
+**Now When Your Contact become online then sound will play  in your Desktop**
 
