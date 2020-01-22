@@ -20,12 +20,20 @@ When your crush be online on Whatsapp get notification in your Desktop and and i
 
 
 # Video 
+
+
  ## Ubuntu
    [![video1](https://user-images.githubusercontent.com/29729380/59044166-4296d380-889b-11e9-9848-7f6b97d75f63.png)](https://youtu.be/3Xo45yhncwg)
  ## Windows
  Desktop App with Cross platform Notification send via web and receive in subscribed devices e.g. Android,Ubuntu etc. without installed any App in your Android and Ubuntu.
    [![video2](https://user-images.githubusercontent.com/29729380/71323225-e32aa900-24f6-11ea-8928-eecb77b0d8a2.png)
 ](https://www.youtube.com/watch?v=kd44QGSkKz8)
+
+## Chrome Extension
+
+  [![video3](https://user-images.githubusercontent.com/29729380/72934544-d7e2cb80-3d89-11ea-8285-749bff6657ec.png)
+](https://www.youtube.com/watch?v=_ukl9s1fdwM)
+
 
 
 
