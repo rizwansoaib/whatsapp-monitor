@@ -9,6 +9,7 @@
 When your crush be online on Whatsapp get notification in your Desktop and voice notification and  in smartphone notification without any installed app.
 
 ### [Windows Desktop App](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
+### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension)
 
 ## Use Case:
 
@@ -16,16 +17,6 @@ When your crush be online on Whatsapp get notification in your Desktop and voice
 * Compare two people history and predict whether coversation(chat) had done between them or not [ if both will be online same time and close Whatsapp within 1-3 minute difference ]
 * Get notification when two people become online at same time
 * Parents uses to track your child when child gone for bed in night or whether whole night chatting with someone
-
-
-### [WhatsApp-Bomber (Chrome Extension)](https://github.com/rizwansoaib/WhatsApp-Bomber)
-
-# Windows
-* Tkinter based GUI Desktop App released Beta Version 
-
- 
-
-  [Click here for more details](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
 
 
 # Video 
@@ -54,12 +45,10 @@ paste binary file in directory /usr/local/bin/
 Download Chrome Webdriver [Click here](https://chromedriver.chromium.org/downloads)
 paste chromedriver binary file in directory /usr/bin/ 
 
-# Architecture
-![overall](/DeployAWS/arc%20-%201.jpg)
-![architecture](/DeployAWS/architecture.jpg)
 
 # Installation
 
+## Script
  Open Terminal and run-
 
          sudo apt install libnotify-bin espeak 
@@ -68,9 +57,16 @@ paste chromedriver binary file in directory /usr/bin/
          pip3 install -r requirements.txt
          chmod +x script_name
          ./script_name
-         
-
 Enjoy Now you will get notification when your friend be Online.
+
+## Windows
+### [Windows Desktop App](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
+
+## Chrome Extension
+### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension)
+
+
+
   
 
 
