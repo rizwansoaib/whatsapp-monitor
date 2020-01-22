@@ -8,10 +8,11 @@ This extension is not available in the Chrome store. You have to install it manu
 3. Open in url chrome://extensions/	
 4. Enable developer mode at the top of the screen by clicking the slider	
 5. Click 'load unpacked extension'	
-6. **Select the WhatsApp Bomber folder**
-7. A red Whatsapp icon should appear at the top of the screen
+6. **Go whatsapp-monitor then Chrome-Extension select Whatsapp Monitor folder**
+7. A green Whatsapp icon should appear at the top of the screen
 8. Open Whatsapp Web you will get popup 
-9. Open Contact chat window and Click WhatsApp Bomber Extension icon 
-10. Enter Your Message and number of time you want send 
-11. Hit start button 
+9. Open Contact chat window and Click WhatsApp Monitor Extension icon 
+10. Hit start button 
+
+Now When Your Contact become online then automatic play tone in your Desktop
 
