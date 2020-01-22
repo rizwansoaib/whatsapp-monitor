@@ -5,7 +5,7 @@ This extension is not available in the Chrome store. You have to install it manu
 
 1. Click 'clone or download' and choose to download the ZIP file	
 2. Extract the folder from the ZIP file	
-3. Open in url chrome://extensions/	
+3. Open in url chrome://extensions/	in chrome browser
 4. Enable developer mode at the top of the screen by clicking the slider	
 5. Click 'load unpacked extension'	
 6. **Go whatsapp-monitor then Chrome-Extension select Whatsapp Monitor folder**
