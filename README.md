@@ -101,7 +101,7 @@ requests </a> are most welcome.
    
    
 ## License
-As of November 2019 Whatsapp-Monitor is Licensed under the Private License: [Read License](/LICENSE)
+As of November 2019 Whatsapp-Monitor is Licensed under the License: [Read License](/LICENSE)
 
 ## Terms and conditions
 * You will NOT use this software for marketing purposes and commercial usage allow only for self usage.
