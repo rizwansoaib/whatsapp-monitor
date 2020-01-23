@@ -86,12 +86,12 @@ Enjoy Now you will get notification when your friend be Online.
 
 
 ## Cross Platform Notification 
-  Successfully Tested on Android and Ubuntu
-    
+ 
+   **Notify-Run (Android)** 
    ![mobile](/DeployAWS/noti.png)
-
+   **LibNotify (Ubuntu)**
    ![online](https://user-images.githubusercontent.com/29729380/59040056-96052380-8893-11e9-8ea4-318a2d0d2404.png)
-   
+   **Chrome-Extension (Windows)**
    ![Windows](https://user-images.githubusercontent.com/29729380/73015109-741bd980-3e41-11ea-99a5-4a075c3686b7.png)
   
    
