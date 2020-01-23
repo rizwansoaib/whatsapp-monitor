@@ -1,6 +1,35 @@
 var online = document.getElementsByClassName("_315-i");
-var user = document.getElementsByClassName("_19RFN");
+var user = document.querySelector("#main > header > div._3V5x5 > div > div > span").innerText
 n=document.querySelector("#main > header > div._3V5x5 > div > div > span")
+
+function notify(user) {
+  if (!("Notification" in window)) {
+    alert("This browser does not support desktop notification");
+  }
+
+  else if (Notification.permission === "granted") {
+    var notification = new Notification("📱"+user+" is Online in WhatsApp 📱");
+  }
+  else if (Notification.permission !== 'denied') {
+    Notification.requestPermission(function (permission) {
+
+      if(!('permission' in Notification)) {
+        Notification.permission = permission;
+      }
+
+      if (permission === "granted") {
+        var notification = new Notification("📱"+user+" is Online in WhatsApp 📱");
+      }
+    });
+  } else {
+    alert(`Permission is ${Notification.permission}`);
+  }
+}
+
+
+
+
+
 function trackuser() {
 
 	   var flag=1;
@@ -13,20 +42,20 @@ function trackuser() {
 			
 			try {
 				if (online[0].innerText == "online" || online[0].innerText == "typing..." ) {
-					n.innerText=user[0].innerText+"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0🅦🅗🅐🅣🅢🅐🅟🅟 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0🅜🅞🅝🅘🅣🅞🅡";
 					n.style.color="green";
 					online[0].style.color="green";
-					
-					console.log(user[0].innerText + " is Online");
+					notify(user);
+					console.log(user+ " is Online");
+
 					let url = chrome.runtime.getURL('beep.mp3')
 	                let a = new Audio(url)
 	                a.play()
+
 	                flag=0; 
 	                
   
 				}  else {
 						console.log(online[0].innerText);
-					    n.innerText=user[0].innerText+" [Offine]"+"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0🅦🅗🅐🅣🅢🅐🅟🅟\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0🅜🅞🅝🅘🅣🅞🅡";
 					    n.style.color="red";
 
 						flag=1;
@@ -34,7 +63,6 @@ function trackuser() {
 				}
 			 catch(error) {
 				console.error("User offline");
-				n.innerText=user[0].innerText+" [Offine]"+"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0🅦🅗🅐🅣🅢🅐🅟🅟\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0🅜🅞🅝🅘🅣🅞🅡";
 					    n.style.color="red";
 				flag=1
 			}
