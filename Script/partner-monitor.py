@@ -24,7 +24,7 @@ options.add_argument("user-data-dir="+os.path.dirname(sys.argv[0]))
 driver = webdriver.Firefox(options=options)
 driver.get("http://web.whatsapp.com")
 with open('qr.png', 'wb') as file:
-    file.write(driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[1]/div/div[2]/div/img').screenshot_as_png)
+    file.write(driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[1]/div/div[2]/div/canvas').screenshot_as_png)
 
 name1=input("Please Enter First Person Name : ")
 name2=input("Please Enter Second Person Name : ")
