@@ -55,7 +55,7 @@ print("QR Code Generating")
 sleep(2)
 
 with open('qr.png', 'wb') as file:
-    file.write(driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[1]/div/div[2]/div/img').screenshot_as_png)
+    file.write(driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[1]/div/div[2]/div/canvas').screenshot_as_png)
 image = Image.open('qr.png')
 print("Sucessfully QR code genereted")
 image.show()
