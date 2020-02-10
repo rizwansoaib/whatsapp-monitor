@@ -44,9 +44,9 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
   [![video3](https://user-images.githubusercontent.com/29729380/72934544-d7e2cb80-3d89-11ea-8285-749bff6657ec.png)
 ](https://www.youtube.com/watch?v=_ukl9s1fdwM)
 
-## Cross Platform Notification 
+## Notification 
  
-   **Notify-Run (Android)** 
+   **Notify-Run[Cross Platform]  (Android)** 
    ![mobile](https://user-images.githubusercontent.com/29729380/74177733-5384b980-4c60-11ea-8b86-a40267588194.png)
    **LibNotify (Ubuntu)**
    ![online](https://user-images.githubusercontent.com/29729380/74180748-0c012c00-4c66-11ea-91f8-b9fd5f6b6a99.jpg)
