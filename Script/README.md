@@ -27,7 +27,8 @@ paste chromedriver binary file in directory /usr/bin/
          git clone https://github.com/rizwansoaib/whatsapp-monitor.git
          cd whatsapp-monitor
          pip3 install -r requirements.txt
-         chmod +x script_name
-         ./script_name
+         cd Script
+         chmod +x monitor+log.py
+         ./monitor+log.py
 Enjoy Now you will get notification when your friend be Online.
 
