@@ -79,8 +79,3 @@ As of November 2019 Whatsapp-Monitor is Licensed: [Read License](/LICENSE)
 rizwan.178208@knit.ac.in
 
 **Feel free to mail me for any queries.**
- 
-# Donation
-If this project help you , you can give me a cup of coffee :) 
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/rizwansoaib)
