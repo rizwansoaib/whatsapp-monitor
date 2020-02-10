@@ -9,8 +9,9 @@
 
 When your crush be online on Whatsapp get notification in your Desktop and  cross platform notification without any installed app.
 
-### [Windows Desktop App](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
 ### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension)
+### [Python Script](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Script)
+### [Windows Desktop App](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
 
 # Video 
 
