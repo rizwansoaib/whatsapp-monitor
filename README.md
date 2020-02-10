@@ -44,47 +44,6 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
   [![video3](https://user-images.githubusercontent.com/29729380/72934544-d7e2cb80-3d89-11ea-8285-749bff6657ec.png)
 ](https://www.youtube.com/watch?v=_ukl9s1fdwM)
 
-
-
-
-# Requirements
-     geckodriver or chromedriver                    :- Automation Driver
-     pip3 install selenium                          :- Automation Library
-     sudo apt-get install libnotify-bin             :- Ubuntu Notification
-     sudo apt-get install espeak                    :- Voice Notification
-     pip3 install pillow                            :- Image Library 
-     pip3 install notify_run                        :- Cross Platform Notification
-     
-     
-Download geckodriver [Click here](https://github.com/mozilla/geckodriver/releases)
-paste binary file in directory /usr/local/bin/ 
-
-
-Download Chrome Webdriver [Click here](https://chromedriver.chromium.org/downloads)
-paste chromedriver binary file in directory /usr/bin/ 
-
-
-# Installation
-
-## Script
- Open Terminal and run-
-
-         sudo apt install libnotify-bin espeak 
-         git clone https://github.com/rizwansoaib/whatsapp-monitor.git
-         cd whatsapp-monitor
-         pip3 install -r requirements.txt
-         chmod +x script_name
-         ./script_name
-Enjoy Now you will get notification when your friend be Online.
-
-
-
-
-
-
-  
-
-
 ## Cross Platform Notification 
  
    **Notify-Run (Android)** 
