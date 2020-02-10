@@ -12,14 +12,6 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
 ### [Windows Desktop App](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
 ### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension)
 
-## Use Case:
-
-* When your girlfriend or boyfriend become online get notification and history of online-offline
-* Compare two people history and predict whether coversation(chat) had done between them or not [ if both will be online same time and close Whatsapp within 1-3 minute difference ]
-* Get notification when two people become online at same time
-* Parents uses to track your child when child gone for bed in night or whether whole night chatting with someone
-
-
 # Video 
 
 
