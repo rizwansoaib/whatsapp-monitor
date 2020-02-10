@@ -1,10 +1,10 @@
 # Deploy on AWS
 ## Architecture
 ### AWS
-![architecture](/DeployAWS/architecture.jpg)
+![architecture](https://user-images.githubusercontent.com/29729380/74177725-51baf600-4c60-11ea-8cbe-99be93961cd5.jpg)
 ### Complete
 
-![overall](/DeployAWS/arc%20-%201.jpg)
+![overall](https://user-images.githubusercontent.com/29729380/74177712-4bc51500-4c60-11ea-819d-8951bbdcdea3.jpg)
 
 #### 1. Developer Setup
   * A Desktop 24/7 with internet Connectivity or use Cloud(AWS/GCP/DigitalOcean etc.)
@@ -51,6 +51,8 @@
    Subscribe from url 
      
 ## 6. Run Script aws.py
+
+![androidnoti](https://user-images.githubusercontent.com/29729380/74177679-3fd95300-4c60-11ea-8d84-1efc188c1119.png)
 
 
  
