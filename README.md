@@ -35,7 +35,7 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
 
 
   [![video3](https://user-images.githubusercontent.com/29729380/72934544-d7e2cb80-3d89-11ea-8285-749bff6657ec.png)
-](https://www.youtube.com/watch?v=_ukl9s1fdwM)
+](https://youtu.be/PFUcunuiGy4)
 
 ## Notification 
  
