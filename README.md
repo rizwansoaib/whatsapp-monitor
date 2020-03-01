@@ -34,7 +34,7 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
 ### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension)
 
 
-  [![video3](https://user-images.githubusercontent.com/29729380/72934544-d7e2cb80-3d89-11ea-8285-749bff6657ec.png)
+  [![video3](https://user-images.githubusercontent.com/29729380/75627593-7ff47b80-5bf7-11ea-9f20-4ed6b81d4d1d.png)
 ](https://youtu.be/PFUcunuiGy4)
 
 ## Notification 
