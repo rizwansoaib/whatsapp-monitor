@@ -57,32 +57,42 @@ function trackuser(rows) {
       
 
    var flag=1;
-   wrif=1
+ 
  
 
 
  
 		setTimeout(function(){
 
-
+      
 			
+      
 			try {
 				if (online[0].innerText == "online" || online[0].innerText == "typing..." ) {
 					n.style.color="green";
 					online[0].style.color="green";
+          console.log(user+ " is Online");
+          //console.error("if",wrif,wri,stopdate)
+					if(wrif==1 && wri==0 && stopdate==0){
 
-					if(wrif==1){
-
-
-                        wrif=0
+               
+                        wrif=1
                         wri=1
+                        stopdate=1
 						startDate   = new Date();
             t1=startDate.toTimeString().split(' ')[0]
+            oldt= startDate.getTime();
+            //console.error("startDate writing",oldt);
 
 					}
 					
-					notify(user);
-					console.log(user+ " is Online");
+          if(notif==1)
+          {
+              notify(user);
+              notif=0
+          }
+				
+					
 
 					let url = chrome.runtime.getURL('beep.mp3')
 	                let a = new Audio(url)
@@ -92,60 +102,69 @@ function trackuser(rows) {
 	                
   
 				}  else {
+            
 						console.log(online[0].innerText);
-            console.error(wrif,wri);
-           
+            //console.error("else",wrif,wri);
+            notif=1
 					    n.style.color="red";
 
-					    
-
-                        if(wrif==1 && wri==1)
-                        {
-
-                          
-
-                        	var t2=endDate.toTimeString().split(' ')[0]
-                        var diff = (endDate.getTime() - startDate.getTime()) / 1000;
-                        var hour="00";
-                        var minute=(Math.floor(diff/60)).toString();
-                        var seconds=(Math.floor(diff%60)).toString();
-                        var t=hour+":"+minute+":"+seconds;
-                        console.error("Saving History");
-                        rows[i]=[t1, t2, t," online "];
-                        i++;
-                        	
-                        }
-
-						flag=1;
-						wri=0
-            wrif=1
-					}
-				}
-			 catch(error) {
-				console.error("User offline");
-        console.error(wrif,wri);
-
-					    n.style.color="red";
-					    
-                        if(wrif==1 && wri==1)
+					     if(wrif==1 && wri==1 && stopdate==1)
                         {
                           
-                        var endDate   = new Date();
+                        console.error(oldt)
                         var endDate   = new Date();
                         var t2=endDate.toTimeString().split(' ')[0]
-                        var diff = (endDate.getTime() - startDate.getTime()) / 1000;
+                        var diff = (endDate.getTime() - oldt) / 1000;
                         var hour="00";
                         var minute=(Math.floor(diff/60)).toString();
                         var seconds=(Math.floor(diff%60)).toString();
                         var t=hour+":"+minute+":"+seconds;
                            console.error("Saving csv");
-                        	rows[i]=[t1, t2, t," online "];
+                          rows[i]=[t1, t2, t," online "];
                           i++;
-                        	
+                            
+                           wrif=1
+                           wri=0
+                           stopdate=0
+                          
+                        }
+
+                        
+
+						flag=1;
+					
+					}
+				}
+			 catch(error) {
+				
+       
+              notif=1
+					    n.style.color="red";
+              console.error("User offline");
+               //console.error("catch",wrif,wri,stopdate);
+					    
+                        if(wrif==1 && wri==1 && stopdate==1)
+                        {
+                          
+                        console.error(oldt)
+                        var endDate   = new Date();
+                        var t2=endDate.toTimeString().split(' ')[0]
+                        var diff = (endDate.getTime() - oldt) / 1000;
+                        var hour="00";
+                        var minute=(Math.floor(diff/60)).toString();
+                        var seconds=(Math.floor(diff%60)).toString();
+                        var t=hour+":"+minute+":"+seconds;
+                           console.error("Saving csv");
+                          rows[i]=[t1, t2, t," online "];
+                          i++;
+                            
+                           wrif=1
+                           wri=0
+                           stopdate=0
+                          
                         }
 				flag=1
-				wri=0
-        wrif=1
+			
 			}
 
 			var flag=""
@@ -160,8 +179,10 @@ chrome.storage.local.get('flag', function (result) {
 	
 }
 
-
+wrif=1
 wri=0
+stopdate=0
+notif=1
 
 trackuser(rows)
 
