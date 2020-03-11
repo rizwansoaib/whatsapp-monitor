@@ -54,7 +54,7 @@ requests </a> are most welcome.
    
    
 ## License
-As of November 2019 Whatsapp-Monitor is Licensed: [Read License](/LICENSE)
+As of 2020 Whatsapp-Monitor is Licensed: [Read License](/LICENSE)
 
 ## Terms and conditions
 * You will NOT use this software for marketing purposes and commercial usage.
