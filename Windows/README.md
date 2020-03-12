@@ -11,7 +11,7 @@
  # INSTALLATION
  
    ## Requirements
-   Chrome Browser version79
+   Chrome Browser version79 or Download ChromeDriver for Current Version and paste on Desktop/WhatsApp-Monitor/
    
       1. Download setup
       2. Install setup in your Windows
