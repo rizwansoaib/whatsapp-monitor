@@ -17,5 +17,5 @@ This extension is not available in the Chrome store. You have to install it manu
 9. Open Contact chat window and Click WhatsApp Monitor Extension icon 
 10. Hit start button 
 
-**Now When Your Contact become online then sound will play  in your Desktop and Web push Notification and you can Download History in CSV Format**
+**Now When Your Contact become online then sound will play  in your Desktop and Web push Notification and Cross Platform Notification e.g. Android(No need to Install any App) you can Download History in CSV Format**
 
