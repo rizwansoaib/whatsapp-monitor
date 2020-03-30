@@ -67,12 +67,6 @@ As of 2020 Whatsapp-Monitor is Licensed: [Read License](/LICENSE)
   This software is for educational purpose only. Keeping eye on a innocent person can make person's life stressful and don't blackmail to someone for fun in your life. Give respect to privacy of every person.
 
    
-## FAQ (Frequently Asked Question)
-**Question:**  QR code is showing but in my phone not scanned successfully?
-
-**Answer:** Change your Default Image Viewer Image Background should be White not in black you can use Magisk image Viewer.
-
-
 
 ## Author:
 ## <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a>
