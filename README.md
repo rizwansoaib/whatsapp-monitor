@@ -79,3 +79,5 @@ As of 2020 Whatsapp-Monitor is Licensed: [Read License](/LICENSE)
 rizwan.178208@knit.ac.in
 
 **Feel free to mail me for any queries.**
+
+**If you like the project, support us by star Thank You**
