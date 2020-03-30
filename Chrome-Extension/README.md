@@ -1,5 +1,8 @@
 # WhatsApp Monitor (Chrome Extension)
 
+## Note
+  ### if extension does not work please report in already issue genetred in repo with error console.
+
 ## Installation
 This extension is not available in the Chrome store. You have to install it manually. That is an easy task, just following these steps:
 
