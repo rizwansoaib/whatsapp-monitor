@@ -32,3 +32,12 @@ paste chromedriver binary file in directory /usr/bin/
          ./monitor+log.py
 Enjoy Now you will get notification when your friend be Online.
 
+
+## FAQ (Frequently Asked Question)
+**Question:**  QR code is showing but in my phone not scanned successfully?
+
+**Answer:** Change your Default Image Viewer Image Background should be White not in black you can use Magisk image Viewer.
+
+
+
+
