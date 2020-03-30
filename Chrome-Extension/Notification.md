@@ -10,6 +10,6 @@
 Notification key is unique url to get Notification on Your Device
 
 ### How to Get Notification
-  <a href="https://notify.run/" target="_blank">Click To Generate</a>
+-  <a href="https://notify.run/" target="_blank">Click To Generate</a>
 
 - Now Click **Create a Channel**
