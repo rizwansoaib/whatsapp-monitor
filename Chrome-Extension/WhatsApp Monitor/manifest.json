@@ -1,0 +1,36 @@
+{
+	"manifest_version": 2,
+	"name": "WhatsApp-Monitor",
+	"description": "WhatsApp-Monitor",
+	"version": "1.0",
+	"author": "Rizwan Ahmad",
+        
+
+	"icons": {
+		
+		"64": "images/icons/64.png",
+		"128": "images/icons/128.png"
+	},
+
+	"web_accessible_resources": [
+		"beep.mp3"
+	],
+
+	"content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/*"],
+            "js": ["start.js" ]
+        }
+    ],
+
+	"permissions": [
+          "storage","tabs","https://web.whatsapp.com/*","https://notify.run/*"
+        ],
+
+       "browser_action": {
+    "default_popup": "popup.html"
+
+  }
+
+
+}
