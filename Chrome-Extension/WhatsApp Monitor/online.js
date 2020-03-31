@@ -1,6 +1,6 @@
 var online = document.getElementsByClassName("_3sgkv Gd51Q");
 var user = document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span").innerText
-n=document.querySelector("#main > header > div._5SiUq > div._3sgkv.Gd51Q > span")
+var n=document.querySelector("#main > header > div._5SiUq > div._3sgkv.Gd51Q > span")
 
 var d   = new Date();
 var curd=d.toLocaleDateString().split(' ')[0]
