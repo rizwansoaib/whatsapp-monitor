@@ -12,8 +12,8 @@ Notification key is unique url to get Notification on Your Device
 ### How to Get Notification
 - 1.  <a href="https://notify.run/" target="_blank">Click To Generate</a>
 - 2. Now Click **Create a Channel**
-- 3. After Create Channel You will get a unique url e.g. https://notify.run/c/ **Your key**
-- 4. Save it in Your Notebook for future use
+- 3. After Create Channel You will get a unique url e.g. https://notify.run/c/**Yourkey**
+- 4. Save **key** in Your Notebook for future use
 - 5. Now paste **key** in WhatsApp Monitor 
 - 6. To Get Notification on any platform just follow url and subscribe that device 
 
