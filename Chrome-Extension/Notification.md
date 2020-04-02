@@ -10,7 +10,7 @@
 Notification key is unique url to get Notification on Your Device
 
 ### How to Get Notification
--1  <a href="https://notify.run/" target="_blank">Click To Generate</a>
+1-  <a href="https://notify.run/" target="_blank">Click To Generate</a>
 -2 Now Click **Create a Channel**
 -3 After Create Channel You will get a unique url e.g. https://notify.run/c/ **Your key**
 -4 Save it in Your Notebook for future use
