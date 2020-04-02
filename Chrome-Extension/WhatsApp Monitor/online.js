@@ -36,7 +36,7 @@ chrome.storage.local.get('nkey', function (result2) {
 function onotif(user) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://notify.run/"+nkey,true);
-    xhr.send("WhatsApp Monitor: "+user+" is Online")
+    xhr.send("📱WhatsApp Monitor: "+user+" is Online")
 }
 
 
