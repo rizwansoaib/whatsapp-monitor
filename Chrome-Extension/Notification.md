@@ -21,6 +21,9 @@ Notification key is unique url to get Notification on Your Device
 ![androidnoti](https://user-images.githubusercontent.com/29729380/74177679-3fd95300-4c60-11ea-8d84-1efc188c1119.png)
 
 
+# Faq (Frequently Asked Question)
+-Q1 ## In which Device i will get notified? Did i need to install WhatsApp on that devices
+
 ## Author:
 ## <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a>
 rizwan.178208@knit.ac.in
