@@ -11,7 +11,7 @@ Notification key is unique url to get Notification on Your Device
 
 ### How to Get Notification
 -  <a href="https://notify.run/" target="_blank">Click To Generate</a>
--  [link](https://notify.run/){:target="_blank"}
+-  [Go to this page](https://notify.run/?target=_blank)
 
 - Now Click **Create a Channel**
 - After Create Channel You will get a unique url e.g. https://notify.run/c/ **Your key**
