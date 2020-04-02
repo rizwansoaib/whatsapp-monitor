@@ -16,7 +16,7 @@ rows.push([" Start ", "  Stop ", " Duration "," Status "]);
 
  
 
-console.log(rows);
+
 
 
 
@@ -97,6 +97,7 @@ function trackuser(rows) {
       
 			try {
 				if (online[0].innerText == "online" || online[0].innerText == "typing..." ) {
+					if(n!=undefined)
 					n.style.color="green";
 					online[0].style.color="green";
           console.log(user+ " is Online");
@@ -134,7 +135,8 @@ function trackuser(rows) {
             
 						console.log(online[0].innerText);
             //console.error("else",wrif,wri);
-            notif=1
+            notif=1 ;  
+                        if(n!=undefined)
 					    n.style.color="red";
 
 					     if(wrif==1 && wri==1 && stopdate==1)
@@ -148,7 +150,7 @@ function trackuser(rows) {
                         var minute=(Math.floor(diff/60)).toString();
                         var seconds=(Math.floor(diff%60)).toString();
                         var t=hour+":"+minute+":"+seconds;
-                           console.error("Saving csv");
+                           //console.error("Saving csv");
                           rows[i]=[t1, t2, t," online "];
                           i++;
                             
@@ -168,6 +170,7 @@ function trackuser(rows) {
 				
        
               notif=1
+                        if(n!=undefined)
 					    n.style.color="red";
               console.error("User offline");
                //console.error("catch",wrif,wri,stopdate);
