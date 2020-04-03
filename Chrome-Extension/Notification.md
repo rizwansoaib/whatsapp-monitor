@@ -17,7 +17,7 @@ Notification key is unique url to get Notification on Your Device
 - 5. Now **paste key** in **WhatsApp Monitor Extension**
 - 6. To Get Notification on any platform just **follow url and subscribe** that device 
 
-![androidnoti](https://user-images.githubusercontent.com/29729380/78394118-aba8be00-7608-11ea-9818-f95e5c12d0f7.png)![androidnoti](https://user-images.githubusercontent.com/29729380/78394159-bb280700-7608-11ea-90be-5bcebeb146ef.png)
+![androidnoti3](https://user-images.githubusercontent.com/29729380/78394118-aba8be00-7608-11ea-9818-f95e5c12d0f7.png)![androidnoti2](https://user-images.githubusercontent.com/29729380/78394159-bb280700-7608-11ea-90be-5bcebeb146ef.png)![3](https://user-images.githubusercontent.com/29729380/78394349-1eb23480-7609-11ea-89fc-c83fb82e305e.png)
 
 
 
