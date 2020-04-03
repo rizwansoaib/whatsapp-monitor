@@ -16,7 +16,7 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
 
 ![](DeployAWS/noti.gif)
 
-### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension) 
+### [Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension) 
 
 **Play Sound when Contact become Online and Web Push Notification and  Cross Platform Notification e.g. Android(No need to Install any App)  Download History of Online in CSV Format**
 
