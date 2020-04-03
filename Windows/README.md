@@ -1,5 +1,14 @@
  ![](https://img.shields.io/badge/Full%20size-32MB-success)
  
+ 
+ ##  Windows Desktop App
+ Desktop App with Cross platform Notification send via web and receive in subscribed devices e.g. Android,Ubuntu etc. without installed any App in your Android and Ubuntu.
+
+
+   [![video2](https://user-images.githubusercontent.com/29729380/71323225-e32aa900-24f6-11ea-8928-eecb77b0d8a2.png)
+](https://www.youtube.com/watch?v=kd44QGSkKz8)
+
+
  ## [Download setup.exe](https://github.com/rizwansoaib/whatsapp-monitor/raw/master/Windows/WhatsApp-Monitor.exe)
  
  ### Warning
