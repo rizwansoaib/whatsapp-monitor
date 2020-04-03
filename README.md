@@ -29,10 +29,10 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
 
 ## Notification 
  
-   **Chrome-Extension and Windows App (Cross Platform)** 
+   **Extension and Windows App (Cross Platform)** 
    ![mobile](https://user-images.githubusercontent.com/29729380/74177733-5384b980-4c60-11ea-8b86-a40267588194.png)
   
-   **Chrome-Extension (Windows)**
+   **Extension (Windows)**
    ![Windows](https://user-images.githubusercontent.com/29729380/74180771-115e7680-4c66-11ea-9939-b9eca7e4b646.png)
   
    
