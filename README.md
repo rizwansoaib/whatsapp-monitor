@@ -11,16 +11,9 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
 
 ![](DeployAWS/noti.gif)
 
-### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension) [recommended]
-### [Windows Desktop App](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
-
-# Video 
-
-
-## Chrome Extension
+### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension) 
 
 **Play Sound when Contact become Online and Web Push Notification and  Cross Platform Notification e.g. Android(No need to Install any App)  Download History of Online in CSV Format**
-### [Chrome Extension](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension)
 
 
   [![video3](https://user-images.githubusercontent.com/29729380/75627593-7ff47b80-5bf7-11ea-9f20-4ed6b81d4d1d.png)
@@ -28,14 +21,6 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
 
 
  
- ##  Windows
- Desktop App with Cross platform Notification send via web and receive in subscribed devices e.g. Android,Ubuntu etc. without installed any App in your Android and Ubuntu.
- ### [Windows Desktop App](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Windows)
-
-   [![video2](https://user-images.githubusercontent.com/29729380/71323225-e32aa900-24f6-11ea-8928-eecb77b0d8a2.png)
-](https://www.youtube.com/watch?v=kd44QGSkKz8)
-
-
 
 ## Notification 
  
