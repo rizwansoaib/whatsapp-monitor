@@ -9,7 +9,7 @@
 
 When your crush be online on Whatsapp get notification in your Desktop and  cross platform notification without any installed app in Smartphone and more.
 
-  [![Get Add on](<img src="https://user-images.githubusercontent.com/29729380/78386601-806ba200-75fb-11ea-87ad-1b595ce69d53.jpg" width="20" />)
+  [![Get Add on](https://user-images.githubusercontent.com/29729380/78387519-2075fb00-75fd-11ea-9201-c9edee9b5039.png)
 ](https://addons.mozilla.org/en-US/android/addon/online-monitor/)
 
 ![](DeployAWS/noti.gif)
