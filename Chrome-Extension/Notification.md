@@ -1,6 +1,6 @@
 # About Notification
 
-### **WhatsApp Monitor Chrome Extension support cross platform Notification to any Device e.g. Android (No App need to Install )**
+### **WhatsApp Online Monitor Extension support cross platform Notification to any Device e.g. Android (No App need to Install )**
 
 
 
