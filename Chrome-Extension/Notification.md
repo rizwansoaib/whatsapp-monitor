@@ -23,7 +23,7 @@ Notification key is unique url to get Notification on Your Device
 
 # Faq (Frequently Asked Question)
  ### **Q1: In which Device i will get notified? Did i need to install WhatsApp on that devices?**
-   #### **Ans: You can subcribe any device which support webpush Notification like Mac,Ubuntu,Windows,Android etc. and There no need to install Whatsapp or Chrome-Extension or any App nothing just follow url and subscribe**
+   #### **Ans: You can subcribe any device which support webpush Notification like Mac,Ubuntu,Windows,Android etc. and There no need to install Whatsapp or Extension or any App nothing just follow url and subscribe**
    
   ### **Q2: In how many Device i will get notified?**
    #### **Ans: You can subcribe any number device,  no limitation was there and you will get notification simultaneously to subscribed devices**
