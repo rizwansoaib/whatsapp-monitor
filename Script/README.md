@@ -1,4 +1,4 @@
- ### [Python Script](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Script) [Currently Not Working]
+ ### [Python Script](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Script) [End update support]
    [![video1](https://user-images.githubusercontent.com/29729380/75820835-1a54ea80-5dc3-11ea-944c-075dda2a0f72.png)](https://youtu.be/3Xo45yhncwg)
    
 
