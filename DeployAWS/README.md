@@ -1,4 +1,4 @@
-# Deploy on AWS
+# Deploy on AWS [support is over]
 ## Architecture
 ### AWS
 ![architecture](https://user-images.githubusercontent.com/29729380/74177725-51baf600-4c60-11ea-8cbe-99be93961cd5.jpg)
