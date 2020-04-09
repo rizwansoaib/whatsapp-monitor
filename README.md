@@ -1,3 +1,4 @@
+<p align="center">
 
  ![](https://img.shields.io/badge/Firefox%20Extension-WhatsApp%20Online%20Monitor-green)
 
@@ -8,6 +9,8 @@
 [![fork this repo](http://githubbadges.com/fork.svg?user=rizwansoaib&repo=whatsapp-monitor)](http://github.com/rizwansoaib/whatsapp-monitor/fork)
 [![HitCount](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor.svg)](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor)
 
+  
+</p>
 # Whatsapp Monitor
 
 When your crush be online on Whatsapp get notification in your Desktop and  cross platform notification without any installed app in Smartphone and more.
