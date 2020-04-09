@@ -5,7 +5,7 @@
 
  [![](https://img.shields.io/badge/Firefox%20Extension-WhatsApp%20Online%20Monitor-green)](https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/)
 [![Gitter](https://badges.gitter.im/whatsapp-monitor/Chat.svg)](https://gitter.im/whatsapp-monitor/Chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![GitHub last commit](https://img.shields.io/github/last-commit/rizwansoaib/whatsapp-monitor)]()
+![GitHub last commit](https://img.shields.io/github/last-commit/rizwansoaib/whatsapp-monitor)
 [![star this repo](http://githubbadges.com/star.svg?user=rizwansoaib&repo=whatsapp-monitor)](https://github.com/rizwansoaib/whatsapp-monitor)
 [![fork this repo](http://githubbadges.com/fork.svg?user=rizwansoaib&repo=whatsapp-monitor)](http://github.com/rizwansoaib/whatsapp-monitor/fork)
 [![HitCount](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor.svg)](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor)
