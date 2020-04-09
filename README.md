@@ -8,6 +8,7 @@
 [![star this repo](http://githubbadges.com/star.svg?user=rizwansoaib&repo=whatsapp-monitor)](https://github.com/rizwansoaib/whatsapp-monitor)
 [![fork this repo](http://githubbadges.com/fork.svg?user=rizwansoaib&repo=whatsapp-monitor)](http://github.com/rizwansoaib/whatsapp-monitor/fork)
 [![HitCount](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor.svg)](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
   
 </p>
