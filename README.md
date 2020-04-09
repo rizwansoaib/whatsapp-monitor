@@ -1,7 +1,7 @@
 <p align="center">
 
 
-<img src="whatsapp-monitor/Chrome-Extension/WhatsApp Monitor/images/icons/128.png" >
+<img src="Chrome-Extension/WhatsApp Monitor/images/icons/128.png" >
 
  ![](https://img.shields.io/badge/Firefox%20Extension-WhatsApp%20Online%20Monitor-green)
 [![Gitter](https://badges.gitter.im/whatsapp-monitor/Chat.svg)](https://gitter.im/whatsapp-monitor/Chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
