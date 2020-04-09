@@ -1,5 +1,7 @@
 
  ![](https://img.shields.io/badge/Firefox%20Extension-WhatsApp%20Online%20Monitor-green)
+
+[![Gitter](https://badges.gitter.im/whatsapp-monitor/community.svg)](https://gitter.im/whatsapp-monitor/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![star this repo](http://githubbadges.com/star.svg?user=rizwansoaib&repo=whatsapp-monitor)](https://github.com/rizwansoaib/whatsapp-monitor)
 [![fork this repo](http://githubbadges.com/fork.svg?user=rizwansoaib&repo=whatsapp-monitor)](http://github.com/rizwansoaib/whatsapp-monitor/fork)
 [![HitCount](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor.svg)](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor)
