@@ -1,9 +1,9 @@
- ![](https://img.shields.io/badge/Full%20size-32MB-success)
+ [![](https://img.shields.io/badge/Full%20size-32MB-success)](https://drive.google.com/open?id=1Hq9VIFCFyD3GuXpRQfwZ9gLmACb858XB)
  
  
  ##  Windows Desktop App
  
- [Download Setup.exe](https://drive.google.com/open?id=1Hq9VIFCFyD3GuXpRQfwZ9gLmACb858XB)
+ ## [Download Setup.exe](https://drive.google.com/open?id=1Hq9VIFCFyD3GuXpRQfwZ9gLmACb858XB)
  
  Desktop App with Cross platform Notification send via web and receive in subscribed devices e.g. Android,Ubuntu etc. without installed any App in your Android and Ubuntu.
 
