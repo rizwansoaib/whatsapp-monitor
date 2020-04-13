@@ -12,7 +12,7 @@
 ](https://www.youtube.com/watch?v=kd44QGSkKz8)
 
 
- ## [Download setup.exe](https://github.com/rizwansoaib/whatsapp-monitor/raw/master/Windows/WhatsApp-Monitor.exe)
+ 
  
  ### Warning
    Thanks [elanozturk](https://github.com/elanozturk) for telling Some Antivirus detect trojan in WhatsApp-Monitor.exe
@@ -23,7 +23,7 @@
  # INSTALLATION
  
    ## Requirements
-   Chrome Browser version80 or Download ChromeDriver for Current Version and paste on Desktop/WhatsApp-Monitor/
+   Chrome Browser version81 or Download ChromeDriver for Current Version and paste on Desktop/WhatsApp-Monitor/
    
       1. Download setup
       2. Install setup in your Windows
