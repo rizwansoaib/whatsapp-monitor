@@ -9,6 +9,7 @@
 [![star this repo](http://githubbadges.com/star.svg?user=rizwansoaib&repo=whatsapp-monitor)](https://github.com/rizwansoaib/whatsapp-monitor)
 [![fork this repo](http://githubbadges.com/fork.svg?user=rizwansoaib&repo=whatsapp-monitor)](http://github.com/rizwansoaib/whatsapp-monitor/fork)
 [![HitCount](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor.svg)](http://hits.dwyl.io/rizwansoaib/whatsapp-monitor)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
   
 </p>
