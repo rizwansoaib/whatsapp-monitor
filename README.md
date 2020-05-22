@@ -5,6 +5,7 @@
 
  [![](https://img.shields.io/badge/Firefox%20Extension-WhatsApp%20Online%20Monitor-green)](https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/)
      [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frizwansoaib%2Fwhatsapp-monitor.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frizwansoaib%2Fwhatsapp-monitor?ref=badge_shield)
               [![Gitter](https://badges.gitter.im/whatsapp-monitor/Chat.svg)](https://gitter.im/whatsapp-monitor/Chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![star this repo](http://githubbadges.com/star.svg?user=rizwansoaib&repo=whatsapp-monitor)](https://github.com/rizwansoaib/whatsapp-monitor)
 [![fork this repo](http://githubbadges.com/fork.svg?user=rizwansoaib&repo=whatsapp-monitor)](http://github.com/rizwansoaib/whatsapp-monitor/fork)
@@ -56,6 +57,9 @@ requests </a> are most welcome.
    
 ## License
 As of 2020 Whatsapp-Monitor is Licensed: [Read License](/LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frizwansoaib%2Fwhatsapp-monitor.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frizwansoaib%2Fwhatsapp-monitor?ref=badge_large)
 
 ## Terms and conditions
 * You will NOT use this software for marketing purposes and commercial usage.
