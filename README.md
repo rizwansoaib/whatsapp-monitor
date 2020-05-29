@@ -55,14 +55,14 @@ requests </a> are most welcome.
    
    
 ## License
-The source code is licensed under GPL v3: [Read License](/LICENSE)
+
     
               
            This program is free software:  you can redistribute it and/or modify it under the terms of 
              the GNU General Public License as published by the Free Software Foundation, version 3.
 
 ![License](https://user-images.githubusercontent.com/29729380/83224186-69c86e00-a19a-11ea-9783-37969dbf78b7.png)
-
+The source code is licensed under GPL v3: [Read License](/LICENSE)
 ## Terms and conditions
 * You will NOT use this software for marketing purposes and commercial usage.
 * We reserve the right to block any user of this repository that does not meet these conditions.
