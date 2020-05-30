@@ -66,7 +66,7 @@ function get()
 
  
 
-mob=document.getElementById('mob').value;
+
 
 
 	var nkey=document.getElementById('nkey').value;
@@ -86,6 +86,33 @@ document.getElementById('start').addEventListener('click', get);
 
 
 
+function mobchat()
+{
+    mob=document.getElementById('mob').value;
+
+chrome.storage.local.set({
+    'mob': mob
+    
+   
+});
+
+
+
+
+chrome.tabs.executeScript({
+    file: 'mobchat.js'
+  }); 
+}
+
+
+
+
+
+
+document.getElementById('mobchat').addEventListener('click', mobchat);
+
+
+document.getElementById('chat').addEventListener('click', mobchat);
 
 
 

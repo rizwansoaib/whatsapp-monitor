@@ -1,34 +1,4 @@
 
-const openChat = phone => {
-  const link = document.createElement("a");
-  link.setAttribute("href", `whatsapp://send?phone=${phone}`);
-  document.body.append(link);
-  link.click();
-  document.body.removeChild(link);
-};
-
-var mob=""
-chrome.storage.local.get('mob', function (result4) {
-        mob = result4.mob;
-
-        if(mob!="")
-        openChat(mob);
-
-            
-    });
-
-
-
-
-function sleep (time) {
-  return new Promise((resolve) => setTimeout(resolve, time));
-}
-sleep(15000);
-
-
-
-
-
 
 
 
@@ -129,10 +99,11 @@ function trackuser(rows) {
    
 
 var online = document.getElementsByClassName("_3sgkv Gd51Q");
-var user = document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span").innerText
+divu=document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span")
+var user = divu.innerText
 var n=document.querySelector("#main > header > div._5SiUq > div._3sgkv.Gd51Q > span")
       
-     
+     divu.style.color='blue';
 
    var flag=1;
 
@@ -285,18 +256,8 @@ notif=1
 
 var user = document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span").innerText
 
-rows = [];
 
-
-rows.push(["********",user, curd,"********"]);
-rows.push([" Start ", "  Stop ", " Duration "," Status "]);
-
-
-
-trackuser(rows)
-
-
-
+console.log(user);
 
 
 
@@ -311,6 +272,7 @@ trackuser(rows)
 
 
 function dcsv() {
+
 	let csvContent = "data:text/csv;charset=utf-8," 
     + rows.map(e => e.join(",")).join("\n");
 
@@ -320,7 +282,6 @@ link.setAttribute("href", encodedUri);
 link.setAttribute("download", user+d+".csv");
 document.body.appendChild(link); 
 link.click();
-
 
 }
 
@@ -335,11 +296,31 @@ link.click();
 
 
 var btn = document.createElement("BUTTON");   
-btn.innerHTML = "Download History";  
+btn.innerHTML = " WhatsApp Monitor Online History";  
+btn.style.width="100px";
 btn.id="download";                 
-document.querySelector("#main > header").appendChild(btn);
-btn.style.backgroundColor="cyan";
+document.querySelector("#side > header").appendChild(btn);
+btn.style.backgroundColor="#075e54";
+btn.style.color="white";
+
+
+var img=document.createElement("IMG");
+img.src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/64.png"
+document.querySelector("#side > header").appendChild(img);
 
 
 
 document.getElementById('download').addEventListener('click', dcsv);
+rows = [];
+
+rows.push(["********",user, curd,"********"]);
+
+rows.push([" Start ", "  Stop ", " Duration "," Status "]);
+
+
+
+
+trackuser(rows)
+
+
+

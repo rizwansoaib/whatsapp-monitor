@@ -1,5 +1,5 @@
 
-function start(mcnkey) {
+function start(contactlist) {
 
 	b.innerText='Stop';
 	//console.log(b.innerText);
@@ -16,6 +16,9 @@ function start(mcnkey) {
    
 });
 
+/*
+
+
 
 	chrome.storage.local.set({
     'mcnkey': mcnkey
@@ -23,9 +26,16 @@ function start(mcnkey) {
    
 });
 
-
 chrome.storage.local.set({
     'mcpso': mcpso
+    
+   
+});
+*/
+
+chrome.storage.local.set({
+    'contactlist': contactlist
+    
     
    
 });
@@ -53,18 +63,18 @@ function stop() {
 
 function get()
 {
-	var mcnkey=document.getElementById('mcnkey').value;
-	mcpso=document.querySelector('input[name="mcps"]:checked').value; 
+	//var mcnkey=document.getElementById('mcnkey').value;
+	//var mcpso=document.querySelector('input[name="mcps"]:checked').value; 
 	b=document.getElementById('mcstart')
-    contactlist=new Array();
-	contactlist=document.getElementById('mcl').value;
+	//alert(mcnkey)
+    //contactlist=new Array();
+    contactlist=[];
+	var contactlist=document.getElementById('mcl').value;
     contactlist=contactlist.split(',');
-    alert(contactlist);
-    console.log(contactlist);
-    
+ 
 	//alert(b.innerText);
 	//console.log(nkey,pso,b);
-	if(b.innerText=='Start'){start(mcnkey);}
+	if(b.innerText=='Start'){start(contactlist);}
 	else{stop();b.innerText='Start';b.className="btn-success";}
        
 
@@ -73,6 +83,6 @@ function get()
 document.getElementById('mcstart').addEventListener('click', get);
 
 
-
+//alert("Enter in mc.js");
 
 

@@ -2,12 +2,13 @@
 <html>
 <head>
 	<title>WhatsApp Monitor Multiple Contacts</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="bts/jq.js"></script>
+  <link rel="stylesheet" href="bts/bts.css">
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="bts/bts_theme.css">
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="bts/bts_js.js"></script>
 
 </head>
 <body>
@@ -17,23 +18,23 @@
 
 	<hr>
 
-
+<!--
 
 	<h1 align="center">
 Notification Key: <input id="mcnkey" type="text" name="nkey" placeholder="Leave Blank Don't know"> 
 </h1>
 <hr>
-
-<h1 align="center">Enter Mutiple Contact Name Same as Saved in Your WhatsApp separted by comma<br>
+-->
+<h1 align="center">Enter Mutiple Contact WhatsApp Mobile Number with country code separted by comma<br>
 
 
 <br><hr>
 
-<textarea class="form-control" style="font-size: 20pt" id="mcl" rows="5" name="mcl" placeholder="Shofia,Rizwan WhatsApp,Ghulam Bhai,Shreya Office,Diwakar KNIT,Vineet TCS,Nancy Shop,Prashant Babu,Avanish Bhaiya,Rahul Jain,Sailesh yadav,Ankit SainiBoy,Davis,Raonaldo"></textarea>
+<input type="" name="mcl"  id="mcl"   style="font-size: 35px;" placeholder="918115168763,14022256255">
 
 
 
-
+<!--
 <hr>
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
 	<p>Play Sounds:
@@ -48,13 +49,14 @@ Notification Key: <input id="mcnkey" type="text" name="nkey" placeholder="Leave 
   </label>
   </p>
 </div>
+-->
 
-
-<h4 align="center">Open WhatsApp Web</h4>
+<h4 align="center" style="color: red">I have Opened any Contact chat window WhatsApp Web</h4>
 
 <h1>
 <center><button class="btn-success" id="mcstart"; style="border-radius:40px;height:80px;width:150px;">Start</button></center>
 </h1>
+<script type="text/javascript" src="mc.js"></script>
 <hr>
 
 
@@ -64,6 +66,5 @@ Notification Key: <input id="mcnkey" type="text" name="nkey" placeholder="Leave 
 
 </body>
 
-<script type="text/javascript" src="mc.js"></script>
 
 </html>

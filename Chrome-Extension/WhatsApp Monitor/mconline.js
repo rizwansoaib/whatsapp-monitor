@@ -1,17 +1,67 @@
-var online = document.getElementsByClassName("_3sgkv Gd51Q");
-var user = document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span").innerText
-var n=document.querySelector("#main > header > div._5SiUq > div._3sgkv.Gd51Q > span")
+
+curr_user_num=-1;
+
+var openChat = phone => {
+  var link = document.createElement("a");
+  link.setAttribute("href", `whatsapp://send?phone=${phone}`);
+  document.body.append(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+
+
+contactlist="";
+n="";
+
+chrome.storage.local.get('contactlist', function (result) {
+         contactlist = result.contactlist; 
+          n=contactlist.length; 
+        
+            
+    });
+
+
+/*
+let mcnkey;
+chrome.storage.local.get('mcnkey', function (result2) {
+        mcnkey = result2.mcnkey;
+        
+        if(mcnkey!="")
+        alert("Subcribe any Device for Notification\nhttps://notify.run/"+mcnkey)
+        
+        
+            
+    });
+
+
+
+
+
+let mcpso;
+chrome.storage.local.get('mcpso', function (result3) {
+        mcpso = result3.mcpso;
+
+        
+            
+    });
+
+
+
+
+*/
 
 var d   = new Date();
 var curd=d.toLocaleDateString().split(' ')[0]
 i=2;
 
 
+
+
 rows = [];
 
-
-rows.push(["********",user, curd,"********"]);
-rows.push([" Start ", "  Stop ", " Duration "," Status "]);
+rows.push(["WhatsApp Monitor","Multiple",curd]);
+rows.push(["Name"," Time ", " Status "]);
 
 
  
@@ -20,14 +70,7 @@ rows.push([" Start ", "  Stop ", " Duration "," Status "]);
 
 
 
-var nkey=""
-chrome.storage.local.get('nkey', function (result2) {
-        nkey = result2.nkey;
-        if(nkey!="")
-        alert("Subcribe any Device for Notification\nhttps://notify.run/"+nkey)
 
-            
-    });
 
 
 
@@ -41,13 +84,9 @@ function onotif(user) {
 
 
 
-pso=""
-chrome.storage.local.get('pso', function (result3) {
-        pso = result3.pso;
 
-        
-            
-    });
+
+
 
 
 
@@ -66,6 +105,8 @@ let url = chrome.runtime.getURL('beep.mp3')
 
 
 function notify(user) {
+
+  
   if(pso=="2")
   {
     let url = chrome.runtime.getURL('beep.mp3')
@@ -99,20 +140,51 @@ function notify(user) {
 
 
 
-function trackuser(rows) {	   
+
+
+
+
+
+
+
+function trackuser(rows) {	  
+
+    setTimeout(function(){
+
+
+ 
+ 
+
+    a=contactlist;
+    n=a.length;
+    curr_user_num++;
+     var key=curr_user_num%n;
+     
+     var x=a[key]
+
+     console.log("Start Monitor: ",x);
+     openChat(x);
+  
+
+
+
+
+ online = document.getElementsByClassName("_3sgkv Gd51Q");
+ user = document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span").innerText
+ n=document.querySelector("#main > header > div._5SiUq > div._3sgkv.Gd51Q > span")
+
    
-      
      
 
    var flag=1;
 
-   var nkey=""
+
  
  
 
 
  
-		setTimeout(function(){
+	
 
 
 
@@ -123,7 +195,11 @@ function trackuser(rows) {
       
 			try {
 				if (online[0].innerText == "online" || online[0].innerText == "typing..." ) {
-					if(n!=undefined)
+					 online = document.getElementsByClassName("_3sgkv Gd51Q");
+           user = document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span").innerText
+           n=document.querySelector("#main > header > div._5SiUq > div._3sgkv.Gd51Q > span")
+
+          if(n!=undefined)
 					n.style.color="green";
 					online[0].style.color="green";
           console.log(user+ " is Online");
@@ -140,17 +216,25 @@ function trackuser(rows) {
             //console.error("startDate writing",oldt);
 
 					}
+           console.error("Saving csv");
+            rows[i]=[user,t1," online "];
+            i++;
+                            
+
+          /*console.log("notif val: ",notif);
 					
           if(notif==1)
           {
+            //console.log("Notification Starting:",user);
               notify(user);
               onotif(user);
               notif=0
           }
 				
+       // console.log("Playing Sound");
 					playsound();
 
-					
+					*/
 
 	                flag=0; 
 	                
@@ -175,7 +259,7 @@ function trackuser(rows) {
                         var seconds=(Math.floor(diff%60)).toString();
                         var t=hour+":"+minute+":"+seconds;
                            //console.error("Saving csv");
-                          rows[i]=[t1, t2, t," online "];
+                          rows[i]=[user,t1," online "];
                           i++;
                             
                            wrif=1
@@ -210,10 +294,7 @@ function trackuser(rows) {
                         var minute=(Math.floor(diff/60)).toString();
                         var seconds=(Math.floor(diff%60)).toString();
                         var t=hour+":"+minute+":"+seconds;
-                           console.error("Saving csv");
-                          rows[i]=[t1, t2, t," online "];
-                          i++;
-                            
+                          
                            wrif=1
                            wri=0
                            stopdate=0
@@ -240,7 +321,7 @@ chrome.storage.local.get('flag', function (result) {
 
             
 			
-		}, 3000);
+		}, 1500);
 	
 }
 
@@ -273,7 +354,7 @@ function dcsv() {
 var encodedUri = encodeURI(csvContent);
 var link = document.createElement("a");
 link.setAttribute("href", encodedUri);
-link.setAttribute("download", user+d+".csv");
+link.setAttribute("download", "Multiple"+d+".csv");
 document.body.appendChild(link); 
 link.click();
 
@@ -291,10 +372,18 @@ link.click();
 
 
 var btn = document.createElement("BUTTON");   
-btn.innerHTML = "Download History";  
+btn.innerHTML = " WhatsApp Monitor Online History";  
+btn.style.width="100px";
 btn.id="download";                 
-document.querySelector("#main > header").appendChild(btn);
-btn.style.backgroundColor="cyan";
+document.querySelector("#side > header").appendChild(btn);
+btn.style.backgroundColor="#075e54";
+btn.style.color="white";
+
+
+var img=document.createElement("IMG");
+img.src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/64.png"
+document.querySelector("#side > header").appendChild(img);
+
 
 
 
