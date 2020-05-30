@@ -94,4 +94,4 @@ rizwan.178208@knit.ac.in
 **🤳  Feel free to mail 📨 me for any queries ❓**
 
 
-**If you 👍  the project, support us by 🌟 Thank You 🙏**
+## **If you 👍  the project, support us by 🌟 Thank You 🙏**
