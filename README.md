@@ -28,6 +28,7 @@ When your crush be online on Whatsapp get notification in your Desktop and  cros
   <li>Desktop Notification</li>
  <li>Cross Platform Notification e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</li>
  <li>Monitor Without Save Number in Your WhatsApp</li>
+  <li>Multiple Contacts Tracking with Mobile Number</li>
  </ul>
 
   [![Get Add on](https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png)
