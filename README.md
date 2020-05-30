@@ -29,7 +29,7 @@ When your crush 💕 be online 🤳 on Whatsapp 👀  get notification 🔔 in y
  <li>Cross Platform Notification 📲 💻  e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</li>
  <li>Monitor Without Save Number 🔢 in Your WhatsApp</li>
   <li>Multiple Contacts 👪 Tracking with Mobile Number</li>
- <li>Message Bomber 💣</li>
+ <li>Message Bomber 💣</li>**
  </ul>
 
   [![Get Add on](https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png)
@@ -79,8 +79,8 @@ The source code is licensed under GPL v3: [Read License](/LICENSE)
    This code is in no way affiliated with, authorized, maintained, sponsored or endorsed by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code. Use at your own risk.
    
 ## Disclaimer ⚠️ 
-  This software is for educational purpose only. Keeping eye on a innocent person can make person's life stressful and don't blackmail to someone for fun in your life. Give respect to privacy of every person.
-  Sending Annoying Messages to someone can prevent the person from contacting you.
+  This software is for educational 🏫 purpose only. 🕵️‍♂️ Keeping eye 👀 on a innocent person 🙇 can make person's life stressful 😞 and don't blackmail to someone 📴 for fun in your life. Give respect 🙏 to privacy of every person 👪
+ 📨 Sending Annoying Messages 💋 to someone can prevent 📴 the person from contacting you 💔
   **Don't Send many messages at a time WhatsApp may block your Account**
 
    
