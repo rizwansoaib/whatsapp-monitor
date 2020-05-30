@@ -91,7 +91,7 @@ The source code is licensed under GPL v3: [Read License](/LICENSE)
 ## <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a>
 rizwan.178208@knit.ac.in
 
-**🤳  Feel free to mail 📨 me for any queries ❓**
+## **🤳  Feel free to mail 📨 me for any queries ❓**
 
 
 # **If you 👍  the project, support us by 🌟 Thank You 🙏**
