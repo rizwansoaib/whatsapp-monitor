@@ -76,21 +76,21 @@ requests 📃</a> are most welcome.
 The source code is licensed under GPL v3: [Read License](/LICENSE)
 
 ## Legal ⚖️
-   This code 👨🏻‍💻  is in no way affiliated 🔗 with, authorized ✔️, maintained 🔀, sponsored 👓  or endorsed 👊 by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code 🧑🏻‍💻. Use at your own risk.
+###   This code 👨🏻‍💻  is in no way affiliated 🔗 with, authorized ✔️, maintained 🔀, sponsored 👓  or endorsed 👊 by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code 🧑🏻‍💻. Use at your own risk.
    
 ## Disclaimer ⚠️ 
-  This software is for educational 🏫 purpose only. 🕵️‍♂️ Keeping eye 👀 on a innocent person 🙇 can make person's life stressful 😞 and don't blackmail to someone 📴 for fun in your life. Give respect 🙏 to privacy of every person 👪.
+###  This software is for educational 🏫 purpose only. 🕵️‍♂️ Keeping eye 👀 on a innocent person 🙇 can make person's life stressful 😞 and don't blackmail to someone 📴 for fun in your life. Give respect 🙏 to privacy of every person 👪.
   
- 📨 Sending Annoying Messages 💋 to someone can prevent 📴 the person from contacting you 💔.
+### 📨 Sending Annoying Messages 💋 to someone can prevent 📴 the person from contacting you 💔.
  
   **Don't Send many messages at a time WhatsApp may block your Account**
 
    
 
-<h1 align="center"> Author 🧑‍💻 </h1>    
-<h1 align="center"> <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a> </h1>
-<h1 align="center"> <a href="mailto:rizwan.178208@knit.ac.in">rizwan.178208@knit.ac.in</a>  </h1>                                    
-<h1 align="center">      🤳  Feel free to mail 📨 me for any queries ❓ </h1> 
-<h1 align="center"> If you 👍  the project, support us by 🌟 Thank You 🙏 </h1> 
+<h2 align="center"> Author 🧑‍💻 </h2>    
+<h3 align="center"> <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a> </h3>
+<h3 align="center"> <a href="mailto:rizwan.178208@knit.ac.in">rizwan.178208@knit.ac.in</a>  </h3>                                    
+<h2 align="center">      🤳  Feel free to mail 📨 me for any queries ❓ </h2> 
+<h2 align="center"> If you 👍  the project, support us by 🌟 Thank You 🙏 </h2> 
 
 
