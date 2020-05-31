@@ -22,15 +22,15 @@
 <h4 align="center" >When your crush 💕 be online 🤳 on Whatsapp 👀  get notification 🔔 in your Desktop 🖥️ and  cross platform notification without any installed app in Smartphone 📱 and more </h4>
 
 <h2 align="center" > Features </h2>
- <ul align="center">
- <li align="center">Play Sound 🔉 When Contact online</li>
- <li align="center">Online History 📜 Download in CSV</li>
-  <li align="center">Desktop Notification 🔔</li>
- <li align="center">Cross Platform Notification 📲 💻  e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</li>
- <li align="center">Monitor Without Save Number 🔢 in Your WhatsApp</li>
-  <li align="center">Multiple Contacts 👪 Tracking with Mobile Number</li>
- <li align="center">Message Bomber 💣</li>
- </ul>
+ 
+ <h4 align="center">Play Sound 🔉 When Contact online</h4 >
+ <h4  align="center">Online History 📜 Download in CSV</h4 >
+  <h4  align="center">Desktop Notification 🔔</h4 >
+ <h4 align="center">Cross Platform Notification 📲 💻  e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</h4 >
+ <h4  align="center">Monitor Without Save Number 🔢 in Your WhatsApp</h4 >
+  <h4  align="center">Multiple Contacts 👪 Tracking with Mobile Number</h4 >
+ <h4  align="center">Message Bomber 💣</h4 >
+ 
 
   [![Get Add on](https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png)
 ](https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/) 
@@ -72,7 +72,7 @@ and <a href ="https://github.com/rizwansoaib/whatsapp-monitor/pulls"> Pull reque
 The source code is licensed under GPL v3: [Read License](/LICENSE)
 
 <h2 align="center" > Legal ⚖️ </h2>
- <h3 align="center" >  This code 👨🏻‍💻  is in no way affiliated 🔗 with, authorized ✔️, maintained 🔀, sponsored 👓  or endorsed 👊 by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code 🧑🏻‍💻. Use at your own risk </h3>
+ <h3 align="center" >  This code 👨🏻‍💻  is in no way affiliated 🔗 with, authorized ✔️, maintained 🔀, sponsored 👓  or endorsed 👊 by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code 🧑🏻‍💻 Use at your own risk </h3>
    
 <h2 align="center" > Disclaimer ⚠️ </h2>
 <h3 align="center" >  This software is for educational 🏫 purpose only. 🕵️‍♂️ Keeping eye 👀 on a innocent person 🙇 can make person's life stressful 😞 and don't blackmail to someone 📴 for fun in your life. Give respect 🙏 to privacy of every person 👪 </h3>
