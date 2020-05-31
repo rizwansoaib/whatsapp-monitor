@@ -17,19 +17,19 @@
 
 
 
-# Whatsapp Monitor
+<h1 align="center" > Whatsapp Monitor </h1>
 
-When your crush 💕 be online 🤳 on Whatsapp 👀  get notification 🔔 in your Desktop 🖥️ and  cross platform notification without any installed app in Smartphone 📱 and more.
+<h4 align="center" >When your crush 💕 be online 🤳 on Whatsapp 👀  get notification 🔔 in your Desktop 🖥️ and  cross platform notification without any installed app in Smartphone 📱 and more </h4>
 
-## Features
- <ul>
- <li>Play Sound 🔉 When Contact online</li>
- <li>Online History 📜 Download in CSV</li>
-  <li>Desktop Notification 🔔</li>
- <li>Cross Platform Notification 📲 💻  e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</li>
- <li>Monitor Without Save Number 🔢 in Your WhatsApp</li>
-  <li>Multiple Contacts 👪 Tracking with Mobile Number</li>
- <li>Message Bomber 💣</li>
+<h2 align="center" > Features </h2>
+ <ul align="center">
+ <li align="center">Play Sound 🔉 When Contact online</li>
+ <li align="center">Online History 📜 Download in CSV</li>
+  <li align="center">Desktop Notification 🔔</li>
+ <li align="center">Cross Platform Notification 📲 💻  e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</li>
+ <li align="center">Monitor Without Save Number 🔢 in Your WhatsApp</li>
+  <li align="center">Multiple Contacts 👪 Tracking with Mobile Number</li>
+ <li align="center">Message Bomber 💣</li>
  </ul>
 
   [![Get Add on](https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png)
