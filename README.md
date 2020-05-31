@@ -59,26 +59,22 @@ When your crush 💕 be online 🤳 on Whatsapp 👀  get notification 🔔 in y
    ![Windows](https://user-images.githubusercontent.com/29729380/74180771-115e7680-4c66-11ea-9939-b9eca7e4b646.png)
   
    
-## Contributions 🖐️ 
-<a href="https://github.com/rizwansoaib/whatsapp-monitor/issues"> Issues 🙋</a>
-and <a href ="https://github.com/rizwansoaib/whatsapp-monitor/pulls"> Pull
-requests 📃</a> are most welcome.
+<h2 align="center" > Contributions 🖐️ <h2>
+<h3 align="center" ><a href="https://github.com/rizwansoaib/whatsapp-monitor/issues"> Issues 🙋</a>
+and <a href ="https://github.com/rizwansoaib/whatsapp-monitor/pulls"> Pull requests 📃</a> are most welcome </h3>
    
    
-## License 🧾 
-
-    
-              
-     This program is free 🆓  software:  you can redistribute it and/or modify 👨🏻‍💻  it under the terms of 
-         the GNU General 📢 Public License as published by the Free Software Foundation 🇺🇳, version 3.
+<h2 align="center" > License 🧾 </h2>
+<h3 align="center" > This program is free 🆓  software:  you can redistribute it and/or modify 👨🏻‍💻  it under the terms of 
+         the GNU General 📢 Public License as published by the Free Software Foundation 🇺🇳, version 3 </h3>
 
 ![License](https://user-images.githubusercontent.com/29729380/83224186-69c86e00-a19a-11ea-9783-37969dbf78b7.png)
 The source code is licensed under GPL v3: [Read License](/LICENSE)
 
-## Legal ⚖️
+<h2 align="center" > Legal ⚖️ </h2>
  <h3 align="center" >  This code 👨🏻‍💻  is in no way affiliated 🔗 with, authorized ✔️, maintained 🔀, sponsored 👓  or endorsed 👊 by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code 🧑🏻‍💻. Use at your own risk </h3>
    
-## Disclaimer ⚠️ 
+<h2 align="center" > Disclaimer ⚠️ </h2>
 <h3 align="center" >  This software is for educational 🏫 purpose only. 🕵️‍♂️ Keeping eye 👀 on a innocent person 🙇 can make person's life stressful 😞 and don't blackmail to someone 📴 for fun in your life. Give respect 🙏 to privacy of every person 👪 </h3>
   
 <h3 align="center" > 📨 Sending Annoying Messages 💋 to someone can prevent 📴 the person from contacting you 💔 </h3>
