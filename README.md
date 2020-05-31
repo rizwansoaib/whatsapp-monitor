@@ -90,7 +90,7 @@ The source code is licensed under GPL v3: [Read License](/LICENSE)
 <h1 align="center"> Author 🧑‍💻 </h1>    
 <h1 align="center"> <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a> </h1>
 <h1 align="center"> <a href="mailto:rizwan.178208@knit.ac.in">rizwan.178208@knit.ac.in</a>  </h1>                                    
-><h2 align="center">      🤳  Feel free to mail 📨 me for any queries ❓ </h2> 
-   <h2> If you 👍  the project, support us by 🌟 Thank You 🙏 </h2> 
+<h1 align="center">      🤳  Feel free to mail 📨 me for any queries ❓ </h1> 
+<h1 align="center"> If you 👍  the project, support us by 🌟 Thank You 🙏 </h1> 
 
 
