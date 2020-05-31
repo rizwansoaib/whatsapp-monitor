@@ -33,7 +33,7 @@
  
 
   <h4  align="center">
- <a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" > </a>
+ <a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" ></a><br> 
  <a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/">Install Firefox Add on</a>
 </h4>
 
