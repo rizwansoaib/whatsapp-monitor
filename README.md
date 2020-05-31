@@ -40,23 +40,21 @@
 
 ![](DeployAWS/noti.gif)
 
-### [Extension 🌐](https://github.com/rizwansoaib/whatsapp-monitor/tree/master/Chrome-Extension) 
+<h3 align="center"> Extension 🌐 </h3>
+<h4 align="center"> Play Sound 🔉 when Contact become Online 🤳  and Web  Push Notification 📳 and  Cross Platform Notification e.g. Android(No need to Install any App)  Download 📥 History 📜  of Online in CSV Format</h4>
 
-**Play Sound 🔉 when Contact become Online 🤳  and Web  Push Notification 📳 and  Cross Platform Notification e.g. Android(No need to Install any App)  Download 📥 History 📜  of Online in CSV Format**
-
-
-  [![video3](https://user-images.githubusercontent.com/29729380/75627593-7ff47b80-5bf7-11ea-9f20-4ed6b81d4d1d.png)
+[![video3](https://user-images.githubusercontent.com/29729380/75627593-7ff47b80-5bf7-11ea-9f20-4ed6b81d4d1d.png)
 ](https://youtu.be/5xlrjh3poqs)
 
 
  
 
-## Notification 🔕
+<h2 align="center"> Notification 🔕 </h2>
  
-   **Extension and Windows App (Cross Platform) 📳** 
+   <h4 align="center">Extension and Windows App (Cross Platform) 📳</h4>
    ![mobile](https://user-images.githubusercontent.com/29729380/74177733-5384b980-4c60-11ea-8b86-a40267588194.png)
   
-   **Extension (Windows) 🖥️**
+   <h4 align="center">Extension (Windows) 🖥️</h4>
    ![Windows](https://user-images.githubusercontent.com/29729380/74180771-115e7680-4c66-11ea-9939-b9eca7e4b646.png)
   
    
