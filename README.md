@@ -52,10 +52,12 @@
 <h2 align="center"> Notification 🔕 </h2>
  
    <h4 align="center">Extension and Windows App (Cross Platform) 📳</h4>
-   ![mobile](https://user-images.githubusercontent.com/29729380/74177733-5384b980-4c60-11ea-8b86-a40267588194.png)
+   
+![mobile](https://user-images.githubusercontent.com/29729380/74177733-5384b980-4c60-11ea-8b86-a40267588194.png)
   
    <h4 align="center">Extension (Windows) 🖥️</h4>
-   ![Windows](https://user-images.githubusercontent.com/29729380/74180771-115e7680-4c66-11ea-9939-b9eca7e4b646.png)
+ 
+ ![Windows](https://user-images.githubusercontent.com/29729380/74180771-115e7680-4c66-11ea-9939-b9eca7e4b646.png)
   
    
 <h2 align="center" > Contributions 🖐️ <h2>
