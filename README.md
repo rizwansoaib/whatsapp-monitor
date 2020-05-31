@@ -65,12 +65,12 @@
 and <a href ="https://github.com/rizwansoaib/whatsapp-monitor/pulls"> Pull requests 📃</a> are most welcome </h3>
    
    
-<h2 align="center" > License 🧾 </h2>
+<h2 align="center" > <a href ="/LICENSE"> License 🧾 </a></h2>
 <h3 align="center" > This program is free 🆓  software:  you can redistribute it and/or modify 👨🏻‍💻  it under the terms of 
          the GNU General 📢 Public License as published by the Free Software Foundation 🇺🇳, version 3 </h3>
 
 ![License](https://user-images.githubusercontent.com/29729380/83224186-69c86e00-a19a-11ea-9783-37969dbf78b7.png)
-The source code is licensed under GPL v3: [Read License](/LICENSE)
+
 
 <h2 align="center" > Legal ⚖️ </h2>
  <h3 align="center" >  This code 👨🏻‍💻  is in no way affiliated 🔗 with, authorized ✔️, maintained 🔀, sponsored 👓  or endorsed 👊 by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code 🧑🏻‍💻 Use at your own risk </h3>
