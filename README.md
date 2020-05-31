@@ -83,7 +83,7 @@ The source code is licensed under GPL v3: [Read License](/LICENSE)
   
 ### 📨 Sending Annoying Messages 💋 to someone can prevent 📴 the person from contacting you 💔.
  
-  **Don't Send many messages at a time WhatsApp may block your Account**
+<h3 align="center" >Don't Send many messages at a time WhatsApp may block your Account </h3>
 
    
 
