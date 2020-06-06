@@ -203,6 +203,8 @@ function trackuser(rows) {
 					n.style.color="green";
 					online[0].style.color="green";
           console.log(user+ " is Online");
+
+                 
           //console.error("if",wrif,wri,stopdate)
 					if(wrif==1 && wri==0 && stopdate==0){
 
@@ -213,13 +215,15 @@ function trackuser(rows) {
 						startDate   = new Date();
             t1=startDate.toTimeString().split(' ')[0]
             oldt= startDate.getTime();
+
+
+            console.error("Saving csv");
+            rows[i]=[user,t1," online "];
+            i++;
             //console.error("startDate writing",oldt);
 
 					}
-           console.error("Saving csv");
-            rows[i]=[user,t1," online "];
-            i++;
-                            
+                      
 
           /*console.log("notif val: ",notif);
 					
