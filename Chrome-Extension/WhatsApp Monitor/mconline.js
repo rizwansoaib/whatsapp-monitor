@@ -169,9 +169,9 @@ function trackuser(rows) {
 
 
 
- online = document.getElementsByClassName("_3sgkv Gd51Q");
- user = document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span").innerText
- n=document.querySelector("#main > header > div._5SiUq > div._3sgkv.Gd51Q > span")
+ online = document.getElementsByClassName("_3-cMa _3Whw5");
+ user = document.querySelector("#main > header > div._33QME > div._2FCjS > div > span").innerText
+ n=document.querySelector("#main > header > div._33QME > div._2ruUq._3xjAz > span")
 
    
      
@@ -195,9 +195,9 @@ function trackuser(rows) {
       
 			try {
 				if (online[0].innerText == "online" || online[0].innerText == "typing..." ) {
-					 online = document.getElementsByClassName("_3sgkv Gd51Q");
-           user = document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span").innerText
-           n=document.querySelector("#main > header > div._5SiUq > div._3sgkv.Gd51Q > span")
+					 online = document.getElementsByClassName("_3-cMa _3Whw5");
+           user = document.querySelector("#main > header > div._33QME > div._2FCjS > div > span").innerText
+           n=document.querySelector("#main > header > div._33QME > div._2ruUq._3xjAz > span")
 
           if(n!=undefined)
 					n.style.color="green";
