@@ -98,10 +98,10 @@ function notify(user) {
 function trackuser(rows) {	   
    
 
-var online = document.getElementsByClassName("_3sgkv Gd51Q");
-divu=document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span")
+var online = document.getElementsByClassName("_3-cMa _3Whw5");
+divu=document.querySelector("#main > header > div._33QME > div._2FCjS > div > span")
 var user = divu.innerText
-var n=document.querySelector("#main > header > div._5SiUq > div._3sgkv.Gd51Q > span")
+var n=document.querySelector("#main > header > div._33QME > div._2ruUq._3xjAz > span")
       
      divu.style.color='blue';
 
@@ -254,7 +254,7 @@ notif=1
 
 
 
-var user = document.querySelector("#main > header > div._5SiUq > div._16vzP > div > span").innerText
+var user = document.querySelector("#main > header > div._33QME > div._2FCjS > div > span").innerText
 
 
 console.log(user);
