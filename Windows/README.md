@@ -2,7 +2,8 @@
  
  
  ##  Windows Desktop App
- 
+ ## [Support End in May 2020]
+ ### Please use extension
  ## [Download Setup.exe](https://drive.google.com/open?id=1Hq9VIFCFyD3GuXpRQfwZ9gLmACb858XB)
  
  Desktop App with Cross platform Notification send via web and receive in subscribed devices e.g. Android,Ubuntu etc. without installed any App in your Android and Ubuntu.
