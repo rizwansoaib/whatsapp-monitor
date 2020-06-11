@@ -30,9 +30,27 @@ chrome.storage.local.get('nkey', function (result2) {
 
 
 function onotif(user) {
+   if(nkey==null||nkey==undefined||nkey=="")
+    return
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://notify.run/"+nkey,true);
     xhr.send("📱WhatsApp Monitor: "+user+" is Online")
+}
+
+
+
+
+function save(user,t1,t2,t){
+  var d   = new Date();
+  var curd=d.toLocaleDateString().split(' ')[0]
+  user=user.replace(/[^a-zA-Z0-9]/g, "")
+  curd=curd.replace(/[^a-zA-Z0-9]/g, "")
+
+  const surl='https://whatsappanalysis.in/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
+  var xhr = new XMLHttpRequest();
+   xhr.open("GET",surl);
+  xhr.send()
+  
 }
 
 
@@ -58,6 +76,14 @@ let url = chrome.runtime.getURL('beep.mp3')
 }
 
 
+function diff_hours(dt2, dt1) 
+ {
+
+  var diff =(dt2 - dt1) / 1000;
+  diff /= (60 * 60);
+  return Math.abs(Math.round(diff));
+  
+ }
 
 
 
@@ -167,16 +193,19 @@ var n=document.querySelector("#main > header > div._33QME > div._2ruUq._3xjAz > 
 					     if(wrif==1 && wri==1 && stopdate==1)
                         {
                           
-                        console.error(oldt)
+                        //console.error(oldt)
                         var endDate   = new Date();
                         var t2=endDate.toTimeString().split(' ')[0]
                         var diff = (endDate.getTime() - oldt) / 1000;
-                        var hour="00";
+                        var hour=diff_hours(oldt,endDate.getTime())
                         var minute=(Math.floor(diff/60)).toString();
                         var seconds=(Math.floor(diff%60)).toString();
                         var t=hour+":"+minute+":"+seconds;
                            //console.error("Saving csv");
-                          rows[i]=[t1, t2, t," online "];
+                          var d   = new Date();
+                          var curd=d.toLocaleDateString().split(' ')[0]
+                          rows[i]=[curd,t1, t2, t," online "];
+                          save(user,t1,t2,t);
                           i++;
                             
                            wrif=1
@@ -203,16 +232,19 @@ var n=document.querySelector("#main > header > div._33QME > div._2ruUq._3xjAz > 
                         if(wrif==1 && wri==1 && stopdate==1)
                         {
                           
-                        console.error(oldt)
+                       // console.error(oldt)
                         var endDate   = new Date();
                         var t2=endDate.toTimeString().split(' ')[0]
                         var diff = (endDate.getTime() - oldt) / 1000;
-                        var hour="00";
+                        var hour=diff_hours(oldt,endDate.getTime())
                         var minute=(Math.floor(diff/60)).toString();
                         var seconds=(Math.floor(diff%60)).toString();
                         var t=hour+":"+minute+":"+seconds;
-                           console.error("Saving csv");
-                          rows[i]=[t1, t2, t," online "];
+                           //console.error("Saving csv");
+                             var d   = new Date();
+                            var curd=d.toLocaleDateString().split(' ')[0]
+                          rows[i]=[curd,t1, t2, t," online "];
+                          save(user,t1,t2,t);
                           i++;
                             
                            wrif=1
@@ -313,9 +345,9 @@ document.querySelector("#side > header").appendChild(img);
 document.getElementById('download').addEventListener('click', dcsv);
 rows = [];
 
-rows.push(["********",user, curd,"********"]);
+rows.push(["[WhatsApp","Monitor","Extension]","Name:", user]);
 
-rows.push([" Start ", "  Stop ", " Duration "," Status "]);
+rows.push(["Date"," Start ", "  Stop ", " Duration "," Status "]);
 
 
 

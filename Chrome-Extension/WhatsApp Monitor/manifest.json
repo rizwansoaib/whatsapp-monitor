@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
 	"name": "WhatsApp Online Monitor",
-	"description": "WhatsApp Online Monitor",
-	"version": "1.4",
+	"description": "WhatsApp Online Monitor @http://github.com/rizwansoaib",
+	"version": "1.8",
 	"author": "Rizwan Ahmad",
         
 
@@ -24,7 +24,7 @@
     ],
 
 	"permissions": [
-          "storage","tabs","https://web.whatsapp.com/*","https://notify.run/*"
+          "storage","tabs","https://web.whatsapp.com/*","https://notify.run/*","https://whatsappanalysis.in/*"
         ],
 
        "browser_action": {
