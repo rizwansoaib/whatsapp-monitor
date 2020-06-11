@@ -27,6 +27,7 @@
  
  <h4 align="center">Play Sound 🔉 When Contact online</h4 >
  <h4  align="center">Online History 📜 Download in CSV</h4 >
+  <h4  align="center">Access History 📡 via web or api</h4 >
   <h4  align="center">Desktop Notification 🔔</h4 >
  <h4 align="center">Cross Platform Notification 📲 💻  e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</h4 >
  <h4  align="center">Monitor Without Save Number 🔢 in Your WhatsApp</h4 >
