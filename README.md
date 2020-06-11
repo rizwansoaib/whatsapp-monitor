@@ -46,8 +46,8 @@
 ### Web and API
 Name | Description | Parameter
 |---|---|---|
-| Web|(https://whatsappanalysis.in/online) | 
-| API|(https://whatsappanalysis.in/api/v1/online/) | {Name or Mobile}
+| Web|https://whatsappanalysis.in/online | 
+| API|https://whatsappanalysis.in/api/v1/online/ | {Name or Mobile}
 
 
 
