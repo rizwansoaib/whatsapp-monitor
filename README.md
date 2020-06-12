@@ -43,7 +43,7 @@
  
  
  <br> 
- <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/">Install Chrome Add on         </a><a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/">        Install Firefox Add on</a>
+ <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/">Chrome Add on         </a><a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/">        Firefox Add on</a>
 </h4>
 
 
