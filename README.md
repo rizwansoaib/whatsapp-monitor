@@ -57,7 +57,7 @@ Name | Description | Parameter
 | Web|https://whatsappanalysis.in/online | 
 | API|https://whatsappanalysis.in/api/v1/online/ | {Name or Mobile}
 
-**Name and Mobile Number without any space and special character Allowed[a-z,A-Z,0-9]**
+**Name and Mobile Number without any space and special character not Allowed[a-z,A-Z,0-9]**
 
 e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.in/api/v1/online/918004136155)
 
