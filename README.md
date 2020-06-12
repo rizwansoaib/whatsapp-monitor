@@ -34,11 +34,20 @@
   <h4  align="center">Multiple Contacts 👪 Tracking with Mobile Number</h4 >
  <h4  align="center">Message Bomber 💣</h4 >
  
+ 
+ 
+   <h4  align="center">
+ <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/"><img src="https://user-images.githubusercontent.com/29729380/84505020-a045d300-acda-11ea-9409-48e2ce88a4a1.png" ></a><br> 
+ <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/">Install Chrome Add on</a>
+</h4>
+ 
 
   <h4  align="center">
  <a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" ></a><br> 
  <a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/">Install Firefox Add on</a>
 </h4>
+
+
 
 
 
