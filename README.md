@@ -37,7 +37,7 @@
  
  
    <h4  align="center">
- <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/"><img src="https://user-images.githubusercontent.com/29729380/84505020-a045d300-acda-11ea-9409-48e2ce88a4a1.png" height="80" width="200"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" height="70" width="200"></a>
+ <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/"><img src="https://user-images.githubusercontent.com/29729380/84505020-a045d300-acda-11ea-9409-48e2ce88a4a1.png" height="80" width="200"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" height="65" width="180"></a>
  
  
  
