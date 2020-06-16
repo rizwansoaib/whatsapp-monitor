@@ -7,7 +7,7 @@
 
 
 var d   = new Date();
-var curd=d.toLocaleDateString("sa-IN").split(' ')[0]
+var curd=d.toLocaleDateString("en-GB").split(' ')[0]
 i=2;
 
  
@@ -42,7 +42,7 @@ function onotif(user) {
 
 function save(user,t1,t2,t){
   var d   = new Date();
-  var curd=d.toLocaleDateString("sa-IN").split(' ')[0]
+  var curd=d.toLocaleDateString("en-GB").split(' ')[0]
   user=user.replace(/[^a-zA-Z0-9]/g, "")
   curd=curd.replace(/[^a-zA-Z0-9]/g, "")
 
@@ -203,7 +203,7 @@ var n=document.querySelector("#main > header > div._33QME > div._2ruUq._3xjAz > 
                         var t=hour+":"+minute+":"+seconds;
                            //console.error("Saving csv");
                           var d   = new Date();
-                          var curd=d.toLocaleDateString("sa-IN").split(' ')[0]
+                          var curd=d.toLocaleDateString("en-GB").split(' ')[0]
                           rows[i]=[curd,t1, t2, t," online "];
                           save(user,t1,t2,t);
                           i++;
@@ -242,7 +242,7 @@ var n=document.querySelector("#main > header > div._33QME > div._2ruUq._3xjAz > 
                         var t=hour+":"+minute+":"+seconds;
                            //console.error("Saving csv");
                              var d   = new Date();
-                            var curd=d.toLocaleDateString("sa-IN").split(' ')[0]
+                            var curd=d.toLocaleDateString("en-GB").split(' ')[0]
                           rows[i]=[curd,t1, t2, t," online "];
                           save(user,t1,t2,t);
                           i++;
