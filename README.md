@@ -21,7 +21,7 @@
 <h4 align="center">WhatsApp Contact Online Monitoring Tool</h4>
 
 
-<h4 align="center" >When WhatsApp Contact will be online 🤳 on Whatsapp 👀  get notification 🔔 in your Desktop 🖥️ and  cross platform notification without any installed app in Smartphone 📱 and more </h4>
+<h4 align="center" >When Your Contact will be online 🤳 on Whatsapp 👀  get notification 🔔 in your Desktop 🖥️ and  cross platform notification without any installed app in Smartphone 📱 and more </h4>
 
 <h2 align="center" > Features </h2>
  
