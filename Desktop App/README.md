@@ -1,6 +1,8 @@
 # Desktop App
 
-### App Size is Big No Future support we will focus on extension only  
+### App Size is Big [350mb]
+### No Future support 
+### We will focus on extension only  
 
 ## Windows
 Download [Setup.exe](https://drive.google.com/file/d/1BF6OtZVA4xcRjeA_R8W-CxUSAVK9qWft/view?usp=sharing) and install 
