@@ -10,4 +10,4 @@ Download [WhatsApp-Monitor.deb](https://drive.google.com/file/d/1niS3DmdU-4yFzG5
                       
                       
                       
- **Open App from Launcher and run WhatsApp Web will be Open For Tracking Please Open Contact chat Window and go menu Tools then click start Monitor**
+ **Open App from Launcher and it will run WhatsApp Web  For Tracking Please Open Contact chat Window and go menu Tools then click start Monitor**
