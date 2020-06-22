@@ -4,7 +4,7 @@ Download [Setup.exe](https://drive.google.com/file/d/1BF6OtZVA4xcRjeA_R8W-CxUSAV
 
 ## Linux 
 
-Download [WhatsApp-Monitor.deb](https://drive.google.com/file/d/1niS3DmdU-4yFzG5580fLH4lEUzFF55m8/view?usp=sharing) and install open terminal and run in Downloaded Directory
+Download [WhatsApp-Monitor.deb](https://drive.google.com/file/d/1niS3DmdU-4yFzG5580fLH4lEUzFF55m8/view?usp=sharing) for installation open terminal and run in Downloaded Directory
 
                       sudo dpkg -i WhatsApp-Monitor.deb 
                       
