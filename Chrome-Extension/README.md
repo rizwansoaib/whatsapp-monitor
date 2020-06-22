@@ -4,7 +4,7 @@
 ## Installation
 This extension is not available in the Chrome store. You have to install it manually. That is an easy task, just following these steps:
 
-1. Click Download the ZIP file Chrome-Extension	
+1. Download the ZIP file from [release](https://github.com/rizwansoaib/whatsapp-monitor/releases/)
 2. Extract the folder from the ZIP file	
 3. Open in url chrome://extensions/	in chrome browser
 4. Enable developer mode at the top of the screen by clicking the slider	
