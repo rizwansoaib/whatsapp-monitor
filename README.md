@@ -102,7 +102,7 @@ e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.i
 
   1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser)
             
-  2. Install Extension from repo
+  2. Install Chrome Extension
             
   3. Open WhatsApp Web and run extension same as Desktop
    
