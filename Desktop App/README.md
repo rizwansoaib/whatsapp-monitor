@@ -4,6 +4,11 @@
 * No Future support 
 * We will focus on extension only  
 
+
+[![](https://user-images.githubusercontent.com/29729380/85367786-92e4e000-b547-11ea-934d-ed42ce0235a9.gif)](https://www.youtube.com/watch?v=oDPMrvz2YhI)
+
+
+
 ## Windows
 Download [Setup.exe](https://drive.google.com/file/d/1BF6OtZVA4xcRjeA_R8W-CxUSAVK9qWft/view?usp=sharing) and install 
 
