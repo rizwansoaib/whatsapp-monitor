@@ -93,6 +93,27 @@ e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.i
  
  ![Windows](https://user-images.githubusercontent.com/29729380/74180771-115e7680-4c66-11ea-9939-b9eca7e4b646.png)
   
+  
+  
+# Faq (Frequently Asked Question)
+ ### **Q1: I Have no Desktop. How can i use extension?**
+   #### **Ans: Don't take tension we have designed this extension for Mobile support.**
+#### **You only need two devices one should android used for tracking**
+
+            1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser)
+            
+            2. Install Extension from repo
+            
+            3. Open WhatsApp Web and run extension same as Desktop
+   
+  ### **Q2: Android extension how i will get notification?**
+   #### **Ans: Use Notification Key and Subscribe any devices you will get Notification**
+
+
+  
+  
+  
+  
    
 <h2 align="center" > Contributions 🖐️ <h2>
 <h3 align="center" ><a href="https://github.com/rizwansoaib/whatsapp-monitor/issues"> Issues 🙋</a>
