@@ -104,7 +104,7 @@ e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.i
             
   2. Install Chrome Extension
             
-  3. Open WhatsApp Web and run extension same as Desktop
+  3. Open WhatsApp Web in Desktop mode and run extension same as Desktop
    
   ### **Q2: Android extension how i will get notification?**
    #### **Ans: Use Notification Key and Subscribe any devices you will get Notification**
