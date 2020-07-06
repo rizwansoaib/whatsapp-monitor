@@ -110,7 +110,7 @@ e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.i
    #### **Ans: Use Notification Key and Subscribe any devices you will get Notification**
    
    ### **Q3: Why there is PRO and what features available in PRO?**
-   **Ans**: I believe in power of OpenSource but many whatsapp monitor users requesting that they should be able to see all previous history on a website if they outside from home they want access history in Smartphone and history should be persistent for future reference 
+   **Ans**: I believe in power of OpenSource and freeware but many whatsapp monitor users requesting that they should be able to see all previous history on a website if they outside from home they want access history in Smartphone and history should be persistent for future reference 
    and they said to me that they willing for pay this if any financial need. 
    PRO version will not work just enter number and start tracking.
    You have to use extension only in pro version you will be able to access previous online history with statistics GRAPH
