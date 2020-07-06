@@ -109,7 +109,7 @@ e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.i
   ### **Q2: Android extension how i will get notification?**
    #### **Ans: Use Notification Key and Subscribe any devices you will get Notification**
    
-   ### **Q3: What features available in PRO?**
+   ### **Q3: why there is PRO and what features available in PRO?**
    **Ans**: Many whatsapp monitor users requesting that they should be able to see all previous history on website if they outside from home they want access history in Smartphone and history should be persistent for future refrence 
    and they said to me that they willing for pay this if any financial need. 
    PRO version will not work just enter number and start tracking.
