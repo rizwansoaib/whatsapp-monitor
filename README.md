@@ -100,9 +100,9 @@ e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.i
    #### **Ans: Don't take tension we have designed this extension for Mobile support.**
 #### **You only need two devices one should android used for tracking**
 
-  1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser)
+  1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser) in your Android
             
-  2. Install [Chrome Extension](https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/)
+  2. Install [Chrome Extension](https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/) in Kiwi Browser
             
   3. Open WhatsApp Web in Desktop mode and run extension same as Desktop
    
