@@ -21,13 +21,13 @@
 <h4 align="center">WhatsApp Contact Online Monitoring Tool</h4>
 
 
-<h4 align="center" >When Your Contact will be online 🤳 on Whatsapp 👀  get notification 🔔 in your Desktop 🖥️ and  cross platform notification without any installed app in Smartphone 📱 and more </h4>
+<h4 align="center" >When Your Contact will be online 🤳 on Whatsapp 👀  get the notification 🔔 in your Desktop 🖥️ and  cross-platform notification without any installed app in Smartphone 📱 and more </h4>
 
 <h2 align="center" > Features </h2>
  
  <h4 align="center">Play Sound 🔉 When Contact online</h4 >
  <h4  align="center">Online History 📜 Download in CSV</h4 >
-  <h4  align="center">Access History 📡 via web or api</h4 >
+  <h4  align="center">Access History 📡 via web or API</h4 >
   <h4  align="center">Desktop Notification 🔔</h4 >
  <h4 align="center">Cross Platform Notification 📲 💻  e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</h4 >
  <h4  align="center">Monitor Without Save Number 🔢 in Your WhatsApp</h4 >
@@ -96,7 +96,7 @@ e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.i
   
   
 # Faq (Frequently Asked Question)
- ### **Q1: I Have no Desktop. How can i use extension?**
+ ### **Q1: I Have no Desktop. How can I use extension?**
    #### **Ans: Don't take tension we have designed this extension for Mobile support.**
 #### **You only need two devices one should android used for tracking**
 
@@ -106,15 +106,15 @@ e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.i
             
   3. Open WhatsApp Web in Desktop mode and run extension same as Desktop
    
-  ### **Q2: Android extension how i will get notification?**
+  ### **Q2: Android extension how I will get notification?**
    #### **Ans: Use Notification Key and Subscribe any devices you will get Notification**
    
    ### **Q3: Why there is PRO and what features available in PRO?**
-   **Ans**: I beleive in power of OpenSource but many whatsapp monitor users requesting that they should be able to see all previous history on website if they outside from home they want access history in Smartphone and history should be persistent for future refrence 
+   **Ans**: I believe in power of OpenSource but many whatsapp monitor users requesting that they should be able to see all previous history on a website if they outside from home they want access history in Smartphone and history should be persistent for future reference 
    and they said to me that they willing for pay this if any financial need. 
    PRO version will not work just enter number and start tracking.
    You have to use extension only in pro version you will be able to access previous online history with statistics GRAPH
-   which is recorded when you start monitor your contacts. PRO version is less cost it's only server cost which is running on AWS
+   which is recorded when you start monitoring your contacts. PRO version is less cost it's only server cost which is running on AWS
 
 
   
@@ -138,7 +138,7 @@ and <a href ="https://github.com/rizwansoaib/whatsapp-monitor/pulls"> Pull reque
  <h3 align="center" >  This code 👨🏻‍💻  is in no way affiliated 🔗 with, authorized ✔️, maintained 🔀, sponsored 👓  or endorsed 👊 by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code 🧑🏻‍💻 Use at your own risk </h3>
    
 <h2 align="center" > Disclaimer ⚠️ </h2>
-<h3 align="center" >  This software is for educational 🏫 purpose only. 🕵️‍♂️ Keeping eye 👀 on a innocent person 🙇 can make person's life stressful 😞 and don't blackmail to someone 📴 for fun in your life. Give respect 🙏 to privacy of every person 👪 </h3>
+<h3 align="center" >  This software is for educational 🏫 purpose only. 🕵️‍♂️ Keeping eye 👀 on a innocent person 🙇 can make a person's life stressful 😞 and don't blackmail  someone 📴 for fun in your life. Give respect 🙏 to privacy of every person 👪 </h3>
   
 <h3 align="center" > 📨 Sending Annoying Messages 💋 to someone can prevent 📴 the person from contacting you 💔 </h3>
  
