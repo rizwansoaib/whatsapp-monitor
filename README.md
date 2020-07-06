@@ -113,7 +113,7 @@ e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.i
    **Ans**: I beleive in power of OpenSource but many whatsapp monitor users requesting that they should be able to see all previous history on website if they outside from home they want access history in Smartphone and history should be persistent for future refrence 
    and they said to me that they willing for pay this if any financial need. 
    PRO version will not work just enter number and start tracking.
-   You have to use extension only in pro version you will be able to access previuos online history with statitics GRAPH
+   You have to use extension only in pro version you will be able to access previous online history with statistics GRAPH
    which is recorded when you start monitor your contacts. PRO version is less cost it's only server cost which is running on AWS
 
 
