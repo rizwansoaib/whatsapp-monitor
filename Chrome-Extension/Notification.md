@@ -27,6 +27,9 @@ Notification key is unique url to get Notification on Your Device
    
   ### **Q2: In how many Device i will get notified?**
    #### **Ans: You can subcribe any number device,  no limitation was there and you will get notification simultaneously to subscribed devices**
+   
+  ### **Q2: Is multiple contact online notification support?**
+   #### **Ans: Yes from v2.2**
 
 
 ## Author:
