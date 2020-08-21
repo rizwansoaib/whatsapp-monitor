@@ -31,8 +31,8 @@
   <h4  align="center">Desktop Notification 🔔</h4 >
  <h4 align="center">Cross Platform Notification 📲 💻  e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</h4 >
  <h4  align="center">Monitor Without Save Number 🔢 in Your WhatsApp</h4 >
-  <h4  align="center">Multiple Contacts 👪 Tracking with Mobile Number</h4 >
- <h4  align="center">Message Bomber 💣 (Only in Firefox)</h4 >
+  <h4  align="center">Concurrent Multiple Contacts 👪 Tracking </h4 >
+
  
  
  
