@@ -1,5 +1,7 @@
 # Desktop App
 
+## [Support end in August 2020]
+
 * App Size is Big [350mb]
 * No Future support 
 * We will focus on extension only  
