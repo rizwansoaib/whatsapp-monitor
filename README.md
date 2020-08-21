@@ -23,7 +23,7 @@
 
 <h4 align="center" >When Your Contact will be online 🤳 on Whatsapp 👀  get the notification 🔔 in your Desktop 🖥️ and  cross-platform notification without any installed app in Smartphone 📱 and more </h4>
 
-<h2 align="center" > Features </h2>
+<h2 align="center" > Features in v2.2 </h2>
  
  <h4 align="center">Play Sound 🔉 When Contact online</h4 >
  <h4  align="center">Online History 📜 Download in CSV</h4 >
