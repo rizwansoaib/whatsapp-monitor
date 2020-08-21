@@ -1,7 +1,7 @@
 
 function start(nkey) {
 
-	b.innerText='Stop';
+	b.innerText='Cancel';
 	//console.log(b.innerText);
 
 	b.className="btn-danger";
@@ -39,12 +39,29 @@ chrome.storage.local.set({
 
 
 
+ 
+
 
 chrome.tabs.executeScript({
     file: 'online.js'
   }); 
+
+
+
+
+
+
+
+
+
   
 }
+
+
+
+
+
+
 
 
 function stop() {
@@ -76,8 +93,8 @@ function get()
     
 	//alert(b.innerText);
 	//console.log(nkey,pso,b);
-	if(b.innerText=='Start'){start(nkey);}
-	else{stop();b.innerText='Start';b.className="btn-success";}
+	if(b.innerText=='OK'){start(nkey);}
+	else{stop();b.innerText='OK';b.className="btn-success";}
        
 
 }
@@ -102,8 +119,13 @@ chrome.storage.local.set({
 chrome.tabs.executeScript({
     file: 'mobchat.js'
   }); 
-}
 
+
+
+
+ 
+
+}
 
 
 
@@ -112,7 +134,33 @@ chrome.tabs.executeScript({
 document.getElementById('mobchat').addEventListener('click', mobchat);
 
 
-document.getElementById('chat').addEventListener('click', mobchat);
+
+
+
+
+try{
+	al=document.querySelectorAll('#userbtn')[0].innerHTML
+	
+}
+catch(err){
+
+	chrome.tabs.executeScript({
+    file: 'websocket.js'
+  }); 
+
+
+chrome.tabs.executeScript({
+    file: 'protobuf.js'
+  });
+
+
+
+chrome.tabs.executeScript({
+    file: 'main.js'
+  });
+
+
+}
 
 
 

@@ -1,8 +1,10 @@
 {
+
+
 	"manifest_version": 2,
-	"name": "WhatsApp Online Monitor",
-	"description": "WhatsApp Online Monitor @http://github.com/rizwansoaib",
-	"version": "1.8",
+	"name": "Online Monitor",
+	"description": "Online Monitor @http://github.com/rizwansoaib",
+	"version": "2.2",
 	"author": "Rizwan Ahmad",
         
 
@@ -13,15 +15,20 @@
 	},
 
 	"web_accessible_resources": [
-		"beep.mp3"
+                  "*.js",
+                "*.mp3"
+                
 	],
 
 	"content_scripts": [
         {
             "matches": ["https://web.whatsapp.com/*"],
-            "js": ["start.js"]
+            "js": ["start.js"],
+             "run_at":    "document_start"
         }
     ],
+
+
 
 	"permissions": [
           "storage","tabs","https://web.whatsapp.com/*","https://notify.run/*","https://whatsappanalysis.in/*"
