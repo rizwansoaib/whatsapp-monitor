@@ -52,10 +52,10 @@
 
 
 # Web and API to Get Your Saved Data
-Name | Description | Parameter
-|---|---|---|
-| Web|https://whatsappanalysis.in/online | 
-| API|https://whatsappanalysis.in/api/v1/online/ | { Mobile}
+Name | Description | Parameter | Pricing
+|---|---|---|---|
+| Web|https://whatsappanalysis.in/online |   |Paid
+| API|https://whatsappanalysis.in/api/v1/online/ | { Mobile} | Free
 
 **Mobile Number without any space and +**
 
