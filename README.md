@@ -55,14 +55,11 @@
 Name | Description | Parameter
 |---|---|---|
 | Web|https://whatsappanalysis.in/online | 
-| API|https://whatsappanalysis.in/api/v1/online/ | {Name or Mobile}
+| API|https://whatsappanalysis.in/api/v1/online/ | { Mobile}
 
-**Name and Mobile Number without any space and special character not Allowed[a-z,A-Z,0-9]**
+**Mobile Number without any space and +**
 
 e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.in/api/v1/online/918004136155)
-
-  Name:  Rizwan WhatsApp => RizwanWhatsApp (https://whatsappanalysis.in/api/v1/online/RizwanWhatsApp)
-  
 
 
 
