@@ -137,9 +137,7 @@ and <a href ="https://github.com/rizwansoaib/whatsapp-monitor/pulls"> Pull reque
 <h2 align="center" > Disclaimer ⚠️ </h2>
 <h3 align="center" >  This software is for educational 🏫 purpose only. 🕵️‍♂️ Keeping eye 👀 on a innocent person 🙇 can make a person's life stressful 😞 and don't blackmail  someone 📴 for fun in your life. Give respect 🙏 to privacy of every person 👪 </h3>
   
-<h3 align="center" > 📨 Sending Annoying Messages 💋 to someone can prevent 📴 the person from contacting you 💔 </h3>
- 
-<h3 align="center" style="color:red">Don't Send many messages at a time WhatsApp may block your Account </h3>
+
 
    
 
