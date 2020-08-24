@@ -52,14 +52,8 @@
 
 
 # Web and API to Get Your Saved Data
-Name | Description | Parameter | Pricing
-|---|---|---|---|
-| Web|https://whatsappanalysis.in/online |   |Paid
-| API|https://whatsappanalysis.in/api/v1/online/ | { Mobile} | Free
 
-**Mobile Number without any space and +**
-
-e.g. Mobile Number: +91 80041 36155 =>  918004136155 (https://whatsappanalysis.in/api/v1/online/918004136155)
+https://whatsappanalysis.in/online
 
 
 
