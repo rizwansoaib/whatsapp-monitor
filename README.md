@@ -51,7 +51,7 @@
 
 
 
-# Web and API to Get Your Saved Data
+# WebApp to Get Your Saved Data
 
 https://whatsappanalysis.in/online
 
