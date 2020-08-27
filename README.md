@@ -46,21 +46,6 @@
  <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/">Chrome Add on &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp         </a><a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"> &nbsp&nbsp&nbsp&nbsp      &nbsp&nbsp Firefox Add on</a>
 </h4>
 
-
-
-
-
-
-# WebApp to Get Your Saved Data
-
-https://whatsappanalysis.in/online
-
-
-
-
-
-
-
 # Introduction
 
 [![](https://user-images.githubusercontent.com/29729380/83626193-b359f400-a5b2-11ea-87c9-ab6ab2e8376f.gif)](https://www.youtube.com/watch?v=Wwp_SAwKh0g)
