@@ -117,8 +117,6 @@ and <a href ="https://github.com/rizwansoaib/whatsapp-monitor/pulls"> Pull reque
 
 <h2 align="center"> Author 🧑‍💻 </h2>    
 <h3 align="center"> <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a> </h3>
-<h3 align="center"> <a href="mailto:rizwan.178208@knit.ac.in">rizwan.178208@knit.ac.in</a>  </h3>                                    
-<h2 align="center">      🤳  Feel free to mail 📨 me for any queries ❓ </h2> 
 <h2 align="center"> If you 👍  the project, support us by 🌟 Thank You 🙏 </h2> 
 
 
