@@ -1,4 +1,4 @@
-<h1>Privacy Policy for RS Technology PVT. LTD.</h1>
+<h1>Privacy Policy for WhatsApp Online Monitor</h1>
 
 <p>At Online Monitor, accessible from https://github.com/rizwansoaib/whatsapp-monitor, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Online Monitor and how we use it.</p>
 
