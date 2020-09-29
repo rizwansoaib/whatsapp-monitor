@@ -26,4 +26,4 @@ Method2. Download AppImage [WhatsApp-Monitor.AppImage](https://drive.google.com/
                       
                       
                       
- **Open App from Launcher and it will run WhatsApp Web  For Tracking Please Open Contact chat Window for tracking contacts and go menu Tools then click start Monitor**
+ **Open App from Launcher and it will run WhatsApp Web  For Tracking Please Open Contact chat Window of contacts and go menu Tools then click start Monitor**
