@@ -1,10 +1,8 @@
-# Desktop App
+# Desktop App Linux and Windows v1.1
 
-## [Support end in August 2020]
-
-* App Size is Big [350mb]
-* No Future support 
-* We will focus on extension only  
+* App Size  [55mb]
+* Multiple Contact Monitor Support
+* Download history various format PDF,CSV,Excel etc. 
 
 ## Video
 [![video](https://user-images.githubusercontent.com/29729380/85369456-c37a4900-b54a-11ea-9e08-d29ac54e2b4e.png)
@@ -22,7 +20,10 @@ Method1. Download [WhatsApp-Monitor.deb](https://drive.google.com/file/d/1niS3Dm
                       sudo dpkg -i WhatsApp-Monitor.deb 
         
 Method2. Download AppImage [WhatsApp-Monitor.AppImage](https://drive.google.com/file/d/16f2jcMI4fBHtP5_X3IOIWCVpVMWeGEiw/view?usp=sharing) and open without install
+
+                        sudo chmod +x WhatsApp-Monitor.Appimage
+                        ./WhatsApp-Monitor.Appimage
                       
                       
                       
- **Open App from Launcher and it will run WhatsApp Web  For Tracking Please Open Contact chat Window and go menu Tools then click start Monitor**
+ **Open App from Launcher and it will run WhatsApp Web  For Tracking Please Open Contact chat Window for tracking contacts and go menu Tools then click start Monitor**
