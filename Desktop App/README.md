@@ -21,8 +21,8 @@ Method1. Download [WhatsApp-Monitor.deb](https://drive.google.com/file/d/1niS3Dm
         
 Method2. Download AppImage [WhatsApp-Monitor.AppImage](https://drive.google.com/file/d/16f2jcMI4fBHtP5_X3IOIWCVpVMWeGEiw/view?usp=sharing) and open without install
 
-                        sudo chmod +x WhatsApp-Monitor.Appimage
-                        ./WhatsApp-Monitor.Appimage
+                        sudo chmod +x WhatsApp-Monitor.AppImage
+                        ./WhatsApp-Monitor.AppImage
                       
                       
                       
