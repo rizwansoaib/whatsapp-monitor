@@ -80,7 +80,7 @@
 
 <h2 align="center"> Notification 🔕 </h2>
  
-   <h4 align="center">Extension and Windows App (Cross Platform) 📳</h4>
+   <h4 align="center">Extension (Cross Platform) 📳</h4>
    
 ![mobile](https://user-images.githubusercontent.com/29729380/74177733-5384b980-4c60-11ea-8b86-a40267588194.png)
   
