@@ -49,7 +49,7 @@
 
 
 <br><br>
-<h1 align="center" > Whatsapp Monitor Desktop</h1>
+<h1 align="center" > Whatsapp Monitor Desktop v1.1</h1>
 
  
    <h4  align="center">
