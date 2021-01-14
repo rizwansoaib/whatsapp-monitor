@@ -52,6 +52,6 @@
     "electron": "11.2.0"
   },
   "dependencies": {
-    "node-notifier": "7.0.1"
+    "node-notifier": "8.0.1"
   }
 }
