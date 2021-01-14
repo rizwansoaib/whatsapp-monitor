@@ -10,6 +10,11 @@
 
 
 
+## Installation and Developement
+                rizwan@ubuntu~$ npm install
+                rizwan@ubuntu~$ npm start
+
+
 ## Windows
 Download [Setup.exe](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor%20Setup%201.1.0.exe) and install 
 
