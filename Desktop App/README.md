@@ -11,8 +11,13 @@
 
 
 ## Installation and Developement
+               # Install dependencies
                 rizwan@ubuntu~$ npm install
+               # Run the app
                 rizwan@ubuntu~$ npm start
+
+               
+                
 
 
 ## Windows
