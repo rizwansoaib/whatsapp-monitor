@@ -1,0 +1,97 @@
+<html>
+    <head>
+       
+  
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  
+    </head>
+    <body>
+
+      <style>
+        html,body {
+  height:100%;
+  width:100%;
+  margin:0;
+}
+body {
+  display:flex;
+}
+form {
+  margin:auto;/* nice thing of auto margin if display:flex; it center both horizontal and vertical :) */
+}
+
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+      </style>
+       
+
+      <form>
+        <div class="form-group" >
+          
+          <input type="text" class="form-control" autocomplete="username" id="user" placeholder="             UserName">
+        </div>
+        <div class="form-group">
+         
+         <input type="password" class="form-control" autocomplete="current-password" id="pwd" placeholder="              Password">
+        </div>
+        <div class="form-actions">
+        <button type="submit" class="btn btn-primary col-md-4 text-center" id="sign" onclick="signin()">Sign in</button>
+        <br>
+        <button type="submit" class="btn btn-primary col-md-4 text-center" id="cancel" >Cancel</button>
+     
+      </div>
+      </form>
+
+      <script>
+
+const electron=require("electron");
+const ipc=electron.ipcRenderer;
+const BrowserWindow=electron.BrowserWindow;
+
+console.log("login.js loaded")
+
+
+  
+
+
+
+
+   
+
+     function signin()
+     {
+      var user=document.getElementById('user').value;
+      var pwd=document.getElementById('pwd').value;
+      var show=document.getElementById('show');
+
+      data={
+        'user':user,
+        'pwd':pwd
+      }
+
+      ipc.send('login',data);
+      console.log("data send");
+         show.innerHTML='Data Send'
+        // console.log(response)
+   
+   
+
+
+
+
+
+
+     
+    }
+      </script>
+
+    <h1 id="show">Test</h1>
+
+    </body>
+</html>

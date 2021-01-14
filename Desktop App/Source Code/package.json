@@ -1,0 +1,57 @@
+{
+  "name": "WhatsApp-Monitor",
+  "version": "1.1.0",
+  "main": "main.js",
+  "homepage": "https://github.com/rizwansoaib/whatsapp-monitor",
+  "author": {
+    "name": "rizwansoaib",
+    "email": "rizwansoaib@gmail.com"
+  },
+  "icon": "assets/logo.png",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --linux",
+    "dist-win": "electron-builder --win"
+  },
+  "build": {
+    "icon": "assests/logo.png",
+    "asar": true,
+    "asarUnpack": [
+      "build/logo.png",
+      "build/logo.ico",
+      "assets/64.png",
+      "assets/websockets.js",
+      "assets/protobuf.js"
+    ],
+    "appId": "com.whatsappmonitor.v1.1",
+    "linux": {
+      "icon": "build/logo.png",
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "msi",
+        "zip"
+      ],
+      "icon": "build/logo.ico"
+    },
+    "nsis": {
+      "installerIcon": "build/logo.ico",
+      "installerHeaderIcon": "build/logo.ico",
+      "deleteAppDataOnUninstall": true
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "22.9.1",
+    "electron": "11.2.0"
+  },
+  "dependencies": {
+    "node-notifier": "7.0.1"
+  }
+}

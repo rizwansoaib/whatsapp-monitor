@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Open Chat</title>
+        <script src="./../../assets/bts/jq.js"></script>
+        <link rel="stylesheet" href="./../../assets/bts/bts.css">
+
+    <link rel="stylesheet" href="./../../assets/bts/bts_theme.css">
+    <script src="./../../assets/bts/bts_js.js"></script>
+
+   
+    </head>
+    <body>
+
+
+      <style>
+        input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+      </style>
+        
+      <div class="container">
+        <form>
+          <div class="form-group row" align="center">
+            <h4 for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Mobile Number</h4>
+            <h4 for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">with Country Code</h4>
+
+            <div class="col-sm-10">
+              <input type="number" minlength="10" maxlength="15" class="form-control form-control-lg" id="mob" placeholder="918115168763" />
+            </div><br>
+            <div class="col-sm-10" align="center">
+            <button class="bg-success btn-lg" onclick="send()">Submit</button>  
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+
+      <script>
+
+const electron=require("electron");
+const ipc=electron.ipcRenderer;
+
+        function send(){
+          var mob=document.getElementById("mob").value;
+          console.log(mob);
+          ipc.send('omob',mob);
+          //win.webContents.send('omob', mob);
+        }
+        
+      </script>
+
+    </body>
+</html>
