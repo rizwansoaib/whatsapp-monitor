@@ -11,6 +11,12 @@
 
 
 ## Installation and Developement
+```bash
+# Install dependencies
+npm install
+# Run the app
+npm start
+```
                # Install dependencies
                 rizwan@ubuntu~$ npm install
                # Run the app
