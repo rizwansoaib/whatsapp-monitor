@@ -17,12 +17,6 @@ npm install
 # Run the app
 npm start
 ```
-               # Install dependencies
-                rizwan@ubuntu~$ npm install
-               # Run the app
-                rizwan@ubuntu~$ npm start
-
-               
                 
 
 
