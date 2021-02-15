@@ -23,11 +23,11 @@
 
 <h4 align="center" >When Your Contact will be online 🤳 on Whatsapp 👀  get the notification 🔔 in your Desktop 🖥️ and  cross-platform notification without any installed app in Smartphone 📱 and more </h4>
 
-<h2 align="center" > Features in v2.2 </h2>
+<h2 align="center" > Features in v2.3 </h2>
  
  <h4 align="center">Play Sound 🔉 When Contact online</h4 >
- <h4  align="center">Online History 📜 Download in CSV</h4 >
-  <h4  align="center">Access History 📡 on web (Need Support currently not working)</h4 >
+ <h4  align="center">Online History 📜 Download in CSV and auto save csv</h4 >
+  <h4  align="center">Access History 📡 on web </h4 >
   <h4  align="center">Desktop Notification 🔔</h4 >
  <h4 align="center">Cross Platform Notification 📲 💻  e.g. Android,iOS,iPAD,Macbook,Linux,Windows (No need Install App)</h4 >
  <h4  align="center">Monitor Without Save Number 🔢 in Your WhatsApp</h4 >
