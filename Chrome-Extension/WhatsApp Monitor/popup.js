@@ -1,5 +1,5 @@
 
-function start(nkey) {
+function start(nkey,save_interval) {
 
 	b.innerText='Cancel';
 	//console.log(b.innerText);
@@ -29,6 +29,19 @@ chrome.storage.local.set({
     
    
 });
+
+
+if(save_interval!='null')
+{
+    chrome.storage.local.set({
+        'save_interval':save_interval 
+        
+       
+    });
+}
+
+
+
 
 
 chrome.storage.local.set({
@@ -78,6 +91,9 @@ function stop() {
 
 
 
+save_interval=0;
+
+
 function get()
 {
 
@@ -86,14 +102,28 @@ function get()
 
 
 
-	var nkey=document.getElementById('nkey').value;
+    var nkey=document.getElementById('nkey').value;
+   
+
+    save_interval=document.getElementById('interval').value;
+
+
+    chrome.storage.sync.set({"nkey": nkey}, function() {
+        document.getElementById('nkey').value=nkey;
+
+
+      });
+
+
+
+
 	pso=document.querySelector('input[name="ps"]:checked').value; 
 	b=document.getElementById('start')
 	
     
 	//alert(b.innerText);
 	//console.log(nkey,pso,b);
-	if(b.innerText=='OK'){start(nkey);}
+	if(b.innerText=='OK'){start(nkey,save_interval);}
 	else{stop();b.innerText='OK';b.className="btn-success";}
        
 
@@ -101,6 +131,20 @@ function get()
 
 document.getElementById('start').addEventListener('click', get);
 
+
+try {
+
+    chrome.storage.sync.get(['nkey'], function(result) {
+       
+        document.getElementById('nkey').value=result.nkey;
+      });
+    
+} catch (error) {
+    
+    chrome.storage.sync.get(['nkey'], function(result) {
+        document.getElementById('nkey').value=result.nkey;
+      });
+}
 
 
 function mobchat()
@@ -160,6 +204,9 @@ chrome.tabs.executeScript({
   });
 
 
+ 
+
+
 }
 
 
@@ -176,3 +223,10 @@ document.addEventListener('DOMContentLoaded', function () {
         })();
     }
 });
+
+
+
+
+
+
+

@@ -64,6 +64,12 @@ let url = chrome.runtime.getURL('open.mp3')
 
 setInterval(function(){
   try{
+    olb=document.querySelector('#online_list_btn').innerText
+    if(olb=='true' && pso=='3')
+    {
+      
+      playsound();
+    }
     prev=document.querySelectorAll('#userbtn')[0].innerHTML
     if(prev!='null'&&pso=='1')
     {
@@ -75,6 +81,13 @@ catch(err){}
 
 
 try{
+  olb=document.querySelector('#online_list_btn').innerText
+  if(olb=='true' && pso=='3')
+    {
+      
+
+      playsound();
+    }
 
   user=document.querySelectorAll('#contactbtn')[0].innerHTML;
   if(user!='null')
@@ -104,6 +117,7 @@ catch(err){}
 
 
 function dcsv2() {
+   console.log("Downloading History as CSV File")
     var rows = document.body.querySelectorAll(' table' + ' tr');
     var csv = [];
     for (var i = 0; i < rows.length; i++) {
@@ -115,7 +129,7 @@ function dcsv2() {
         csv.push(row.join(';'));
     }
     var csv_string = csv.join('\n');
-    var filename = 'whatsapp-monitor' + '_' + new Date().toLocaleDateString() + '.csv';
+    var filename = `whatsapp-monitor_${new Date().toLocaleDateString()}&&${new Date().toLocaleTimeString()}.csv`;
     var link = document.createElement('a');
     link.style.display = 'none';
     link.setAttribute('target', '_blank');
@@ -125,6 +139,21 @@ function dcsv2() {
     link.click();
     document.body.removeChild(link);
 }
+
+
+
+
+
+chrome.storage.local.get('save_interval', function (result4) {
+        save_interval = parseInt(result4.save_interval);
+        if(save_interval>=1)
+        setInterval(dcsv2,save_interval*60000);
+
+        
+            
+    });
+
+
 
 
 

@@ -162,6 +162,26 @@ document.body.appendChild(usernbtn);
   
 }
 
+
+function online_list_btn(value){
+  try{
+      document.querySelectorAll('online_list_btn')[0].remove()    
+  }
+  catch(err){
+    //
+  }
+var online_list_btn = document.createElement("BUTTON");   
+online_list_btn.innerHTML = value;  
+online_list_btn.id="online_list_btn";                 
+document.body.appendChild(online_list_btn);
+  
+}
+
+
+online_list_btn("false");
+
+
+
 function startbtn(value){
   try{
       document.querySelectorAll('#startbtn')[0].remove()    
@@ -252,6 +272,8 @@ setInterval(function(){
     diff_time=currDate.getTime()-prevDate.getTime()
     if(diff_time>2000)
       updatebtn("null");
+      
+
 
     }
 
@@ -280,6 +302,8 @@ setInterval(function(){
     document.querySelectorAll('#startbtn')[0].innerHTML='null';
     document.querySelectorAll('#stopbtn')[0].innerHTML='null';
     document.querySelectorAll('#durbtn')[0].innerHTML='null';
+     
+
   }
   catch(err){
      
@@ -299,6 +323,16 @@ setInterval(function(){
     try{  
         online_list=window.Store.Presence.filter(a=>a.__x_isOnline==true);
         offline_list=window.Store.Presence.filter(a=>a.__x_isOnline==false);
+        if(online_list.length>0){
+         
+          document.querySelectorAll('#online_list_btn')[0].innerHTML='true';
+        }
+        else
+        {
+         
+          document.querySelectorAll('#online_list_btn')[0].innerHTML='false';
+        }
+        
         online_list.forEach(onlineFun);
         offline_list.forEach(offlineFun);
 

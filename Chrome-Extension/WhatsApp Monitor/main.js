@@ -21,13 +21,13 @@ function save(user,t1,t2,t){
 setInterval(function(){
 
  try{
-    name=document.querySelectorAll('#usernamebtn')[0].innerHTML
+    uname=document.querySelectorAll('#usernamebtn')[0].innerHTML
     t1=document.querySelectorAll('#startbtn')[0].innerHTML
     t2=document.querySelectorAll('#stopbtn')[0].innerHTML
     t=document.querySelectorAll('#durbtn')[0].innerHTML
 
-    if(name!='null'&&t1!='null'&&t2!='null'&&t!='null'){
-    save(name,t1,t2,t);
+    if(uname!='null'&&t1!='null'&&t2!='null'&&t!='null'){
+    save(uname,t1,t2,t);
 
     }
 

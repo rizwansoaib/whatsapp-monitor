@@ -21,14 +21,23 @@ Notification Key: <input id="nkey" type="text" autocomplete="username" name="nke
 <h2 align="center"><a href="https://github.com/rizwansoaib/whatsapp-monitor/blob/master/Chrome-Extension/Notification.md" target="_blank" >About Notification Key</a></h2>
 <div class="btn-group btn-group-toggle" data-toggle="buttons"  align="center">
 	<p>Play Sounds:
+  <label class="btn btn-secondary">
+    <input type="radio" id="ps3" name="ps" value="3" autocomplete="off" checked>Always
+  </label>
   <label class="btn btn-secondary active">
-    <input type="radio" id="ps1" name="ps" value="1" autocomplete="off" checked>  Allow
+    <input type="radio" id="ps1" name="ps" value="1" autocomplete="off" checked>Only Once
   </label>
   <label class="btn btn-secondary">
     <input type="radio" id="ps2" name="ps" value="2" autocomplete="off"> Deny
   </label>
   </p>
 </div>
+<br>
+<labelclass="btn btn-secondary">
+Auto Save CSV
+<input type="number" id="interval" name="interval" min="5 " step="5" default="0"> Minute
+</label>
+
 
 <h2>
 <center><button class="btn-success" id="start"; style="border-radius:40px;height:70px;width:150px;">OK</button></center>
@@ -44,7 +53,7 @@ Notification Key: <input id="nkey" type="text" autocomplete="username" name="nke
 </h1>
 
 <div class="alert alert-success" role="alert" align="center">
-<a href="https://whatsappanalysis.in/online" target="_blank" class="alert-link">Online History</a> Pro Users Only
+<a href="https://whatsappanalysis.in/online" target="_blank" class="alert-link">Whatsapp Monitor Online History</a>
 </div>
 
 
