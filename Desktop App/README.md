@@ -11,7 +11,7 @@
 
 
 
-## Installation and Developement
+## Developement
 ```bash
 # Install dependencies
 npm install
