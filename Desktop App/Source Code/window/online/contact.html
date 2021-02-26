@@ -93,7 +93,7 @@ animation:1s blinker linear infinite;
 </head>
 
     <body style="background-color: black">
-        <h1 align="center" style="color: #08ff15;">WhatsApp Online Monitor @github.com/rizwansoaib</h1>
+        <h1 align="center" style="color: #08ff15;">WhatsApp Online Monitor v1.2</h1>
       
         <!--
           <h5 align="left" style="color: #08ff15;">[ESC] Minimize</h5><br>
@@ -138,9 +138,7 @@ animation:1s blinker linear infinite;
 
 
                  
-
-
-
+                   <h3 id="sound" align="center" style="font-size: 25px;background-color: black;color: antiquewhite;"><input class="soundcheck" type="checkbox" value="1" name="sound"> Sound Notification</h3> 
                     <img align="center" id='pro' class="rounded-circle img-responsive center-block" alt="Profile pic" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
           data-holder-rendered="true" width="220" height="220">
           <br>
@@ -282,6 +280,14 @@ var h={}
   status.style.color= 'white';
  //console.log('Online Window data received');
   
+ cb = document.getElementsByClassName('soundcheck')[0]
+  if(cb.checked){
+    var audio = new Audio('https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/open.mp3');
+    audio.play();
+}
+
+  //play audio
+
 
   if(flag==0){
     startDate   = new Date();
@@ -314,6 +320,7 @@ ipc.on('imgsrc',function(event,imgurl){
     //console.log(imgurl);
    
     var pro=document.getElementById('pro')
+    
     if(imgurl!=undefined)
     pro.src=imgurl;
     console.log('img src set success');

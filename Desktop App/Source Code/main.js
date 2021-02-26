@@ -71,7 +71,7 @@ function createWindow()
    
 
 
-   //win.webContents.openDevTools();
+  // win.webContents.openDevTools();
   
 
     /*win.webContents.on('dom-ready', function(e) {
@@ -199,7 +199,7 @@ var menu = Menu.buildFromTemplate([
                     type: 'info',
                     buttons: ['OK'],
                     title: "License Key",
-                    message: "Community Edition",
+                    message: "Community Edition  v1.2",
                     detail:"Price: Free"
                    })
 
@@ -373,7 +373,7 @@ ipc.on('offline',function(event,user){
 ipc.on('imgsrc',function(event,imgurl){
     
     //console.log(imgurl);
-   // console.log('recevied imgurl')
+    //console.log('recevied imgurl')
     if (onlineWindow)
     onlineWindow.webContents.send('imgsrc', imgurl);
    // console.log('send to html Online Monitor');

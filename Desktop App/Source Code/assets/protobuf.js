@@ -120,8 +120,8 @@ function onlineFun(item, index) {
 
     ipc.send('online',name);
     ipc.send('number',num);
-
-    imgurl=window.WAPI.getContact(num+'@c.us')['profilePicThumbObj']['eurl']
+    
+    imgurl=Store.ProfilePicThumb._index[num+'@c.us']["__x_img"]
     console.log(imgurl)
     if(imgurl!=undefined);
     ipc.send('imgsrc',imgurl);
