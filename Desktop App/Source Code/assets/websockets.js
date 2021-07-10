@@ -61,7 +61,7 @@ if (!window.Store) {
             webpackJsonp([], {'parasite': (x, y, z) => getStore(z)}, ['parasite']);
         } else {
             let tag = new Date().getTime();
-            webpackChunkbuild.push([
+            webpackChunkwhatsapp_web_client.push([
                 ["parasite" + tag],
                 {
 

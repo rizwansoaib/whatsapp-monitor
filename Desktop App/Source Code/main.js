@@ -133,7 +133,10 @@ var menu = Menu.buildFromTemplate([
         label: 'Tools',
         submenu: [
 
-         /* {label:'Open Chat',click:function(){
+          
+         /* {
+             
+            label:'Open Chat',click:function(){
             win.webContents.executeJavaScript(mobchatjs).then(result => {
               
             })
@@ -143,7 +146,13 @@ var menu = Menu.buildFromTemplate([
             });
 
             openmnwindow();
-        }, accelerator:'CmdOrCtrl+Shift+O'},*/
+        }
+        
+        
+        , accelerator:'CmdOrCtrl+Shift+O'}, */
+
+
+
             {label:'Start Monitor',click:function()
             
             {
@@ -199,7 +208,7 @@ var menu = Menu.buildFromTemplate([
                     type: 'info',
                     buttons: ['OK'],
                     title: "License Key",
-                    message: "Community Edition  v1.2",
+                    message: "Community Edition  v1.3",
                     detail:"Price: Free"
                    })
 
@@ -259,8 +268,8 @@ Menu.setApplicationMenu(menu);
 const ctxmenu=new Menu();
 
 
-/*
-ctxmenu.append(new MenuItem({
+
+/*ctxmenu.append(new MenuItem({
     label:"Open Chat",
     click:function()
     {
@@ -382,13 +391,17 @@ ipc.on('imgsrc',function(event,imgurl){
 
 })
 
-/*ipc.on('omob',function(event,mob){
+
+
+/*
+ipc.on('omob',function(event,mob){
     win.webContents.send('omob', mob); 
      
  //console.log(mob);
  mnwindow.close();
 
-})*/
+}) */
+
 
 
 
@@ -472,3 +485,39 @@ olhistwin = new BrowserWindow({
 }
 
 
+
+
+/*
+var mnwindow= null
+
+function openmnwindow() {
+    if (mnwindow) {
+      mnwindow.focus()
+      return
+    }
+  
+    mnwindow = new BrowserWindow({
+      height: 200,
+      width: 250,
+     
+      title: 'Open chat Mobile Number',
+      webPreferences: {
+              nodeIntegration: true
+          }
+      
+      
+    })
+  
+    mnwindow.loadURL('file://' + __dirname + '/window/Open/mobile.html')
+   
+    mnwindow.setMenu(null);
+
+    mnwindow.setResizable(false)
+   //mnwindow.webContents.openDevTools();
+  
+    mnwindow.on('closed', function() {
+      mnwindow = null
+    })
+  }
+
+  */

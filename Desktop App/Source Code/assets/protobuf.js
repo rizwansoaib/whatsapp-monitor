@@ -70,12 +70,12 @@ function track(){
   
     
     try{  
-        online_list=window.Store.Presence.filter(a=>a.__x_isOnline==true);
-        if (!online_list.length)
+      online_list=window.Store.Presence.filter(a=>a.__x_isOnline==true && a.__x_isUser==true);
+       if (!online_list.length)
         ipc.send('offline','All Contacts');
 
 
-        offline_list=window.Store.Presence.filter(a=>a.__x_isOnline==false);
+        offline_list=window.Store.Presence.filter(a=>a.__x_isOnline==false && a.__x_isUser==true);
         online_list.forEach(onlineFun);
         offline_list.forEach(offlineFun);
 function onlineFun(item, index) {
