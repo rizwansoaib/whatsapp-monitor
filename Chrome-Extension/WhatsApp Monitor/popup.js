@@ -1,8 +1,6 @@
 
 
 
-
-
 console.log('popup.js working')
 
 update_numarrray();
@@ -241,7 +239,8 @@ chrome.tabs.executeScript({
 
 
 
-let numarray=[];
+var numarray;
+
 
 function update_numarrray(){
 
@@ -251,9 +250,16 @@ chrome.storage.sync.get(
     ['numarray']
 ,
 function(data) {
-    numarray=data.numarray
+    if(data.numarray==undefined)
+    data.numarray=[];
+    if(numarray==undefined)
+    numarray=new Array();
+    numarray=data.numarray;
+
    console.log(numarray)
    document.getElementById('numarray').innerHTML=''
+
+   
 
    numarray.forEach(number => {
     
@@ -264,12 +270,13 @@ function(data) {
 
 });
 
+   
+
 
 }
 
 );
 }  
-
 
 
 
@@ -289,12 +296,31 @@ function savenum() {
 
     console.log(mob_number);
 
+    console.log(mob_number);
+    if(mob_number.startsWith("+")) {
+        mob_number=mob_number.substring(1);
+    }
+
+
+
+
+
+chrome.storage.sync.set({
+    numarray:numarray
+}, function() {
+   
+});
+
     if(mob_number!=null || mob_number!=undefined && mob_number.length > 8){
 
-
+      
           
+if(numarray!=undefined){
         
             numarray.push(mob_number)
+
+}
+
             //then call the set to update with modified value
             chrome.storage.sync.set({
                 numarray:numarray
@@ -315,8 +341,12 @@ function delnum() {
 
     
     var mob_number = document.getElementById('mob').value;
-
+    
     console.log(mob_number);
+    if(mob_number.startsWith("+")) {
+        mob_number=mob_number.substring(1);
+    }
+
 
     if(mob_number!=null || mob_number!=undefined && mob_number.length > 8){
 
