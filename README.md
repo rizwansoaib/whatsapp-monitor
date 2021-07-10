@@ -54,7 +54,7 @@
 
  
    <h4  align="center">
- <a href="https://github.com/rizwansoaib/file/raw/master/WhatsApp-Monitor%20Setup%201.2.0.exe"><img src="https://user-images.githubusercontent.com/29729380/95250295-8a36c200-0837-11eb-81ec-8e4aff1aca82.jpg" height="80" width="200"></a><a href="https://github.com/rizwansoaib/file/raw/master/WhatsApp-Monitor_1.2.0_amd64.deb"><img src="https://user-images.githubusercontent.com/29729380/95250584-f1547680-0837-11eb-98cc-1c8c832597d1.png" height="65" width="180"></a><a href="https://github.com/rizwansoaib/file/raw/master/WhatsApp-Monitor-1.2.0.AppImage"><img src="https://user-images.githubusercontent.com/29729380/95250774-2f519a80-0838-11eb-90fe-b8645858b471.png" height="65" width="180"></a>
+ <a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor%20Setup%201.3.0.exe"><img src="https://user-images.githubusercontent.com/29729380/95250295-8a36c200-0837-11eb-81ec-8e4aff1aca82.jpg" height="80" width="200"></a><a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor_1.3.0_amd64.deb"><img src="https://user-images.githubusercontent.com/29729380/95250584-f1547680-0837-11eb-98cc-1c8c832597d1.png" height="65" width="180"></a><a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor-1.3.0.AppImage"><img src="https://user-images.githubusercontent.com/29729380/95250774-2f519a80-0838-11eb-90fe-b8645858b471.png" height="65" width="180"></a>
  
  
  
