@@ -166,13 +166,18 @@ chrome.storage.local.get('save_interval', function (result4) {
 
 
 var btn = document.createElement("BUTTON");   
-btn.innerHTML = " WhatsApp Monitor Online History";  
-btn.style.width="100px";
+btn.innerHTML = '<img src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/csv_download.jpg" />';
+
 btn.id="download";                 
 document.querySelector("#side > header").appendChild(btn);
-btn.style.backgroundColor="#075e54";
-btn.style.color="white";
 
+
+/*
+var img=document.createElement("IMG");
+img.id="download"
+img.src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/csv_download.jpg"
+document.querySelector("#side > header").appendChild(img);
+*/
 
 var img=document.createElement("IMG");
 img.src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/64.png"
@@ -180,6 +185,53 @@ document.querySelector("#side > header").appendChild(img);
 
 
 document.getElementById('download').addEventListener('click', dcsv2);
+
+
+
+
+
+
+var numarray=[]
+chrome.storage.sync.get('numarray', function (data) {
+        numarray = data.numarray;
+        if(numarray)
+        {
+
+          //console.log('start',numarray);
+
+
+
+
+
+        numarray.forEach(function(obj, index) {
+          setTimeout(function(){
+            openChat(obj)
+          }, 5000 * (index + 1));
+      });
+
+        }
+
+            
+    });
+
+
+
+
+
+
+
+    var openChat = phone => {
+
+     // console.log('opening chat...',phone);
+      var link = document.createElement("a");
+      link.setAttribute("href", `whatsapp://send?phone=${phone}`);
+      document.body.append(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+    
+   
+
 
 
 

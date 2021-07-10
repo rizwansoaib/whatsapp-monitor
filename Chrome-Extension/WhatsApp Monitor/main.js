@@ -1,4 +1,8 @@
 
+//console.log('main.js working')
+
+
+
 function save(user,t1,t2,t){
   var d   = new Date();
   var curd=d.toLocaleDateString("en-GB").split(' ')[0]

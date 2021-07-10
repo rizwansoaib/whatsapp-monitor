@@ -321,8 +321,8 @@ setInterval(function(){
 
 	 //console.log(window.Store)
     try{  
-        online_list=window.Store.Presence.filter(a=>a.__x_isOnline==true);
-        offline_list=window.Store.Presence.filter(a=>a.__x_isOnline==false);
+        online_list=window.Store.Presence.filter(a=>a.__x_isOnline==true && a.__x_isUser==true);
+        offline_list=window.Store.Presence.filter(a=>a.__x_isOnline==false && a.__x_isUser==true);
         if(online_list.length>0){
          
           document.querySelectorAll('#online_list_btn')[0].innerHTML='true';
@@ -481,8 +481,5 @@ num=item["__x_id"]["user"]
 
 
 console.log("Protobuf connecting")
-
-
-
 
 

@@ -1,4 +1,13 @@
 
+
+
+
+
+console.log('popup.js working')
+
+update_numarrray();
+
+
 function start(nkey,save_interval) {
 
 	b.innerText='Cancel';
@@ -19,6 +28,14 @@ function start(nkey,save_interval) {
 
 	chrome.storage.local.set({
     'nkey': nkey
+    
+   
+});
+
+
+
+chrome.storage.sync.set({
+    'numarray': numarray
     
    
 });
@@ -58,6 +75,11 @@ chrome.storage.local.set({
 chrome.tabs.executeScript({
     file: 'online.js'
   }); 
+
+
+
+
+
 
 
 
@@ -149,7 +171,9 @@ try {
 
 function mobchat()
 {
+    console.log("enter mobchat");
     mob=document.getElementById('mob').value;
+    console.log(mob)
 
 chrome.storage.local.set({
     'mob': mob
@@ -176,6 +200,10 @@ chrome.tabs.executeScript({
 
 
 document.getElementById('mobchat').addEventListener('click', mobchat);
+document.getElementById('savenum').addEventListener('click', savenum);
+document.getElementById('delnum').addEventListener('click', delnum);
+
+
 
 
 
@@ -211,6 +239,117 @@ chrome.tabs.executeScript({
 
 
 
+
+
+let numarray=[];
+
+function update_numarrray(){
+
+    console.log('update_numarray call')
+
+chrome.storage.sync.get(
+    ['numarray']
+,
+function(data) {
+    numarray=data.numarray
+   console.log(numarray)
+   document.getElementById('numarray').innerHTML=''
+
+   numarray.forEach(number => {
+    
+    document.getElementById('numarray').innerHTML+='<span>+'+number+'</span><br>'
+
+
+
+
+});
+
+
+}
+
+);
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+function savenum() {
+
+    
+    var mob_number = document.getElementById('mob').value;
+
+    console.log(mob_number);
+
+    if(mob_number!=null || mob_number!=undefined && mob_number.length > 8){
+
+
+          
+        
+            numarray.push(mob_number)
+            //then call the set to update with modified value
+            chrome.storage.sync.set({
+                numarray:numarray
+            }, function() {
+                console.log("added to list with new values");
+            });
+            }
+
+update_numarrray();
+    
+
+
+}
+
+
+
+function delnum() {
+
+    
+    var mob_number = document.getElementById('mob').value;
+
+    console.log(mob_number);
+
+    if(mob_number!=null || mob_number!=undefined && mob_number.length > 8){
+
+
+        
+            numarray = numarray.filter(item => item !== mob_number)
+    
+            chrome.storage.sync.set({"numarray": numarray}, function() {
+                console.log('deleted'+number);
+                console.log(numarray);
+        
+        
+              });
+        
+              update_numarrray();
+            
+               
+                }
+    
+    update_numarrray();
+         
+    
+
+
+}
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     var links = document.getElementsByTagName("a");
     for (var i = 0; i < links.length; i++) {
@@ -223,7 +362,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })();
     }
 });
-
 
 
 
