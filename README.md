@@ -60,7 +60,7 @@
  
  
  <br> 
- <a href="https://github.com/rizwansoaib/file/raw/master/WhatsApp-Monitor%20Setup%201.2.0.exe">Windows &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp         </a><a href="https://github.com/rizwansoaib/file/raw/master/WhatsApp-Monitor_1.2.0_amd64.deb"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Debian Package  </a><a href="https://github.com/rizwansoaib/file/raw/master/WhatsApp-Monitor-1.2.0.AppImage">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       &nbsp&nbsp AppImage </a>
+ <a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor%20Setup%201.3.0.exe">Windows &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp         </a><a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor_1.3.0_amd64.deb"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Debian Package  </a><a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor-1.3.0.AppImage">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       &nbsp&nbsp AppImage </a>
 </h4>
 
 
