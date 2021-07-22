@@ -35,9 +35,9 @@
  <h4  align="center">Monitor Without Save Number 🔢 in Your WhatsApp</h4 >
   <h4  align="center">Concurrent Multiple Contacts 👪 Tracking </h4 >
   <h4  align="center">Add Favourite Contacts Auto Open Chats</h4 >
+<hr>
 
- 
- 
+
  
    <h4  align="center">
  <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/"><img src="https://user-images.githubusercontent.com/29729380/84505020-a045d300-acda-11ea-9409-48e2ce88a4a1.png" height="80" width="200"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" height="65" width="180"></a>
@@ -106,6 +106,14 @@
    
   ### **Q2: Android extension how I will get notification?**
    #### **Ans: Use Notification Key and Subscribe any devices you will get Notification**
+   
+  ### **Q3: Do i need to connect internet in both device always?**
+   #### **Ans: WhatsApp Messenger Version 2.21.15.11 and above can use WhatsApp web simultaneously upto 4 devices and without internet connection to your phone you only need single connection...**
+    
+ <img align="center"  src="https://user-images.githubusercontent.com/29729380/126678450-6055a90f-5e23-45cc-ba2f-a90861eea7ff.jpg" >
+
+
+ 
    
 
 
