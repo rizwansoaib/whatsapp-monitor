@@ -129,7 +129,7 @@ function dcsv2() {
         csv.push(row.join(';'));
     }
     var csv_string = csv.join('\n');
-    var filename = `whatsapp-monitor_${new Date().toLocaleDateString()}&&${new Date().toLocaleTimeString()}.csv`;
+    var filename = `whatsapp-monitor_${new Date().toISOString().split('T')[0]}&&${new Date().toLocaleTimeString()}.csv`;
     var link = document.createElement('a');
     link.style.display = 'none';
     link.setAttribute('target', '_blank');

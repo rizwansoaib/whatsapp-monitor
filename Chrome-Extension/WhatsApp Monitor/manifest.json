@@ -4,7 +4,7 @@
 	"manifest_version": 2,
 	"name": "Online Monitor",
 	"description": "Online Monitor @http://github.com/rizwansoaib",
-	"version": "2.6",
+	"version": "2.7",
 	"author": "Rizwan Ahmad",
         
 
@@ -31,7 +31,7 @@
 
 
 	"permissions": [
-          "activeTab","storage","tabs","https://web.whatsapp.com/*","https://notify.run/*","https://whatsappanalysis.in/*"
+          "activeTab","storage","https://web.whatsapp.com/*","https://notify.run/*","https://whatsappanalysis.in/*"
         ],
 
         
