@@ -1,8 +1,9 @@
 # Desktop App Linux and Windows v1.3
 
-* App Size  [55mb]
+* App Size  [65mb]
 * Multiple Contact Monitor Support
 * Sound Notification
+* Web Notification (any supported device without install anything)
 * Download history various format PDF,CSV,Excel etc. 
 
 ## Video
@@ -22,18 +23,19 @@ npm start
 
 
 ## Windows
-Download [Setup.exe](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor%20Setup%201.3.0.exe) and install 
+Download [Setup.exe](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor%20Setup%201.4.0.exe) and install 
 
 ## Linux 
 
-Method1. Download [WhatsApp-Monitor.deb](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor_1.3.0_amd64.deb) for installation open terminal and run in Downloaded Directory
 
-                      sudo dpkg -i WhatsApp-Monitor_1.3.0_amd64.deb
+Method1. Download [WhatsApp-Monitor.deb](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor_1.4.0_amd64.deb) for installation open terminal and run in Downloaded Directory
+
+                      sudo dpkg -i WhatsApp-Monitor_1.4.0_amd64.deb
         
-Method2. Download AppImage [WhatsApp-Monitor.AppImage](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor-1.3.0.AppImage) and open without install
+Method2. Download AppImage [WhatsApp-Monitor.AppImage](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor-1.4.0.AppImage) and open without install
 
-                        sudo chmod +x WhatsApp-Monitor-1.3.0.AppImage
-                        ./WhatsApp-Monitor-1.3.0.AppImage
+                        sudo chmod +x WhatsApp-Monitor-1.4.0.AppImage
+                        ./WhatsApp-Monitor-1.4.0.AppImage
                       
                       
                       
