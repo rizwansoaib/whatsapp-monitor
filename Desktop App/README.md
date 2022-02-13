@@ -1,4 +1,4 @@
-# Desktop App Linux and Windows v1.3
+# Desktop App Linux and Windows v1.4
 
 * App Size  [65mb]
 * Multiple Contact Monitor Support
