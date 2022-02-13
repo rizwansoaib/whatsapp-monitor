@@ -1,10 +1,10 @@
 {
-  "name": "WhatsApp-Monitor",
-  "version": "1.3.0",
+  "name": "WPMonitor",
+  "version": "1.4.0",
   "main": "main.js",
   "homepage": "https://github.com/rizwansoaib/whatsapp-monitor",
   "author": {
-    "name": "github.com/rizwansoaib",
+    "name": "rizwansoaib",
     "email": "rizwansoaib@gmail.com"
   },
   "icon": "assets/logo.png",
@@ -19,15 +19,14 @@
     "icon": "assests/logo.png",
     "asar": true,
     "asarUnpack": [
-      "build/logo.png",
-      "build/logo.ico",
+      "assets/logo.png",
       "assets/64.png",
       "assets/websockets.js",
       "assets/protobuf.js"
     ],
-    "appId": "com.whatsappmonitor.v1.3",
+    "appId": "com.whatsappmonitor.v1.4",
     "linux": {
-      "icon": "build/logo.png",
+      "icon": "assets/logo.png",
       "target": [
         "AppImage",
         "deb"
@@ -39,20 +38,29 @@
         "msi",
         "zip"
       ],
-      "icon": "build/logo.ico"
+      "icon": "assets/logo.ico"
     },
     "nsis": {
-      "installerIcon": "build/logo.ico",
-      "installerHeaderIcon": "build/logo.ico",
-      "deleteAppDataOnUninstall": true
+      "installerIcon": "assets/logo.ico",
+      "installerHeaderIcon": "assets/logo.ico",
+      "deleteAppDataOnUninstall": true,
+
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+
     }
   },
   "devDependencies": {
-    "electron": "11.2.0",
-    "electron-builder": "^22.11.7"
+    "electron": "^17.0.0",
+    "electron-builder": "^22.14.13"
   },
   "dependencies": {
-    "node-notifier": "7.0.1",
-    "package.json": "^2.0.1"
+    "electron-store": "^8.0.1",
+    "http": "^0.0.1-security",
+    "node-notifier": "^10.0.1",
+    "request": "^2.88.2"
   }
 }

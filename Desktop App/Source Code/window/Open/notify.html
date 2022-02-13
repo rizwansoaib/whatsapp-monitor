@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Notification Key</title>
+        <script src="./../../assets/bts/jq.js"></script>
+        <link rel="stylesheet" href="./../../assets/bts/bts.css">
+
+    <link rel="stylesheet" href="./../../assets/bts/bts_theme.css">
+    <script src="./../../assets/bts/bts_js.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+   
+    </head>
+    <body>
+     
+
+      
+
+    
+
+
+
+
+
+    <div class="card text-center">
+     
+      <div class="card-body">
+       
+        
+        <img id="qr" src="https://user-images.githubusercontent.com/29729380/78868276-3ef64f00-7a60-11ea-8231-9cf08908cdf6.png" alt="Notification Key QR">
+        <div class="card-footer text-muted">
+          <a id='link' onclick="openurl('link')" data-url="https://notify.run/c/vwxjFN2ADfb4N45mZzXV">Please Generate</a>
+        </div>
+        <a id="new_key" onclick="new_key()" class="btn btn-success">Generate New</a><br><br>
+        <button id="help" onclick="openurl('help')" data-url="https://github.com/rizwansoaib/whatsapp-monitor/blob/master/Chrome-Extension/Notification.md" class="btn btn-primary">Notification Help</button>
+        
+      </div>
+      
+    </div>
+
+      <script>
+ const electron=require("electron");
+ const ipc=electron.ipcRenderer;
+ const request=require("request")
+
+
+
+
+ ipc.on('noti_link',function(event,noti_link){
+  
+    console.log("recvd db link",noti_link);
+
+    
+
+    document.getElementById('qr').src=noti_link+'/qr.svg';
+    document.getElementById('link').innerText=noti_link;
+    document.getElementById('link').setAttribute("data-url",noti_link);
+   
+
+    
+
+})
+
+ipc.send('get_noti_link','get_noti_link')
+
+
+
+
+
+
+        function openurl(myid){
+
+          elem=document.getElementById(myid);
+
+          link=elem.getAttribute("data-url")
+         
+          electron.shell.openExternal(link);
+        }
+
+
+        function new_key(){
+
+
+          document.getElementById('new_key').innerHTML=' <i class="fas fa-circle-notch fa-spin"></i>'
+
+
+
+          
+request({
+    url: "https://notify.run/api/register_channel",
+    method: "POST",
+    json: true,
+    headers: {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"}
+  
+   
+}, function (error, response, body){
+
+    new_url=body['endpoint']
+    console.log(new_url)
+    
+    ipc.send('send_noti_link',new_url);
+    
+    document.getElementById('qr').src=new_url+'/qr.svg';
+    document.getElementById('link').innerText=new_url;
+    document.getElementById('link').setAttribute("data-url", new_url);
+    document.getElementById('new_key').innerHTML='Generate New'
+});
+
+
+
+        }
+
+
+
+    
+        
+      </script>
+
+    </body>
+</html>

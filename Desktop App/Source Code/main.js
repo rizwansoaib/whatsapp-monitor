@@ -14,6 +14,75 @@ const globalShortcut=electron.globalShortcut;
 
 
 
+const Store = require('electron-store');
+const store = new Store();
+
+
+
+/* 
+
+
+// Future implementation advance version...
+
+const Store = require('electron-store');
+const store = new Store();
+
+
+
+function get_today()
+{
+    return new Date(Date.now()).toLocaleString().split(',')[0];
+}
+
+
+
+var today = get_today();
+
+//store.delete('last_date');
+
+var last_date=store.get('last_date');
+
+if(last_date==undefined)
+{
+  store.set('last_date', today);
+  last_date=store.get('last_date');
+}
+
+
+
+console.log(last_date)
+
+
+
+
+
+function get_diff_days(today,last_date)
+{
+
+  
+  today = new Date(today.split('/')[2],today.split('/')[1]-1,today.split('/')[0]);
+  var date2 = last_date
+  date2 = new Date(date2.split('/')[2],date2.split('/')[1]-1,date2.split('/')[0]);
+  var timeDiff = Math.abs(date2.getTime() - today.getTime());
+  var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+
+  return diffDays;
+
+}
+
+
+
+
+diff_days= get_diff_days(today,last_date)
+
+console.log(last_date,today,diff_days)
+
+if(diff_days>6)
+{
+console.log('updation required');
+}
+
+*/
 
 //var player = require('play-sound')(opts = {});
 
@@ -22,6 +91,8 @@ const notifier = require('node-notifier');
 
 
 const fs = require("fs");
+const { Console } = require("console");
+const { spawn } = require("child_process");
 const websockets = fs.readFileSync(path.join(__dirname, 'assets/websockets.js')).toString();
 //const mobchatjs = fs.readFileSync('mobchat.js').toString();
 //const onlinejs = fs.readFileSync(path.join(__dirname, 'websockets.js')).toString();
@@ -46,12 +117,23 @@ function createWindow()
 {
     win=new BrowserWindow({
         webPreferences:{
-        nodeIntegration: true
+        nodeIntegration: true,
+       // nodeIntegrationInWorker: true,
+        //javascript: true,
+       //contextIsolation:true,
+       //enableRemoteModule: true,
+
+       preload: path.join(__dirname, "/assets/preload.js"),
+      
+
+
        }
 
     });
     win.loadURL('http://web.whatsapp.com');
 
+    
+    win.webContents.executeJavaScript(`console.log("hello whatsapp monitor");`); 
     
 
 
@@ -70,8 +152,12 @@ function createWindow()
 
    
 
+   //developer mode
+   //win.webContents.openDevTools();
 
-  // win.webContents.openDevTools();
+
+
+
   
 
     /*win.webContents.on('dom-ready', function(e) {
@@ -79,6 +165,15 @@ function createWindow()
       })*/
 
 }
+
+
+
+
+
+
+
+
+
 
 app.on('window-all-closed', function () {
 
@@ -109,6 +204,10 @@ app.on('ready',function(){
 createWindow();
 
 
+
+
+
+
 var menu = Menu.buildFromTemplate([
 
     {
@@ -134,28 +233,10 @@ var menu = Menu.buildFromTemplate([
         submenu: [
 
           
-         /* {
-             
-            label:'Open Chat',click:function(){
-            win.webContents.executeJavaScript(mobchatjs).then(result => {
-              
-            })
-            .catch(err => {
-              
-
-            });
-
-            openmnwindow();
-        }
-        
-        
-        , accelerator:'CmdOrCtrl+Shift+O'}, */
-
-
-
             {label:'Start Monitor',click:function()
             
             {
+
                 win.webContents.executeJavaScript(websockets).then(result => {
                   //console.log('result (no callback one)', result)
                   
@@ -176,16 +257,28 @@ var menu = Menu.buildFromTemplate([
                   
                 });
 
+                //console.log('online window opened');
+
                 openonlineWindow();
             }, accelerator:'CmdOrCtrl+Shift+M'
 
-            }
-            ,
+            } ,
+
+
+            {label:'Notification Key',click:function(){
+            
+
+              opennotifywindow();
+          }, accelerator:'CmdOrCtrl+Shift+N'},
+
+
             {label:'Online History',click:function()
             
             {
+              
+             // win.webContents.executeJavaScript("console.log('Hello There!')");
 
-                electron.shell.openExternal('https://whatsappanalysis.in/online');
+                electron.shell.openExternal('https://www.wpmonitor.tech/online');
              
             }, accelerator:'CmdOrCtrl+Shift+H'
 
@@ -208,7 +301,7 @@ var menu = Menu.buildFromTemplate([
                     type: 'info',
                     buttons: ['OK'],
                     title: "License Key",
-                    message: "Community Edition  v1.3",
+                    message: "Community Edition v1.4",
                     detail:"Price: Free"
                    })
 
@@ -269,15 +362,14 @@ const ctxmenu=new Menu();
 
 
 
-/*ctxmenu.append(new MenuItem({
-    label:"Open Chat",
+ctxmenu.append(new MenuItem({
+    label:"Notification Key",
     click:function()
     {
-        win.webContents.executeJavaScript(mobchatjs);
-        openmnwindow();
+        opennotifywindow();
     }
 }
-)) */
+)) 
 
 
 
@@ -294,7 +386,7 @@ win.webContents.on('context-menu',function(e,params)
 
 
 );
-app.userAgentFallback = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36";
+app.userAgentFallback = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36";
 
 
 var flag=0
@@ -303,11 +395,16 @@ function notify(user)
 {
     notifier.notify({
         title: 'WhatsApp Monitor',
-        message: "📱 "+user+' is Online',
+        subtitle: 'Online Notification',
+        message: "📲  "+user+' is Online',
+        icon: __dirname + '/assets/64.png',
         sound: 'Ping',
         time: 5000,
+        contentImage:path.join(__dirname,'assets/logo.png'),
       });
 }
+
+
 /*
 function playsound()
 {
@@ -317,6 +414,90 @@ function playsound()
 }
 
 */
+
+
+
+
+
+ipc.on('toMain',function(event,msg){
+  
+  //console.log(msg);
+   
+   
+
+})
+
+
+
+ipc.on("profile_data",function(event,data){
+  
+  //console.log('profile data received');
+  //console.log(data);
+
+
+  if (onlineWindow)
+    {
+      onlineWindow.webContents.send('profile_data', data);
+      
+    }
+
+  
+
+  //store.set('profile_data',data);
+   
+   
+
+})
+
+
+
+ipc.on("contact_data",function(event,data){
+  
+  //console.log('profile data received');
+  //console.log(data);
+
+
+  if (onlineWindow)
+    {
+      onlineWindow.webContents.send('contact_data', data);
+      
+    }
+
+  
+
+  //store.set('profile_data',data);
+   
+   
+
+})
+
+
+
+
+
+
+
+
+var whatsapp_username;
+
+ipc.on('whatsapp_username',function(event,msg){
+  
+  //console.log("main_whatsapp_username",msg);
+
+  whatsapp_username=msg;
+
+  if(onlineWindow)
+  onlineWindow.webContents.send('whatsapp_username', msg);
+  else
+  console.log('onlinewindow not opened')
+
+  
+   
+   
+
+})
+
+
 
 ipc.on('online',function(event,user){
     //dialog.showErrorBox('Online','Now Online');
@@ -343,6 +524,15 @@ ipc.on('number',function(event,num){
    
     if (onlineWindow)
     onlineWindow.webContents.send('number', num);
+
+})
+
+
+ipc.on('first',function(event,h){
+  
+  //console.log(h+' array data');
+   
+  
 
 })
 
@@ -373,7 +563,11 @@ ipc.on('offline',function(event,user){
     //console.log(user+" is offline");
     flag=0;
     if (onlineWindow)
-    onlineWindow.webContents.send('offline', user);
+    {
+      onlineWindow.webContents.send('offline', user);
+      
+    }
+    
     
       //onlineWindow.webContents.send('online', user);
 
@@ -384,24 +578,24 @@ ipc.on('imgsrc',function(event,imgurl){
     //console.log(imgurl);
     //console.log('recevied imgurl')
     if (onlineWindow)
-    onlineWindow.webContents.send('imgsrc', imgurl);
+    {
+      onlineWindow.webContents.send('imgsrc', imgurl);
+      onlineWindow.webContents.send('whatsapp_username', whatsapp_username);
+    }
+   
    // console.log('send to html Online Monitor');
     
       //onlineWindow.webContents.send('online', user);
 
 })
 
-
-
-/*
-ipc.on('omob',function(event,mob){
+/*ipc.on('omob',function(event,mob){
     win.webContents.send('omob', mob); 
      
  //console.log(mob);
  mnwindow.close();
 
-}) */
-
+})*/
 
 
 
@@ -425,15 +619,26 @@ function openonlineWindow() {
   onlineWindow = new BrowserWindow({
     height: 600,
     width: 900,
-    frame:false,
-    fullscreen: true,
+    frame:true,
+   // fullscreen: true,
     title: 'Online Manager',
     webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            nodeIntegrationInWorker: true,
+            contextIsolation: false,
         }
     
     
   })
+
+
+  // In the main process.
+  
+
+
+
+  
+
 
   onlineWindow.loadURL('file://' + __dirname + '/window/online/contact.html')
   onlineWindow.maximize();
@@ -445,11 +650,28 @@ function openonlineWindow() {
 });
  
   onlineWindow.setMenu(null);
+  //developer mode
   //onlineWindow.webContents.openDevTools();
 
   onlineWindow.on('closed', function() {
     onlineWindow = null
   })
+
+
+
+  /*
+
+
+  //Browser view code 
+
+  const {  BrowserView } = require('electron')
+
+    const view = new BrowserView()
+  onlineWindow.setBrowserView(view)
+  view.setBounds({ x: 0, y: 0, width: 500, height: 400 })
+  view.webContents.loadURL('https://web.whatsapp.com')
+  */
+  
 }
 
 
@@ -474,7 +696,7 @@ olhistwin = new BrowserWindow({
     
   })
 
-  olhistwin.loadURL('https://whatsappanalysis.in/online')
+  olhistwin.loadURL('https://www.wpmonitor.tech/online')
  
   olhistwin.setMenu(null);
  
@@ -487,37 +709,109 @@ olhistwin = new BrowserWindow({
 
 
 
-/*
-var mnwindow= null
 
-function openmnwindow() {
-    if (mnwindow) {
-      mnwindow.focus()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var notifywindow= null
+
+function opennotifywindow() {
+    if (notifywindow) {
+      notifywindow.focus()
       return
     }
   
-    mnwindow = new BrowserWindow({
-      height: 200,
-      width: 250,
+    notifywindow = new BrowserWindow({
+      height: 375,
+      width: 300,
      
-      title: 'Open chat Mobile Number',
+      title: 'Notification Key',
       webPreferences: {
-              nodeIntegration: true
+              nodeIntegration: true,
+              contextIsolation:false
           }
       
       
     })
   
-    mnwindow.loadURL('file://' + __dirname + '/window/Open/mobile.html')
+    notifywindow.loadURL('file://' + __dirname + '/window/Open/notify.html')
    
-    mnwindow.setMenu(null);
+    notifywindow.setMenu(null);
 
-    mnwindow.setResizable(false)
-   //mnwindow.webContents.openDevTools();
+    notifywindow.setResizable(false)
+   //notifywindow.webContents.openDevTools();
+
+
   
-    mnwindow.on('closed', function() {
-      mnwindow = null
+  
+   notifywindow.on('closed', function() {
+    notifywindow = null
     })
   }
 
-  */
+
+
+
+ipc.on('send_noti_link',function(event,new_url){
+  store.set('noti_link', new_url);
+  //console.log('new url saved in db')   
+
+})
+
+
+ipc.on('get_noti_link',function(event,data){
+  if (notifywindow)
+  {
+    //console.log(data)
+    var noti_link=store.get('noti_link');
+    if(noti_link!=undefined)
+    notifywindow.webContents.send('noti_link', noti_link);
+    
+    
+  } 
+
+  if(onlineWindow)
+  {
+    //console.log(data)
+    var noti_link=store.get('noti_link');
+    if(noti_link!=undefined)
+    onlineWindow.webContents.send('noti_link', noti_link);
+     
+  }
+
+})
+
+
+
+
+
+
+
+
+
+  
+
+
+ 
+ 
+ 
+  
+
+  
+
+
+
+
+
+

@@ -1,114 +1,608 @@
 <html>
 <head>
-    <title>Whatsapp Online Monitor</title>
+    <title>Whatsapp Online Monitor v1.4</title>
     <script src="./../../assets/bts/jq.js"></script>
         <link rel="stylesheet" href="./../../assets/bts/bts.css">
 
     <link rel="stylesheet" href="./../../assets/bts/bts_theme.css">
-  
+
+
+
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <style type="text/css">
-   html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-* {
-  box-sizing: border-box;
-}
-.container {
-  width: 100%;
-  
-  
-  /* flex */
-  display: flex;
-}
-.left,
-.right {
-  
-  overflow: hidden;
-}
-.left {
-  background: white;
-  width: 65%;
-}
-.right {
-  background: white;
-  /* flex */
-  flex-grow: 1;
-}
+  <link rel="stylesheet" type="text/css" href="theme.css">
+      
 
-.top-right{
-    background: white;
-    height: 70%;
-    
-}
-
-img
-{
-    margin-left: 40px;
-    
-}
-h1
-{
-    margin-left: 30px;
-    
-}
-
-
-.blink_text {
-
-animation:1s blinker linear infinite;
--webkit-animation:1s blinker linear infinite;
--moz-animation:1s blinker linear infinite;
-
- color: red;
-}
-
-@-moz-keyframes blinker {  
- 0% { opacity: 1.0; }
- 50% { opacity: 0.0; }
- 100% { opacity: 1.0; }
- }
-
-@-webkit-keyframes blinker {  
- 0% { opacity: 1.0; }
- 50% { opacity: 0.0; }
- 100% { opacity: 1.0; }
- }
-
-@keyframes blinker {  
- 0% { opacity: 1.0; }
- 50% { opacity: 0.0; }
- 100% { opacity: 1.0; }
- }
-</style>
     
        
 </head>
 
-    <body style="background-color: black">
-        <h1 align="center" style="color: #08ff15;">WhatsApp Online Monitor v1.3</h1>
-      
-        <!--
-          <h5 align="left" style="color: #08ff15;">[ESC] Minimize</h5><br>
-        <h5 align="right" style="color: #08ff15;">[ALT + F4] Close</h5>
-      -->
-      
-         
+    <body style="background-color: black;">
+
+     
+       
+        <div>
+            
+     
+
+        <div align="center">
+
+        <a href="#" class="animated-button1">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+   <button class="buttonload">
+  <i class="fa fa-sync fa-spin" style="font-size:25px;color:#31c8ff;"></i>
+</button>
+<br>
+
+<label>sync</label>
 
 
-        <div class="container" style="margin-top: 50px;background-color: black;">
+</a>
+
+
+
+
+
+
+
+
+<a onclick="change_sound()" class="animated-button1">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+   <button onclick="change_sound()" class="buttonload">
+  <i id="isound" class="fa fa-volume-mute" style="font-size:25px;color:#7dd4a8;"></i>
+</button><br>
+<label id="sound">sound</label>
+
+</a>
+
+
+
+
+
+
+<a onclick="change_notify()" href="#" class="animated-button1">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+
+   
+ 
+   <button onclick="change_notify()" class="buttonload">
+   
+  <i id="notify" class="fas fa-bell-slash" style="font-size:25px;color:#7dd4a8;"></i>
+  
+</button><br>
+<label>notify url</label>
+
+</a>
+
+<!--
+
+<a href="#" class="animated-button1">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+   <button class="buttonload">
+  <i class="fa fa-satellite-dish" style="font-size:25px;color:green;"></i>
+</button><br>
+<label id="ip">IP Address</label>
+
+</a>
+
+
+
+
+
+
+
+<a href="#" class="animated-button1">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+
+
+   <button class="buttonload">
+  <i class="fab fa-whatsapp" style="font-size:30px;color:green;"></i>
+</button><br>
+<label id="whatsapp_username">username</label>
+
+</a>
+
+<br>
+
+
+<div style="margin-left: 100px;">
+
+<a href="#" class="animated-button1">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+
+
+   <button class="buttonload">
+  <i class="fa fa-id-badge" style="font-size:30px;color:green;"></i>
+</button><br>
+<label id="contacts_count">contacts</label><br>
+<label>contacts</label>
+
+</a>
+
+
+<a href="#" class="animated-button1" style="margin-left:10px;">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+
+   <button class="buttonload">
+    <i class="fas fa-globe" style="font-size:30px;color:green;"></i>
+    <!--
+    <img id="country_img" src="https://flagcdn.com/48x36/us.png" class="center" width="48" height="36" alt="South Africa">
+     
+ 
+
+    
+
+</button><br>
+<label id="country_name">USA</label><br>
+<label id="city_name">New York</label>
+
+</a>
+
+
+
+<a href="#" class="animated-button1" style="margin-left:10px;">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+ 
+
+   <button class="buttonload">
+    <i class="fas fa-microchip" style="font-size:30px;color:green;"></i>
+    
+</button><br>
+<label id="up_time">UP Time</label><br>
+<label >UP Time</label><br>
+
+
+</a>
+
+
+
+<a href="#" class="animated-button1" style="margin-left:10px;">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  
+
+
+   <button class="buttonload">
+  <i class="fas fa-memory" style="font-size:30px;color:green;"></i>
+</button><br>
+<label id="mem_usage">memory</label><br>
+<label >memory</label>
+
+</a>
+
+-->
+
+
+</div>
+
+
+
+<!--
+
+
+
+<a href="#" class="animated-button1" style="margin-left:10px;">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+
+
+   <button class="buttonload">
+  <i class="fa fa-id-badge" style="font-size:30px;color:green;"></i>
+</button><br>
+<label id="conatcts">contacts</label>
+
+</a>
+
+
+
+
+<a href="#" class="animated-button1" style="margin-left:10px;">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+
+
+   <button class="buttonload">
+  <i class="fa fa-id-badge" style="font-size:30px;color:green;"></i>
+</button><br>
+<label id="conatcts">contacts</label>
+
+</a>
+
+
+
+
+<a href="#" class="animated-button1" style="margin-left:10px;">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+
+
+   <button class="buttonload">
+  <i class="fa fa-id-badge" style="font-size:30px;color:green;"></i>
+</button><br>
+<label id="conatcts">contacts</label>
+
+</a>
+-->
+
+
+</div>
+
+
+
+
+</div>
+
+
+<div class="cardnum">
+
+<div align="center" class="word"></div>
+      
+</div>  
+
+   
+
+
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+ 
+  display: inline-block;
+  transition: background-color 10.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+
+.scan {
+  width: 25em;
+  text-align: center;
+  padding: 6px 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  transform: translate(-50%);
+  
+}
+
+.scan::after {
+  content: '';
+  background: #31c8ff;
+  width: 20.5em;
+  height: 0.2em;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0em;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 7;
+  z-index: 2;
+  animation: 5s infinite ease-in-out roll;
+}
+
+
+
+@keyframes roll {
+  0% {
+    transform: translateY(-35px);
+  }
+  50% {
+    transform: translateY(168px);
+  }
+  100% {
+    transform: translateY(-35px);
+  }
+}
+
+
+
+
+p a {
+	 color: #31c8ff !important;
+	 font-weight: 900;
+}
+ h1 {
+	 margin-top: 0;
+}
+ .card {
+   width: 250px;
+	 background: linear-gradient(-135deg, transparent 35px, #000000  0);
+	 border: none;
+	 padding: 10px;
+	 border-radius: 0.8rem;
+	 filter: drop-shadow(2px 2px 10px #7dd4a8);
+	 margin: 10px auto 0;
+}
+ .card h1, .card  {
+	 color: #7dd4a8 !important;
+   margin-right: 30px;
+}
+ .card hr {
+	 border-color: #7dd4a8 !important;
+}
+ 
+
+
+.cardnum{
+   width: 850px;
+   height: 50px;
+   margin-left: 280px;
+	 background: linear-gradient(90deg, transparent 35px, #000000  0);
+	 border: none;
+	 border-radius: 0.8rem;
+	 filter: drop-shadow(2px 2px 10px #7dd4a8);
+	 
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="scan" align="right" style="width: 300px;  margin-left: 150px;">
+
+  
+
+
+
+
+  <div class="card" style="margin: 100px auto 0;">
+    <h1 class="section-heading">Profile Scan</h1>
+    <hr class="">
+  
+  
+
+
+<div id="profile_data_id" class=" slideshow-container" align="right">
+
+<div class="mySlides fade " style="text-align:center">
+  <img class="img-responsive center-block" src="https://i.pravatar.cc/300" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade " style="text-align:center">
+  <img class="img-responsive center-block" src="https://i.pravatar.cc/500" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade " style="text-align:center">
+  <img class=" img-responsive center-block" src="https://i.pravatar.cc/400" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div id="profile_dot" style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</div>
+
+
+
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+
+
+
+
+
+var wordflick = function (words) {
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 10,
+    speed = 150;
+
+  setInterval(function () {
+    if (forwards) {
+      if (offset >= words[i].length) {
+        ++skip_count;
+        if (skip_count == skip_delay) {
+          forwards = false;
+          skip_count = 0;
+        }
+      }
+    }
+    else {
+      if (offset == 0) {
+        forwards = true;
+        i++;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+    }
+    part = words[i].substr(0, offset);
+    if (skip_count == 0) {
+      if (forwards) {
+        offset++;
+      }
+      else {
+        offset--;
+      }
+    }
+    $('.word').text(part);
+  },speed);
+};
+
+
+
+
+</script>
+
+<style>
+  .word {
+  color: #31c8ff;
+  font-size: 25px;
+  
+}
+</style>
+
+
+
+
+
+
+        <div class="container" style="margin-top: 10px;background-color: black; margin-left: 300px;">
           
-            <div class="left" style="background-color:rgb(0, 0, 0)">
+          
+
+            <div class="left " style="background-color:rgb(0, 0, 0)">
                 
                 
-                <table class="table" id="history" style="color:rgb(64, 233, 22);">
+                <table class="table " id="history" style="color:#31c8ff;">
                     <thead class="thead-white" align="center">
                       <tr>
                         <th scope="col" >Name</th>
@@ -130,25 +624,54 @@ animation:1s blinker linear infinite;
 
 
             </div>
+
+            </div>
           
-            <div class="right" id="right" style="background-color:black">
+
+         
+            <div class="card">
+              <h1 class="section-heading">Online Scan</h1>
+              <hr class="">
+
+
+
+            <div align="right" id="right" style="background-color:black;">
                
-                <div class="top-right card-img-top" style="background-color: black">
+                <div class="top-right card-img-top" style="background-color: black;">
+
+
+
+
+
+
+
+            
+
 
 
 
                  
-                   <h3 id="sound" align="center" style="font-size: 25px;background-color: black;color: antiquewhite;"><input class="soundcheck" type="checkbox" value="1" name="sound"> Sound Notification</h3> 
+                   
+                    
                     <img align="center" id='pro' class="rounded-circle img-responsive center-block" alt="Profile pic" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
           data-holder-rendered="true" width="220" height="220">
-          <br>
-                <h1 id="name" align="center" style="font-size: 50px;background-color: black;color: antiquewhite;">Name</h1> 
-                <br>
-                <h1 id="number" align="center" style="font-size: 50px;background-color: black;color: antiquewhite;">Number</h1>
-                <br>
-                <h1 id="status" class="blink_text" align="center" style="font-size: 50px;background-color: black">Status</h1> 
-                <br>
-          <br>
+          
+         
+                   <div  align="center">
+                <h1 class="" id="name"  style="font-size: 25px;background-color: black;color: antiquewhite;">Name</h1> 
+                
+                <h1 class="" id="number" style="font-size: 20px;background-color: black;color: antiquewhite;">Number</h1>
+               
+
+              
+                  
+                 <h1 id="status" class="blink_text flipX" align="center" style="font-size: 25px;background-color: black;color: red;">OFFLINE</h1>
+                 
+                               
+                    </div>
+
+                       </div>
+              
                      </div>
               <br>
             </div>
@@ -163,17 +686,176 @@ animation:1s blinker linear infinite;
 
 
 
+
+
 <script>
 
 
+const electron= require("electron");
+const ipc=electron.ipcRenderer;
 
+
+
+
+const os = require('os');
+
+const http = require('http');
+
+
+
+
+
+function change_sound(){
+
+  //console.log('function change_sound');
+  isound=document.getElementById('isound');
+  //console.log(isound.className);
+  if(isound.className=="fa fa-volume-mute")
+  {
+    isound.className = "fa fa-volume-up";
+    isound.style.color= "#31c8ff";
+  }
+  
+  else
+  {
+    isound.className = "fa fa-volume-mute";
+    isound.style.color= "#7dd4a8";
+  }
+  
+
+}
+
+
+
+
+function change_notify(){
+
+//console.log('function change_sound');
+inoti=document.getElementById('notify');
+//console.log(isound.className);
+if(inoti.className=="fas fa-bell")
+{
+  inoti.className = "fas fa-bell-slash";
+  inoti.style.color= "#7dd4a8";
+}
+
+else
+{
+  inoti.className = "fas fa-bell";
+  inoti.style.color= "#31c8ff";
+}
+
+
+}
+
+
+const request = require('request');
 
 
 
 
 //console.log('Online Window running script');
-const electron= require("electron");
-const ipc=electron.ipcRenderer;
+
+/*
+
+var ip_address=null;
+
+
+http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
+  resp.on('data', function(ip) {
+    ip_address=ip;
+
+    document.getElementById('ip').innerText=ip;
+
+
+    
+
+
+    
+  });
+});
+
+
+
+
+
+request('http://api.freegeoip.app/json/?apikey=46c5bbe0-8a6b-11ec-b6a4-c56566f29c56', function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+
+    const ip_data = JSON.parse(body);
+
+    //console.log(typeof(ip_data),ip_data)
+
+    country_code=ip_data['country_code'].toLowerCase();
+    
+   // document.getElementById('country_img').src='https://flagcdn.com/48x36/'+country_code+'.png'
+
+    country_name=ip_data['country_name']
+    //document.getElementById('country_img').alt=country_name;
+    document.getElementById('country_name').innerText=country_name;
+    document.getElementById('city_name').innerText=ip_data['city'];
+
+
+    //console.log(country_code,country_name)
+
+
+
+    //console.log(document.getElementById('country_img'))
+    
+    // Show the HTML for the Google homepage. 
+  }
+  else {
+    console.log("Error "+response.statusCode)
+  }
+})
+
+
+
+
+function formatBytes(bytes) {
+    var marker = 1024; // Change to 1000 if required
+    var decimal = 2; // Change as required
+    var kiloBytes = marker; // One Kilobyte is 1024 bytes
+    var megaBytes = marker * marker; // One MB is 1024 KB
+    var gigaBytes = marker * marker * marker; // One GB is 1024 MB
+    var teraBytes = marker * marker * marker * marker; // One TB is 1024 GB
+
+    // return bytes if less than a KB
+    if(bytes < kiloBytes) return bytes + " Bytes";
+    // return KB if less than a MB
+    else if(bytes < megaBytes) return(bytes / kiloBytes).toFixed(decimal) + " MB" ;
+    // return MB if less than a GB
+    else if(bytes < gigaBytes) return(bytes / megaBytes).toFixed(decimal) + " GB";
+    // return GB if less than a TB
+    else return(bytes / gigaBytes).toFixed(decimal);
+}
+
+
+
+function set_up_mem()
+{
+
+  up_time=new Date(os.uptime()* 1000).toISOString().substr(11, 8);
+
+
+document.getElementById('up_time').innerText=up_time;
+
+
+
+
+mem_usgae=process.getSystemMemoryInfo();
+
+free_mem=formatBytes(mem_usgae['free'])
+total_mem=formatBytes(mem_usgae['total'])
+
+
+document.getElementById('mem_usage').innerText=free_mem+'/'+total_mem;
+
+}
+
+
+*/
+
 
 /*
 function addRow(t1,t2,t) {
@@ -190,7 +872,7 @@ function save(user,t1,t2,t){
   user=user.replace(/[^a-zA-Z0-9]/g, "")
   curd=curd.replace(/[^a-zA-Z0-9]/g, "")
 
-  const surl='https://whatsappanalysis.in/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
+  const surl='https://www.wpmonitor.tech/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
   var xhr = new XMLHttpRequest();
    xhr.open("GET",surl);
   xhr.send()
@@ -247,6 +929,11 @@ load_tbl();
 
 
 
+
+
+
+
+
 function diff_hours(dt2, dt1) 
  {
 
@@ -268,20 +955,81 @@ let startDate;
 var h={}
 
 
+var noti_flag_dict={}
+
+
 
 
 
   ipc.on('online',function(event,user){
   //dialog.showErrorBox('Online','Now Online');
+
+
+  ipc.send('get_noti_link','get_noti_link')
+
+
+  //console.log('getting noti url');
+  
+
+  inoti=document.getElementById('notify');
+//console.log(isound.className);
+
+noti_send_flag=false
+
+
+
+if(inoti.className=="fas fa-bell")
+noti_send_flag=true
+
+
+is_need_noti=noti_flag_dict[user]
+
+if(is_need_noti == undefined){
+  noti_flag_dict[user]=true;
+  is_need_noti=noti_flag_dict[user]
+}
+
+
+//console.log(noti_link_url,noti_send_flag,is_need_noti)
+
+  if(noti_link_url!=null && noti_send_flag && is_need_noti)
+  {
+
+    noti_flag_dict[user]=false;
+
+
+    //console.log(noti_link_url,noti_send_flag)
+    //console.log('sending online noti...')
+
+request({
+  url: noti_link_url,
+  method: "POST",
+  json: true,
+  body: '📲 WhatsApp Monitor Online : '+user,
+  headers: {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"}
+
+ 
+}, function (error, response, body){
+
+  //console.log(body);
+  
+});
+
+
+
+  }
+
+
+  
   
   document.getElementById('name').innerHTML = user;
   var status=document.getElementById('status')
   status.innerHTML = "ONLINE";
-  status.style.color= 'white';
+  status.style.color= '#7dd4a8';
  //console.log('Online Window data received');
   
- cb = document.getElementsByClassName('soundcheck')[0]
-  if(cb.checked){
+ isound=document.getElementById('isound');
+  if(isound.className=="fa fa-volume-up"){
     var audio = new Audio('https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/open.mp3');
     audio.play();
 }
@@ -323,7 +1071,7 @@ ipc.on('imgsrc',function(event,imgurl){
     
     if(imgurl!=undefined)
     pro.src=imgurl;
-    console.log('img src set success');
+    //console.log('img src set success');
     
 
 })
@@ -333,7 +1081,7 @@ ipc.on('imgsrc',function(event,imgurl){
 ipc.on('data',function(event,his){
 
 
-  console.log(his+" contact.html")
+  //console.log(his+" contact.html")
   num=his[0];
   name=his[1];
   curd=his[2];
@@ -350,6 +1098,45 @@ ipc.on('data',function(event,his){
     '<tr><td>'+name+'</td><td>'+curd+'</td><td>'+t1+'</td><td>'+t2+'</td><td>'+t+'</td></tr>'
   ) ).draw();
 
+  inoti=document.getElementById('notify');
+//console.log(isound.className);
+
+noti_send_flag=false
+if(inoti.className=="fas fa-bell")
+noti_send_flag=true
+
+
+is_need_noti=noti_flag_dict[name]
+
+
+
+
+
+//console.log(noti_link_url,noti_send_flag)
+
+  if(noti_link_url!=null && noti_send_flag && is_need_noti==false)
+  {
+
+    //console.log('sending offline noti...')
+
+request({
+  url: noti_link_url,
+  method: "POST",
+  json: true,
+  body: '📴 WhatsApp Monitor Offline : '+name+' '+curd+' '+t1+' '+t2+' '+t,
+  headers: {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"}
+
+ 
+}, function (error, response, body){
+
+  noti_flag_dict[name]=true;
+
+  //console.log(body);
+});
+
+  }
+
+
 
 })
 
@@ -357,6 +1144,8 @@ ipc.on('data',function(event,his){
 
 ipc.on('offline',function(event,user){
     //dialog.showErrorBox('Online','Now Online');
+
+    //set_up_mem();
     
     document.getElementById('name').innerHTML = user;
   document.getElementById('number').innerHTML = '';
@@ -375,6 +1164,115 @@ ipc.on('offline',function(event,user){
 
 })
 
+
+
+wordflick_flag=false;
+
+
+
+ipc.on('contact_data',function(event,data){
+
+  
+
+//console.log(data);
+if(!wordflick_flag){
+  wordflick_flag=true;
+
+  var words = [];
+    
+
+for (const [key, value] of Object.entries(data)) {
+  //console.log(key, value);
+
+  
+   val = key+" "+value;
+   words.push(val);
+}
+
+
+//document.getElementById('contacts_count').innerHTML=words.length;
+
+wordflick(words);
+
+  
+}
+
+
+
+})
+
+
+/*
+ipc.on('whatsapp_username',function(event,msg){
+
+
+//console.log("online_window_whatsapp_username",msg);
+
+
+document.getElementById('whatsapp_username').innerText = msg;
+
+})
+
+*/
+ipc.on('profile_data',function(event,data){
+
+
+//console.log("profile data received",data);
+
+myhtml=''
+dothtml='';
+for (const [key, value] of Object.entries(data)) {
+  //console.log(key, value);
+
+   temp='<div class="mySlides fade " style="text-align:center"><img class="black_white img-responsive center-block" src='+value+' style="width:100%;"><div class="text blink_text lineUp">'+key+'</div></div>'
+
+   
+   myhtml+=temp;
+
+   temp_dot='<span class="dot"></span>'
+   dothtml+=temp_dot
+
+
+}
+
+query_id=document.getElementById('profile_data_id')
+
+query_id.innerHTML=myhtml;
+
+query_dot=document.getElementById('profile_dot')
+
+query_dot.innerHTML=dothtml;
+
+
+
+
+
+
+
+})
+
+
+
+
+noti_link_url=null;
+
+
+
+
+
+
+ipc.on('noti_link',function(event,noti_link){
+  
+  //console.log("recvd db link",noti_link);
+
+  noti_link_url=noti_link;
+
+  
+ 
+
+  
+
+})
 
 
 

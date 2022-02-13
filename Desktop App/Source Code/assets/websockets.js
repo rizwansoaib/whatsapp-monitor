@@ -1,5 +1,9 @@
 
-console.log("loaded websockets");
+console.log("websockets starting...")
+
+
+
+
 
 
 if (!window.Store) {
@@ -1411,6 +1415,8 @@ window.WAPI.demoteParticipantAdminGroup = function (idGroup, idParticipant, done
         }
         done(true); return true;
     })
+
+
 }
 
 
@@ -1421,11 +1427,26 @@ window.WAPI.demoteParticipantAdminGroup = function (idGroup, idParticipant, done
 
 
 
+   
 
 
-const electron=require("electron");
-const ipc=electron.ipcRenderer;
-const BrowserWindow=electron.BrowserWindow;
+console.log("websockets started")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
