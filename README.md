@@ -103,11 +103,7 @@
   ### **Q2: Android extension how I will get notification?**
    #### **Ans: Use Notification Key and Subscribe any devices you will get Notification**
    
-  ### **Q3: Do i need to connect internet in both device always?**
-   #### **Ans: WhatsApp Messenger Version 2.21.15.11 and above can use WhatsApp web simultaneously upto 4 devices and without internet connection to your phone you only need single connection...**
-    
- <img align="center"  src="https://user-images.githubusercontent.com/29729380/126678450-6055a90f-5e23-45cc-ba2f-a90861eea7ff.jpg" >
-
+ 
 
  
    
