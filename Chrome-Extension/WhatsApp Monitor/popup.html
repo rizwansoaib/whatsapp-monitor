@@ -1,9 +1,85 @@
 
 <html>
 <head>
+  
+  <!--
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
+
+  <meta http-equiv="Content-Security-Policy" content="script-src 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs=' default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+
+<link rel="stylesheet" href="css/itel.css" />
+    <script type="text/javascript" src="js/itel.js"></script>
+
+
+   <script type="text/javascript">
+        $(function () {
+           // var myVar = document.getElementById("myVar").value;
+            var code = "+1"; // Assigning value from model.
+            $('#name').val(code);
+            $('#name').intlTelInput({
+                autoHideDialCode: true,
+                autoPlaceholder: "ON",
+                dropdownContainer: document.body,
+                formatOnDisplay: true,
+                hiddenInput: "full_number",
+                initialCountry: "auto",
+                nationalMode: true,
+                placeholderNumberType: "MOBILE",
+                preferredCountries: ['US'],
+                separateDialCode: true
+            });
+            $('#search').on('click', function () {
+                var code = $("#name").intlTelInput("getSelectedCountryData").dialCode;
+                var phoneNumber = $('#name').val();
+                var name = $("#name").intlTelInput("getSelectedCountryData").name;
+                //alert('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
+                //console.log('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
+                document.getElementById("name").value = code+phoneNumber;
+            });
+        });
+    </script>
+
+
+
+
+  <script>
+    function new_key(){
+  
+  
+  document.getElementById('new_key').innerHTML=' <i class="fas fa-circle-notch fa-spin"></i>'
+   
+   
+   
+           
+   request({
+     url: "https://notify.run/api/register_channel",
+     method: "POST",
+     json: true,
+     headers: {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"}
+   
+    
+   }, function (error, response, body){
+   
+     new_url=body['endpoint']
+     console.log(new_url)
+     
+     document.getElementById('qr').src=new_url+'/qr.svg';
+     document.getElementById('link').innerText=new_url;
+     document.getElementById('link').setAttribute("data-url", new_url);
+     document.getElementById('new_key').innerHTML='Generate New'
+   });
+   
+  </script>
+
+
+  -->
 	<title>Online Monitor</title>
 <script src="bts/jq.js"></script>
 	<link rel="stylesheet" href="bts/bts.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
 
 
 <link rel="stylesheet" href="bts/bts_theme.css">
@@ -11,32 +87,90 @@
 <script src="bts/bts_js.js"></script>
 
 
+    
+
 
 </head>
 <body style="width: 1400px height:800px">
 <h4 align="center" style="color: red">Please Open  Chat on WhatsApp Web at least once to start monitoring</h4>
-<h3 align="center">
-Notification Key: <input id="nkey" type="text" autocomplete="username" name="nkey" placeholder="Leave Blank Don't know"> 
-</h3>
-<h2 align="center"><a href="https://github.com/rizwansoaib/whatsapp-monitor/blob/master/Chrome-Extension/Notification.md" target="_blank" >About Notification Key</a></h2>
-<div class="btn-group btn-group-toggle" data-toggle="buttons"  align="center">
-	<p>Play Sounds:
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+      
+
+    
+
+
+
+
+
+  <div class="card text-center">
+   
+    <div class="card-body">
+     
+      
+      <img id="qr" src="https://user-images.githubusercontent.com/29729380/78868276-3ef64f00-7a60-11ea-8231-9cf08908cdf6.png" alt="Notification Key QR">
+      <div class="card-footer text-muted">
+        <a id='link'  data-url="https://notify.run/c/vwxjFN2ADfb4N45mZzXV" href="">Please Generate</a>
+      </div>
+      <button id="new_key"  class="btn btn-success">Generate New</button>&emsp13;<a href="https://github.com/rizwansoaib/whatsapp-monitor/blob/master/Chrome-Extension/Notification.md"><button class="btn btn-primary">Notification Help</button></a>
+      
+    </div>
+    
+  </div>
+
+
+ 
+
+<h4>
+
+  <center>
+    <i class="fa-duotone fa-square-check"></i>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons"  align="center">
+	<p>Notify Notification: <i class="fa fa-mobile" aria-hidden="true" title="Notify Notification"></i>
+  <label class="btn btn-secondary active">
+    <input type="radio" id="nn1" name="nn" value="1" autocomplete="off"><i class="fa fa-bell-slash" aria-hidden="true" title="Notify OFF"></i>
+
+  </label>
   <label class="btn btn-secondary">
-    <input type="radio" id="ps3" name="ps" value="3" autocomplete="off" checked>Always
+    <input type="radio" id="nn2" name="nn" value="2" autocomplete="off" checked><i class="fa fa-bell" title="Notify ON"></i>
+  </label>
+  </p>
+</div>
+
+<div class="btn-group btn-group-toggle" data-toggle="buttons"  align="center">
+	<p>Sound: <i class="fa fa-play" aria-hidden="true" title="Play Sounds "></i>
+  <label class="btn btn-secondary">
+    <input type="radio" id="ps3" name="ps" value="3" autocomplete="off" checked><i class="fa fa-volume-up" aria-hidden="true" title="Always"></i>
+
   </label>
   <label class="btn btn-secondary active">
-    <input type="radio" id="ps1" name="ps" value="1" autocomplete="off" checked>Only Once
+    <input type="radio" id="ps1" name="ps" value="1" autocomplete="off" checked><i class="fa fa-volume-down" aria-hidden="true" title="Only Once"></i>
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" id="ps2" name="ps" value="2" autocomplete="off"> Deny
+    <input type="radio" id="ps2" name="ps" value="2" autocomplete="off"><i class="fa fa-volume-off" aria-hidden="true" title="Deny"></i>
   </label>
   </p>
 </div>
 <br>
 <labelclass="btn btn-secondary">
-Auto Save CSV
+  Auto Save: <i class="fas fa-file-csv" title="Auto Save CSV"></i>
 <input type="number" id="interval" name="interval" min="5 " step="5" default="0"> Minute
 </label>
+
+</center>
+</h4>
 
 
 <h2>
@@ -47,15 +181,18 @@ Auto Save CSV
 
 <h1 align="center">
 <input align="center" id="mob" type="text"  name="mob" placeholder="             918115168763"> 
+
+
+
 </h1>
 <h2>
 <center>
   
-  <button  id="mobchat"; style="border-radius:40px;">Open Chat </button>
+  <button  id="mobchat"; style="border-radius:40px;">Open Chat <i class="fab fa-whatsapp"></i></button>
 
-  <button  id="savenum"; style="border-radius:40px; color: seagreen;">Add Favourite</button> <br><br>
+  <button  id="savenum"; style="border-radius:40px; color: seagreen;">Add Favourite <i class="fas fa-user-plus"></i></button> <br><br>
    
-  <button  id="delnum"; style="border-radius:40px; color: red;">Remove Favourite</button>
+  <button  id="delnum"; style="border-radius:40px; color: red;">Remove Favourite <i class="fas fa-user-times"></i></button>
 
 
 
@@ -87,7 +224,7 @@ Auto Save CSV
 
 
 <div class="alert alert-success" role="alert" align="center">
-<a href="https://whatsappanalysis.in/online" target="_blank" class="alert-link">Whatsapp Monitor Online History</a>
+<a href="https://wpmonitor.tech/dashboard"  class="alert-link">Whatsapp Monitor Online History</a>
 </div>
 
 
@@ -96,7 +233,7 @@ Auto Save CSV
 <center>
 
 <br><br>
-<h3 align="center">Github Version 2.6 (10 July 2021)</h3>
+<h3 align="center">Github Version 2.8 (10 July 2022)</h3>
 
 
 
@@ -104,7 +241,7 @@ Auto Save CSV
 
 
 <h2>Please support us by star for continue this project Thank You</h2>
-	<h2 align="center"><a href="https://github.com/rizwansoaib/whatsapp-monitor" target="_blank">About Online Monitor</a>
+	<h2 align="center"><a href="https://github.com/rizwansoaib/whatsapp-monitor">About Online Monitor</a>
 		
 		</h2>
 

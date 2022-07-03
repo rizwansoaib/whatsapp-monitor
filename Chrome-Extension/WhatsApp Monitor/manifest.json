@@ -1,12 +1,16 @@
 {
-
-
-	"manifest_version": 2,
+  "manifest_version": 3,
 	"name": "Online Monitor",
 	"description": "Online Monitor @http://github.com/rizwansoaib",
-	"version": "2.7",
+	"version": "2.8",
 	"author": "Rizwan Ahmad",
-        
+
+
+  "action": {
+    "default_title": "Start WhatsApp Online Monitor",
+ "default_popup": "popup.html" 
+},
+       
 
 	"icons": {
 		
@@ -14,32 +18,28 @@
 		"128": "images/icons/128.png"
 	},
 
-	"web_accessible_resources": [
-                  "*.js",
-                "*.mp3"
-                
-	],
+	"web_accessible_resources": [{
+    "resources": ["*.js","*.mp3"],
+    "matches": ["<all_urls>"]
+  }],
 
 	"content_scripts": [
         {
             "matches": ["https://web.whatsapp.com/*"],
-            "js": ["main.js"],
-             "run_at":    "document_start"
+            "js": ["start.js"],
+             "run_at":    "document_end"
         }
     ],
-
-
-
-	"permissions": [
-          "activeTab","storage","https://web.whatsapp.com/*","https://notify.run/*","https://whatsappanalysis.in/*"
-        ],
-
-        
-
-       "browser_action": {
-    "default_popup": "popup.html"
-
-  }
-
+    
+    "permissions": [
+      "scripting",
+	"storage",
+	"activeTab"
+	],
+	
+    
+    "host_permissions": [
+    "https://web.whatsapp.com/*","https://notify.run/*","https://wpmonitor.tech/*"
+  ]
 
 }

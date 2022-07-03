@@ -1,23 +1,64 @@
+var nno=""
+var nkey;
+chrome.storage.local.get('nno', function (myresult) {
+        nno = myresult.nno;
+        console.log("nno val in online.js",nno);
+        if(nno==2){
 
-var nkey=""
-chrome.storage.local.get('nkey', function (result2) {
-        nkey = result2.nkey;
-        if(nkey!="")
-        alert("Subcribe any Device for Notification\nhttps://notify.run/"+nkey)
+  var mnkey=""
+  chrome.storage.local.get('mnkey', function (result2) {
+          mnkey = result2.mnkey;
+          console.log("mnkey val from online.js",mnkey,typeof(mnkey))
 
+          if(mnkey != "undefined"){
+            alert("Subcribe any Device for Notification\n"+mnkey)
+            nkey=mnkey;
+          }
+          
+            
+        });
+        
+        
+        }
+                 
+    }); 
+
+
+console.log("nno val from online.js",nno);
+
+
+pso=""
+chrome.storage.local.get('pso', function (result3) {
+        pso = result3.pso;
+
+        
             
     });
 
+
+    console.log("pso val from online.js",pso);
+
+
+        
+        
+
+            
+   
+
+  
+
+
+   
 
 
 
 
 function onotif(user) {
-   if(nkey==null||nkey==undefined||nkey=="")
+   if(nkey==null||nkey==undefined||nkey==""||nkey=="undefined")
     return
   else{
         var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://notify.run/"+nkey,true);
+    xhr.open("POST", nkey,true);
     xhr.send("📱WhatsApp Monitor: "+user+" is Online")
 
   }
@@ -33,7 +74,7 @@ function save(user,t1,t2,t){
   user=user.replace(/[^a-zA-Z0-9]/g, "")
   curd=curd.replace(/[^a-zA-Z0-9]/g, "")
 
-  const surl='https://whatsappanalysis.in/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
+  const surl='https://wpmonitor.tech/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
   var xhr = new XMLHttpRequest();
    xhr.open("GET",surl);
   xhr.send()
@@ -42,13 +83,7 @@ function save(user,t1,t2,t){
 
 
 
-pso=""
-chrome.storage.local.get('pso', function (result3) {
-        pso = result3.pso;
 
-        
-            
-    });
 
 
 

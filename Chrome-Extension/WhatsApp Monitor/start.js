@@ -1,2 +1,1 @@
-var test;
-
+console.log("content scripts loaded successfully");

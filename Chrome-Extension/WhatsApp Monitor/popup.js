@@ -3,10 +3,50 @@
 
 console.log('popup.js working')
 
+
+
+
+try {
+
+    chrome.storage.sync.get(['nkey'], function(result) {
+       
+       
+        document.getElementById('qr').src=result.nkey+'/qr.svg';
+        document.getElementById('link').innerText=result.nkey;
+        document.getElementById('link').setAttribute("data-url", result.nkey);
+        document.getElementById('link').setAttribute("href", result.nkey);
+        document.getElementById('new_key').innerHTML='Generate New'
+
+      });
+    
+} catch (error) {
+    
+    chrome.storage.sync.get(['nkey'], function(result) {
+        document.getElementById('qr').src=result.nkey+'/qr.svg';
+        document.getElementById('link').innerText=result.nkey;
+        document.getElementById('link').setAttribute("data-url", result.nkey);
+        document.getElementById('link').setAttribute("href", result.nkey);
+        document.getElementById('new_key').innerHTML='Generate New'
+      });
+}
+
+
+
+
+
+var myTabId;
+
+//chrome.tabs.query({active:true,windowType:"normal", currentWindow: true},function(d){myTabId=d[0].id;})
+
+
+
+
 update_numarrray();
 
 
-function start(nkey,save_interval) {
+
+
+function start(mnkey,save_interval) {
 
 	b.innerText='Cancel';
 	//console.log(b.innerText);
@@ -14,6 +54,8 @@ function start(nkey,save_interval) {
 	b.className="btn-danger";
 
 	//alert("stop set");
+
+    console.log("mnkey from start_fun",mnkey);
 
 
 
@@ -24,16 +66,33 @@ function start(nkey,save_interval) {
 });
 
 
-	chrome.storage.local.set({
-    'nkey': nkey
+if(mnkey)
+{
+    console.log("mnkey is not undefined");
+
+    chrome.storage.local.set({
+        'mnkey': mnkey
+        
+       
+    });
+}
+
+	
+
+
+
+chrome.storage.sync.set({
+    'numarray': numarray
     
    
 });
 
 
 
-chrome.storage.sync.set({
-    'numarray': numarray
+console.log("nno val start_fun",nno);
+
+chrome.storage.local.set({
+    'nno': nno
     
    
 });
@@ -70,9 +129,16 @@ chrome.storage.local.set({
  
 
 
-chrome.tabs.executeScript({
-    file: 'online.js'
-  }); 
+chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+    chrome.scripting.executeScript(
+      {
+        target: {tabId: tab.id},
+        files: ['online.js'],
+        // function: () => {}, // files or function, both do not work.
+      })
+  })
+
+
 
 
 
@@ -117,33 +183,25 @@ save_interval=0;
 function get()
 {
 
- 
-
-
-
-
-    var nkey=document.getElementById('nkey').value;
-   
-
+    var mnkey=document.getElementById('link').innerText;
     save_interval=document.getElementById('interval').value;
 
-
-    chrome.storage.sync.set({"nkey": nkey}, function() {
-        document.getElementById('nkey').value=nkey;
-
-
-      });
-
-
-
-
 	pso=document.querySelector('input[name="ps"]:checked').value; 
+    nno=document.querySelector('input[name="nn"]:checked').value; 
 	b=document.getElementById('start')
 	
+
+    console.log("nno value:",nno);
+    if(nno==1 || mnkey=="Please Generate")
+    {
+        mnkey=undefined;
+    }
+   
+    
     
 	//alert(b.innerText);
-	//console.log(nkey,pso,b);
-	if(b.innerText=='OK'){start(nkey,save_interval);}
+	console.log("nkey val popup.js",mnkey);
+	if(b.innerText=='OK'){start(mnkey,save_interval);}
 	else{stop();b.innerText='OK';b.className="btn-success";}
        
 
@@ -152,19 +210,8 @@ function get()
 document.getElementById('start').addEventListener('click', get);
 
 
-try {
 
-    chrome.storage.sync.get(['nkey'], function(result) {
-       
-        document.getElementById('nkey').value=result.nkey;
-      });
-    
-} catch (error) {
-    
-    chrome.storage.sync.get(['nkey'], function(result) {
-        document.getElementById('nkey').value=result.nkey;
-      });
-}
+
 
 
 function mobchat()
@@ -182,9 +229,23 @@ chrome.storage.local.set({
 
 
 
-chrome.tabs.executeScript({
-    file: 'mobchat.js'
-  }); 
+
+
+
+
+
+
+
+chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+    chrome.scripting.executeScript(
+      {
+        target: {tabId: tab.id},
+        files: ['mobchat.js'],
+        // function: () => {}, // files or function, both do not work.
+      })
+  })
+
+
 
 
 
@@ -195,12 +256,48 @@ chrome.tabs.executeScript({
 
 
 
+function new_key(){
+  
+  
+    document.getElementById('new_key').innerHTML=' <i class="fas fa-circle-notch fa-spin"></i>'
+     
+     
+    const req = new XMLHttpRequest();
+    const baseUrl = "https://notify.run/api/register_channel";
+
+    req.open("POST", baseUrl, true);
+    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    req.send();
+
+    req.onreadystatechange = function() { // Call a function when the state changes.
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+           
+            var body = JSON.parse(req.responseText || null);
+            new_url=body['endpoint']
+            console.log(new_url)
+            
+
+            chrome.storage.sync.set({"nkey": new_url}, function() {
+            document.getElementById('qr').src=new_url+'/qr.svg';
+            document.getElementById('link').innerText=new_url;
+            document.getElementById('link').setAttribute("data-url", new_url);
+            document.getElementById('link').setAttribute("href", new_url);
+            document.getElementById('new_key').innerHTML='Generate New'
+        
+        
+              });
+
+        }
+    }
+     
+    }  
+
 
 
 document.getElementById('mobchat').addEventListener('click', mobchat);
 document.getElementById('savenum').addEventListener('click', savenum);
 document.getElementById('delnum').addEventListener('click', delnum);
-
+document.getElementById('new_key').addEventListener('click', new_key);
 
 
 
@@ -214,24 +311,47 @@ try{
 }
 catch(err){
 
-	chrome.tabs.executeScript({
-    file: 'websocket.js'
-  }); 
-
-
-chrome.tabs.executeScript({
-    file: 'protobuf.js'
-  });
+	
 
 
 
-chrome.tabs.executeScript({
-    file: 'main.js'
-  });
+chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+    chrome.scripting.executeScript(
+      {
+        target: {tabId: tab.id},
+        files: ['websocket.js'],
+        // function: () => {}, // files or function, both do not work.
+      })
+  })
+
+
+  chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+    chrome.scripting.executeScript(
+      {
+        target: {tabId: tab.id},
+        files: ['protobuf.js'],
+        // function: () => {}, // files or function, both do not work.
+      })
+  })
+
+
+
+
+  chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+    chrome.scripting.executeScript(
+      {
+        target: {tabId: tab.id},
+        files: ['main.js'],
+        // function: () => {}, // files or function, both do not work.
+      })
+  })
+
+
+
+
 
 
  
-
 
 }
 
