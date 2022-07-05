@@ -31,21 +31,29 @@
  <h4 align="center">Cross Platform Notification 📲 💻  e.g. Android,Macbook,Linux,Windows (No need Install App)</h4 >
   <h4  align="center">Concurrent Multiple Contacts 👪 Tracking </h4 >
   <h4  align="center">Add Favourite Contacts Auto Open Chats</h4 >
+  <h4  align="center"><a  href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" height="65" width="180"></a></h4>
 <hr>
 
-
+<!--
  
    <h4  align="center">
- <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/"><img src="https://user-images.githubusercontent.com/29729380/84505020-a045d300-acda-11ea-9409-48e2ce88a4a1.png" height="80" width="200"></a><a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" height="65" width="180"></a>
+ <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/"><img src="https://user-images.githubusercontent.com/29729380/84505020-a045d300-acda-11ea-9409-48e2ce88a4a1.png" height="80" width="200"></a>
+
+
  
  
  
  
  <br> 
- <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/">Chrome Add on &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp         </a><a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"> &nbsp&nbsp&nbsp&nbsp      &nbsp&nbsp Firefox Add on</a>
+ <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/">Chrome Add on &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       
+</a>
+
+
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"> &nbsp&nbsp&nbsp&nbsp      &nbsp&nbsp Firefox Add on</a>
 </h4>
 
-
+-->
 
 <br><br>
 <h1 align="center" > Whatsapp Monitor Desktop v1.4</h1>
