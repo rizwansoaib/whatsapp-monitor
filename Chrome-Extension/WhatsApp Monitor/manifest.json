@@ -2,7 +2,7 @@
   "manifest_version": 3,
 	"name": "Online Monitor for WhatsApp",
 	"description": "Online Monitor WhatsApp Web",
-	"version": "2.9",
+	"version": "3.0",
 	"author": "Rizwan Ahmad",
 
 
@@ -39,7 +39,7 @@
 	
     
     "host_permissions": [
-    "https://web.whatsapp.com/*","https://notify.run/*","https://wpmonitor.tech/*"
+    "https://web.whatsapp.com/*","https://notify.run/*","https://wpmonitor.online/*"
   ]
 
 }
