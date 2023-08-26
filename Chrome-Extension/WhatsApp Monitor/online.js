@@ -204,7 +204,7 @@ var btn = document.createElement("BUTTON");
 btn.innerHTML = '<img src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/csv_download.jpg" />';
 
 btn.id="download";                 
-document.querySelector('header[data-testid="chatlist-header"]').appendChild(btn);
+document.querySelector('header').appendChild(btn);
 
 
 /*
@@ -216,7 +216,7 @@ document.querySelector("#side > header").appendChild(img);
 
 var img=document.createElement("IMG");
 img.src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/64.png"
-document.querySelector('header[data-testid="chatlist-header"]').appendChild(img);
+document.querySelector('header').appendChild(img);
 
 
 document.getElementById('download').addEventListener('click', dcsv2);
