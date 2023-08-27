@@ -91,16 +91,16 @@
 # Faq (Frequently Asked Question)
  ### **Q1: I Have no Desktop. How can I use extension?**
    #### **Ans: Don't take tension we have designed this extension for Mobile support.**
-#### **You only need two devices one should android used for tracking**
+#### **You only need atleast one android device used for tracking**
 
   1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser) in your Android
             
   2. Install [Chrome Extension](https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/) in Kiwi Browser
             
-  3. Open WhatsApp Web in Desktop mode and run extension same as Desktop
+  3. Open WhatsApp Web in Desktop mode and click on Link with phone number and proceed with steps to login in WhatsApp web after login allow notification run extension from three dot menu and scroll down below click on online monitor for WhatsApp and allow sound all time 1st option click OK now back to WhatsApp web tab open contact when contact will be online you will get sound notification.
    
   ### **Q2: Android extension how I will get notification?**
-   #### **Ans: Use Notification Key and Subscribe any devices you will get Notification**
+   #### **Ans: Use Notify Notification with url or qr code on any devices you will get Notification**
    
  
 
