@@ -47,7 +47,7 @@
 
 
 <br><br>
-<h1 align="center" > Whatsapp Monitor Desktop v1.4</h1>
+<h1 align="center" > Whatsapp Monitor Desktop v1.4 (Depreciated)</h1>
 
  
    <h4  align="center">
