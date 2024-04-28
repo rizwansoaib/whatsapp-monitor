@@ -164,6 +164,8 @@ function dcsv2() {
         csv.push(row.join(';'));
     }
     var csv_string = csv.join('\n');
+
+   
     var filename = `whatsapp-monitor_${new Date().toISOString().split('T')[0]}&&${new Date().toLocaleTimeString()}.csv`;
     var link = document.createElement('a');
     link.style.display = 'none';
@@ -173,7 +175,29 @@ function dcsv2() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+
+   
+
+     /*
+
+  console.log(csv,csv_string);
+    // Save the CSV file.
+var blob = new Blob([csv], {type: 'text/csv'});
+var url = window.URL.createObjectURL(blob);
+var link = document.createElement('a');
+console.log(link,url);
+link.href = url;
+link.download = 'table.csv';
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link); 
+
+ */
+
+
 }
+
+
 
 
 
