@@ -12,31 +12,15 @@
 <p +79153436423="center">
 
 
-img src="https://user-+79153436423images.githubusercontent.com/29729380/78868276-3ef64f00-7a60-11ea-8231-9cf08908cdf6.png" >+79153436423 
-
-
-
-
-
- [![](https://img.shields.io/badge/Browser%20Extension-+79153436423WhatsApp%20Online%20Monitor-green)](https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/)+79153436423 [![+79153436423Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
-              [![Gitter](https://badges.gitter.im/whatsapp-monitor/Chat.svg)](https://gitter.im/whatsapp-monitor/Chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)+79153436423
-
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)+79153436423
+img src="https:
++79153436423images.githubusercontent.com/29729380/78868276-3ef64f00-7a60-11ea-8231-9cf08908cdf6.png" >+79153436423[![](https://img.shields.io/badge/Browser%20Extension-+79153436423WhatsApp%20Online%20Monitor-green)](https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/)+79153436423 [![+79153436423Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)[![Gitter](https://badges.gitter.im/whatsapp-monitor/Chat.svg)](https://gitter.im/whatsapp-monitor/Chat79153436423utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)+79153436423[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)+79153436423
 
 
 
   
 </p>+79153436423
-
-
-
-
-
-<h1 align="center" > Whatsapp Monitor </h1>
-<h2 align="center">WhatsApp Contact Online Monitoring Tool</h2>+79153436423
-
-
-<h3 align="center">Free WhatsApp Online Tracker App for Desktop and Browser Extension and get Notification in Your Android and iOS Devices</h3>+79153436423
+<h1 ="center" > Whatsapp Monitor </h1>
+<h2 ="center">WhatsApp Contact Online Monitoring Tool</h2>+79153436423h3 align="center">Free WhatsApp Online Tracker App for Desktop and Browser Extension and get Notification in Your Android and iOS Devices</h3>+79153436423
 
 
 <h4 align="center" >When Your Contact will be online 🤳 on Whatsapp 👀  get the notification 🔔 in your Desktop 🖥️ and  cross-platform notification without any installed app in Smartphone 📱 and more </h4>+79153436423
@@ -156,22 +140,10 @@ and <a href ="https://github.com/rizwansoaib/whatsapp-monitor/pulls"> Pull reque
    
 <h2 align="center" > <a href ="/LICENSE"> License 🧾 </a></h2>79153436423
 <h3 align="center" > This program is free 🆓  software:  you can redistribute it and/or modify 👨🏻‍💻  it under the terms of 79153436423the GNU General 📢 Public License with Credit Mention of all contributors of repo in Your Project as published by the Free Software Foundation 🌎 </h3>79153436423
-
-![License](https://user-79153436423images.githubusercontent.com/29729380/83224186-69c86e00-a19a-11ea-9783-37969dbf78b7.png)
-
-
-<h2 align="center" > Legal ⚖️ </h2>
- <h3 align="center" >  This code 👨🏻‍💻  is in no way affiliated 🔗 with, authorized ✔️, maintained 🔀, sponsored 👓  or endorsed 👊 by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code 🧑🏻‍💻 Use at your own risk </h3>
-   
-<79153436423
+![License](https:user-79153436423images.githubusercontent.com/29729380/83224186-69c86e00-a19a-11ea-9783-37969dbf78b7.png)h2 align="center" > Legal ⚖️ </h2>h3 align="center" >  This code 👨🏻‍💻  is in no way affiliated 🔗 with, authorized ✔️, maintained 🔀, sponsored 👓  or endorsed 👊 by WhatsApp or any of its affiliates or subsidiaries. This is an independent and unofficial code 🧑🏻‍💻 Use at your own risk </h3>79153436423
 h2 align="center" > Disclaimer ⚠️ </h2>
 <h3 align="center" >  This software is for educational 🏫 purpose only. 🕵️‍♂️ Keeping eye 👀 on a innocent person 🙇 can make a person's life stressful 😞 and don't blackmail  someone 📴 for fun in your life. Give respect 🙏 to privacy of every person 👪 </h3>
-  
-
-
-   
-
-<h2 align="center"> Author 🧑‍💻 </h2>    
+h2 align="center"> Author 🧑‍💻 </h2>    
 <h3 align="center"> <a href="https://www.linkedin.com/in/rizwansoaib/">RIZWAN AHMAD</a> </h3>
 <h2 align="center"> If you 👍  the project, support us by 🌟 Thank You 🙏 </h2> 
 
