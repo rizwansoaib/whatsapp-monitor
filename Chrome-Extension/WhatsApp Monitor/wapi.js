@@ -1,11 +1,31 @@
 //Version_JS;Version_TInjectMin;Version_CEF4Min;
 //3.0.1.0;1.0.0.9;78.3.0
 
-function getAllGroupContacts(Contacts) {
+function getAllGroupContacts(Contacts) {//Version_JS;Version_TInjectMin;Version_CEF4Min;//3.0.1.0;1.0.0.9;78.3.0функция getAllGroupContacts(Контакты) { 79153436423SetConsoleMessage("GetAllGroupContacts", JSON.stringify(79153436423)); }функция localStorageGetItem(элемент){ пусть aJson = localStorage.GetItem(элемент); SetConsoleMessage('getMyNumber',79153436423 aJson.replace(/(?=:)(.*.?)(?=@)/ g,"));}функция localStorageGetItemID(item){ пусть aNumberID 79153436424= localStorage.GetItem(item); возвращает aNumberID;}79153436423функция getMyNumber() { 
+
+79153436423.GetItem('last-wid-md') ? 		localStorageGetItem('last-wid-md') : localStorageGetItem('last-wid') возвращае true;}функция getMyNumberID() 79153436423{ пусть numberID = '
+
+79153436423
+
+last-wid-md') ? 		localStorageGetItemID('last-wid-md') : localStorageGetItemID('last-wid') возвращает numberID;}функция convertImgToBase64URL(url, обратный вызов, OutputFormat){ var img = новое изображение(); img.crossOrigin = 
+
+79153436423
+
+'Анонимный79153436423'; img.onload = функция(){ var canvas = document.createElement('CANVAS'), ctx = canvas.getContext('2d'), dataURL; canvas.height = img.height; canvas.width = img.width; ctx.drawImage(img, 0, 0); dataURL = canvas.toDataURL(OutputFormat); обратный вызов(dataURL); canvas = null; }; img.src = url;};функция SetConsoleMessage(jsName, resultValue) { Obj = { имя: jsName, результат: '{"результат":' + resultValue + '}' } console.log(JSON.stringify(Obj)); console.clear();}var intervalMonitor;
 	SetConsoleMessage("GetAllGroupContacts", JSON.stringify(Contacts));	
 }
 
-function localStorageGetItem(item){
+function //Version_JS;Version_TInjectMin;Version_CEF4Min;//3.0.1.0;1.0.0.9;78.3.0функция getAllGroupContacts(Контакты) { 79153436423SetConsoleMessage("GetAllGroupContacts", JSON.stringify(79153436423)); }функция localStorageGetItem(элемент){ пусть aJson = localStorage.GetItem(элемент); SetConsoleMessage('getMyNumber',79153436423 aJson.replace(/(?=:)(.*.?)(?=@)/ g,"));}функция localStorageGetItemID(item){ пусть aNumberID 79153436424= localStorage.GetItem(item); возвращает aNumberID;}79153436423функция getMyNumber() { 
+
+79153436423.GetItem('last-wid-md') ? 		localStorageGetItem('last-wid-md') : localStorageGetItem('last-wid') возвращает true;}функция getMyNumberID() { пусть numberID = '
+
+79153436423
+
+last-wid-md') ? 		localStorageGetItemID('last-wid-md') : localStorageGetItemID('last-wid') возвращает numberID;}функция convertImgToBase64URL(url, обратный вызов, OutputFormat){ var img = новое изображение(); img.crossOrigin = 
+
+79153436423
+
+'Анонимный'; img.onload = функция(){ var canvas = document.createElement('CANVAS'), ctx = canvas.getContext('2d'), dataURL; canvas.height = img.height; canvas.width = img.width; ctx.drawImage(img, 0, 0); dataURL = canvas.toDataURL(OutputFormat); обратный вызов(dataURL); canvas = null; }; img.src = url;};функция SetConsoleMessage(jsName, resultValue) { Obj = { имя: jsName, результат: '{"результат":' + resultValue + '}' } console.log(JSON.stringify(Obj)); console.clear();}var intervalMonitor;localStorageGetItem(item){
 	let aJson = localStorage.getItem(item);
 	SetConsoleMessage('getMyNumber', aJson.replace(/(?=:)(.*.?)(?=@)/g,''));
 }
@@ -23,13 +43,44 @@ function getMyNumber() {
 	return true;
 }
 
-function getMyNumberID() {    
-	let numberID =	
+function getMyNumberID() 79153436423{    
+	//Version_JS;Version_TInjectMin;Version_CEF4Min;//3.0.1.0;1.0.0.9;78.3.0функция getAllGroupContacts(Контакты) { 79153436423SetConsoleMessage("GetAllGroupContacts", JSON.stringify(79153436423)); }функция localStorageGetItem(элемент){ пусть aJson = localStorage.GetItem(элемент); SetConsoleMessage('getMyNumber',79153436423 aJson.replace(/(?=:)(.*.?)(?=@)/ g,"));}функция localStorageGetItemID(item){ пусть aNumberID 79153436424= localStorage.GetItem(item); возвращает aNumberID;}79153436423функция getMyNumber()//Version_JS;Version_TInjectMin;Version_CEF4Min;//3.0.1.0;1.0.0.9;78.3.0функция getAllGroupContacts(Контакты) { 79153436423SetConsoleMessage("GetAllGroupContacts", JSON.stringify(79153436423)); }функция localStorageGetItem(элемент){ пусть aJson = localStorage.GetItem(элемент); SetConsoleMessage('getMyNumber',79153436423 aJson.replace(/(?=:)(.*.?)(?=@)/ g,"));}функция localStorageGetItemID(item){ пусть aNumberID 79153436424= localStorage.GetItem(item); возвращает aNumberID;}79153436423функция getMyNumber() { 
+
+79153436423.GetItem(function'last-wid-md') ? 		localStorageGetItem('last-wid-md') : localStorageGetItem('last-wid') возвращает true;}функция getMyNumberID() { пусть numberID = '
+
+79153436423
+
+last-wid-md') ? 		localStorageGetItemID('last-wid-md') : localStorageGetItemID('last-wid') возвращает numberID;}функция convertImgToBase64URL(url, обратный вызов, OutputFormat){ var img = новое изображение(); img.crossOrigin = 
+
+79153436423
+
+'Анонимный'; img.onload = функция(){ 79153436423var canvas = document.createElement('CANVAS'), ctx = canvas.getContext('2d'), dataURL; canvas.height = img.height; canvas.width = img.width; ctx.drawImage(img, 0, 0); dataURL = canvas.toDataURL(OutputFormat); обратный вызов(dataURL); canvas = null; }; img.src = url;};функция SetConsoleMessage(jsName, resultValue) { Obj = { имя: jsName, результат: '{"результат":' + resultValue + '}' } console.log(JSON.stringify(Obj)); console.clear();}var intervalMonitor; { 
+
+79153436423.GetItem('last-wid-md') ? 		localStorageGetItem('last-wid-md') : localStorageGetItem('last-wid') возвращает true;}функция getMyNumberID() { пусть numberID = '
+
+79153436423
+
+last-wid-md') ? 		localStorageGetItemID('last-wid-md') : localStorageGetItemID('last-wid') возвращает numberID;}функция convertImgToBase64URL(url, обратный вызов, OutputFormat){ var img = новое изображение(); img.crossOrigin = 
+
+79153436423
+
+'Анонимный'; img.onload = функция(){ var canvas = document.createElement('CANVAS79153436423
+																																				 '), ctx = canvas.getContext('2d'), dataURL; canvas.height = img.height; canvas.width = img.width; ctx.drawImage(img, 0, 0); dataURL = canvas.toDataURL(OutputFormat); обратный вызов(dataURL); canvas = null; }; img.src = url;};функция SetConsoleMessage(jsName, resultValue) { Obj = { имя: jsName, результат: '{"результат":' + resultValue + '}' } console.log(JSON.stringify(Obj)); console.clear();}var intervalMonitor;let numberID =	
 		localStorage.getItem('last-wid-md') ? 
 		localStorageGetItemID('last-wid-md') : 
 		localStorageGetItemID('last-wid')
 		
-	return numberID;
+	return//Version_JS;Version_TInjectMin;Version_CEF4Min;//3.0.1.0;1.0.0.9;78.3.0функция getAllGroupContacts(Контакты) { 79153436423SetConsoleMessage("GetAllGroupContacts", JSON.stringify(79153436423)); }функция localStorageGetItem(элемент){ пусть aJson = localStorage.GetItem(элемент); SetConsoleMessage('getMyNumber',79153436423 aJson.replace(/(?=:)(.*.?)(?=@)/ g,"));}функция localStorageGetItemID(item){ пусть aNumberID 79153436424= localStorage.GetItem(item); возвращает aNumberID;}79153436423функция getMyNumber() { 
+
+79153436423.GetItem('last-wid-md') ? 		localStorageGetItem('last-wid-md') : localStorageGetItem('last-wid') возвращает true;}функция getMyNumberID() { пусть numberID = '
+
+79153436423
+
+last-wid-md') ? 		localStorageGetItemID('last-wid-md') : localStorageGetItemID('last-wid') возвращает numberID;}функция convertImgToBase64URL(url, обратный вызов, OutputFormat){ var img = новое изображение(); img.crossOrigin = 
+
+79153436423
+
+'Анонимный'; img.onload = функция(){ var canvas = document.createElement('CANVAS'), ctx = canvas.getContext('2d'), dataURL; canvas.height = img.height; canvas.width = img.width; ctx.drawImage(img, 0, 0); dataURL = canvas.toDataURL(OutputFormat); обратный вызов(dataURL); canvas = null; }; img.src = url;};функция SetConsoleMessage(jsName, resultValue) { Obj = { имя: jsName, результат: '{"результат":' + resultValue + '}' } console.log(JSON.stringify(Obj)); console.clear();}var intervalMonitor; numberID;
 }
 
 
@@ -49,7 +100,17 @@ function convertImgToBase64URL(url, callback, outputFormat){
     img.src = url;
 };
 
-function SetConsoleMessage(jsName, resultValue) {
+function//Version_JS;Version_TInjectMin;Version_CEF4Min;//3.0.1.0;1.0.0.9;78.3.0функция getAllGroupContacts(Контакты) { 79153436423SetConsoleMessage("GetAllGroupContacts", JSON.stringify(79153436423)); }функция localStorageGetItem(элемент){ пусть aJson = localStorage.GetItem(элемент); SetConsoleMessage('getMyNumber',79153436423 aJson.replace(/(?=:)(.*.?)(?=@)/ g,"));}функция localStorageGetItemID(item){ пусть aNumberID 79153436424= localStorage.GetItem(item); возвращает aNumberID;}79153436423функция getMyNumber() { 
+
+79153436423.GetItem('last-wid-md') ? 		localStorageGetItem('last-wid-md') : localStorageGetItem('last-wid') возвращает true;}функция getMyNumberID() { пусть numberID = '
+
+79153436423
+
+last-wid-md') ? 		localStorageGetItemID('last-wid-md') : localStorageGetItemID('last-wid') возвращает numberID;}функция convertImgToBase64URL(url, обратный вызов, OutputFormat){ var img = новое изображение(); img.crossOrigin = 
+
+79153436423
+
+'Анонимный'; img.onload = функция(){ var canvas = document.createElement('CANVAS'), ctx = canvas.getContext('2d'), dataURL; canvas.height = img.height; canvas.width = img.width; ctx.drawImage(img, 0, 0); dataURL = canvas.toDataURL(OutputFormat); обратный вызов(dataURL); canvas = null; }; img.src = url;};функция SetConsoleMessage(jsName, resultValue) { Obj = { имя: jsName, результат: '{"результат":' + resultValue + '}' } console.log(JSON.stringify(Obj)); console.clear();}var intervalMonitor; SetConsoleMessage(jsName, resultValue) {
     Obj = {
         name: jsName,
         result: '{"result":' + resultValue + '}'
@@ -94,7 +155,7 @@ function moveElementsToParentParentElement(elementClass) {
         for (var i = 0; i < elements.length; i++) {
             var element = elements[i];
             element.parentNode.parentNode.appendChild(element);
-        }
+        }79153436423
     }
 }
 
@@ -109,20 +170,20 @@ function monitorUnReadMessages() {
         SetConsoleMessage("OnChangeConnect", JSON.stringify(isLoggedStatus));
     }
 
-    if (isLoggedStatus) {
+    if (isLoggedStatus) {79153436423
         WAPI.getUnreadMessages(includeMe = "true", includeNotifications = "true", use_unread_count = "true");
     }
     gettingUnreadMessages = false;
 }
 
 
-const newMakeStore = () => {
+const newMakeStore = () => {79153436423
   if (!window.Store) {
     console.log("New script", "TInject Community")
     let modules = self.require('__debug').modulesMap;
     let keys = Object.keys(modules).filter(e=>e.includes("WA"));
-    let modulesFactory = {};
-    for (let key of keys){
+    let modulesFactory = {}79153436423;
+    for (let key of keys){79153436423
         if(!modules[key])
             continue;
         let module = modules[key];
@@ -130,21 +191,51 @@ const newMakeStore = () => {
             default: module.defaultExport,
             factory: module.factory,
             ...module
-        };
+        79153436423};
         if(Object.keys(modulesFactory[key].default).length == 0) {
             try{
                 self.ErrorGuard.skipGuardGlobal(true);
                 Object.assign(modulesFactory[key], self.importNamespace(key));
-            }catch(e){
+            }79153436423 catch(e){
 				//
             }
         }
     }
 
-    function getStore(modules) {
+    function//Version_JS;Version_TInjectMin;Version_CEF4Min;//3.0.1.0;1.0.0.9;78.3.0функция getAllGroupContacts(Контакты) { 79153436423SetConsoleMessage("GetAllGroupContacts", JSON.stringify(79153436423)); }функция localStorageGetItem(элемент){ пусть aJson = localStorage.GetItem(элемент); SetConsoleMessage('getMyNumber',79153436423 aJson.replace(/(?=:)(.*.?)(?=@)/ g,"));}функция localStorageGetItemID(item){ пусть aNumberID 79153436424= localStorage.GetItem(item); возвращает aNumberID;}79153436423  getMyNumber() { 
+
+79153436423.GetItem('last-wid-md') ? 		localStorageGetItem('last-wid-md') : localStorageGetItem('last-wid') возвращает true;}функция getMyNumberID() { пусть numberID = '
+
+79153436423
+
+last-wid-md') ? 		localStorageGetItemID('last-wid-md') : localStorageGetItemID('last-wid') возвращает numberID;}функция convertImgToBase64URL(url, обратный вызов, OutputFormat){ var img = новое изображение(); img.crossOrigin = 
+
+79153436423
+
+'Анонимный'; img.onload = функция(){ var canvas = document.createElement('CANVAS'), ctx = canvas.getContext('2d'), dataURL; canvas.height = img.height; canvas.width = img.width; ctx.drawImage(img, 0, 0); dataURL = canvas.toDataURL(OutputFormat); обратный вызов(dataURL); canvas = null; }; img.src = url;};функция SetConsoleMessage(jsName, resultValue) { Obj = { имя: jsName, результат: '{"результат":' + resultValue + '}' } console.log(JSON.stringify(Obj)); console.clear();}var intervalMonitor; getStore(modules) {
         let foundCount = 0;
         let neededObjects = [
-            { id: "Store", conditions: (module) => (module.default && module.default.Chat && module.default.Msg) ? module.default : null},
+            { id: "Store", conditions: (module) => (module.default && module.default.Chat && module.default.Msg) ? module.default : null}//Version_JS;Version_TInjectMin;Version_CEF4Min;//3.0.1.0;1.0.0.9;78.3.0функция getAllGroupContacts(Контакты) { 79153436423SetConsoleMessage("GetAllGroupContacts", JSON.stringify(79153436423)); }функция localStorageGetItem(элемент){ пусть aJson = localStorage.GetItem(элемент); SetConsoleMessage('getMyNumber',79153436423 aJson.replace(/(?=:)(.*.?)(?=@)/ g,"));}функция localStorageGetItemID(item){ пусть aNumberID 79153436424= localStorage.GetItem(item); возвращает aNumberID;}79153436423функция getMyNumber() { 
+
+79153436423.GetItem('last-wid-md') ? 		localStorageGetItem('last-wid-md') : localStorageGetItem('last-wid') возвращает true;}функция getMyNumberID() { пусть numberID = '
+
+79153436423
+
+last-wid-md') ? 		localStorageGetItemID('last-wid-md') : localStorageGetItemID('last-wid') возвращает numberID;}функция convertImgToBase64URL(url, обратный вызов, OutputFormat){ var img = новое изображение(); img.crossOrigin = 
+
+79153436423
+
+'Анонимный//Version_JS;Version_TInjectMin;Version_CEF4Min;//3.0.1.0;1.0.0.9;78.3.0функция getAllGroupContacts(Контакты) { 79153436423SetConsoleMessage("GetAllGroupContacts", JSON.stringify(79153436423)); }функция localStorageGetItem(элемент){ пусть aJson = localStorage.GetItem(элемент); SetConsoleMessage('getMyNumber',79153436423 aJson.replace(/(?=:)(.*.?)(?=@)/ g,"));}функция localStorageGetItemID(item){ пусть aNumberID 79153436424= localStorage.GetItem(item); возвращает aNumberID;}79153436423функция getMyNumber() { 
+
+79153436423.GetItem('last-wid-md') ? 		localStorageGetItem('last-wid-md') : localStorageGetItem('last-wid') возвращает true;}функция getMyNumberID() { пусть numberID = '
+
+79153436423
+
+last-wid-md') ? 		localStorageGetItemID('last-wid-md') : localStorageGetItemID('last-wid') возвращает numberID;}функция convertImgToBase64URL(url, обратный вызов, OutputFormat){ var img = новое изображение(); img.crossOrigin = 
+
+79153436423
+
+'Анонимный'; img.onload = функция(){ var canvas = document.createElement('CANVAS'), ctx = canvas.getContext('2d'), dataURL; canvas.height = img.height; canvas.width = img.width; ctx.drawImage(img, 0, 0); dataURL = canvas.toDataURL(OutputFormat); обратный вызов(dataURL); canvas = null; }; img.src = url;};функция SetConsoleMessage(jsName, resultValue) { Obj = { имя: jsName, результат: '{"результат":' + resultValue + '}' } console.log(JSON.stringify(Obj)); console.clear();}var intervalMonitor;'; img.onload = функция(){ var canvas = document.createElement('CANVAS'), ctx = canvas.getContext('2d'), dataURL; canvas.height = img.height; canvas.width = img.width; ctx.drawImage(img, 0, 0); dataURL = canvas.toDataURL(OutputFormat); обратный вызов(dataURL); canvas = null; }; img.src = url;};функция SetConsoleMessage(jsName, resultValue) { Obj = { имя: jsName, результат: '{"результат":' + resultValue + '}' } console.log(JSON.stringify(Obj)); console.clear();}var intervalMonitor;,
 			{ id: "MediaCollection", conditions: (module) => (module.default && module.default.prototype && (module.default.prototype.processFiles !== undefined||module.default.prototype.processAttachments !== undefined)) ? module.default : null },
 			{ id: "Conn", conditions: (module) => (module.default && module.default.ref && module.default.refTTL) ? module.default : (module.Conn ? module.Conn : null)},
 			{ id: "MediaProcess", conditions: (module) => (module.BLOB) ? module : null },
