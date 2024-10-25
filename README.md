@@ -36,10 +36,10 @@
 
  
    <h4  align="center">
- <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/"><img src="https://user-images.githubusercontent.com/29729380/84505020-a045d300-acda-11ea-9409-48e2ce88a4a1.png" height="80" width="200"></a><a  href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" height="65" width="180"></a>
+ <a href="https://chromewebstore.google.com/detail/online-monitor-for-whatsa/emkoflhmeegjlabodebpfbkeicjppebi"><img src="https://user-images.githubusercontent.com/29729380/84505020-a045d300-acda-11ea-9409-48e2ce88a4a1.png" height="80" width="200"></a><a  href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"><img src="https://user-images.githubusercontent.com/29729380/78387807-8cf0fa00-75fd-11ea-9ef4-b49550b192ca.png" height="65" width="180"></a>
 
  <br> 
- <a href="https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/">Chrome Add on &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       
+ <a href="https://chromewebstore.google.com/detail/online-monitor-for-whatsa/emkoflhmeegjlabodebpfbkeicjppebi">Chrome Add on &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       
 </a>
 <a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"> &nbsp&nbsp&nbsp&nbsp      &nbsp&nbsp Firefox Add on</a>
 </h4>
@@ -95,7 +95,7 @@
 
   1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser) in your Android
             
-  2. Install [Chrome Extension](https://chrome.google.com/webstore/detail/online-monitor/emkoflhmeegjlabodebpfbkeicjppebi/) in Kiwi Browser
+  2. Install [Chrome Extension](https://chromewebstore.google.com/detail/online-monitor-for-whatsa/emkoflhmeegjlabodebpfbkeicjppebi) in Kiwi Browser
             
   3. Open WhatsApp Web in Desktop mode and click on Link with phone number and proceed with steps to login in WhatsApp web after login allow notification run extension from three dot menu and scroll down below click on online monitor for WhatsApp and allow sound all time 1st option click OK now back to WhatsApp web tab open contact when contact will be online you will get sound notification.
    
