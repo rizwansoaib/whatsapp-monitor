@@ -46,23 +46,6 @@
 
 
 
-<br><br>
-<h1 align="center" > Whatsapp Monitor Desktop v1.4 (Depreciated)</h1>
-
- 
-   <h4  align="center">
- <a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor%20Setup%201.4.0.exe"><img src="https://user-images.githubusercontent.com/29729380/95250295-8a36c200-0837-11eb-81ec-8e4aff1aca82.jpg" height="80" width="200"></a><a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor_1.4.0_amd64.deb"><img src="https://user-images.githubusercontent.com/29729380/95250584-f1547680-0837-11eb-98cc-1c8c832597d1.png" height="65" width="180"></a><a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor-1.4.0.AppImage"><img src="https://user-images.githubusercontent.com/29729380/95250774-2f519a80-0838-11eb-90fe-b8645858b471.png" height="65" width="180"></a>
- 
- 
- 
- 
- <br> 
- <a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor%20Setup%201.4.0.exe">Windows &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp         </a><a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor_1.4.0_amd64.deb"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Debian Package  </a><a href="https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor-1.4.0.AppImage">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       &nbsp&nbsp AppImage </a>
-</h4>
-
-
-
-
 # Introduction
 
 [![](https://user-images.githubusercontent.com/29729380/83626193-b359f400-a5b2-11ea-87c9-ab6ab2e8376f.gif)](https://youtu.be/CrHjJIbBmKs)
