@@ -22,11 +22,12 @@
 
 <h4 align="center" >When Your Contact will be online 🤳 on Whatsapp 👀  get the notification 🔔 in your Desktop 🖥️ and  cross-platform notification without any installed app in Smartphone 📱 and more </h4>
 
-<h2 align="center" > Features in v3.2 </h2>
+<h2 align="center" > Features in v3.3 </h2>
  
  <h4 align="center">Play Sound 🔉 When Contact online</h4 >
  <h4  align="center">Online History 📜 Download in CSV and auto save csv</h4 >
   <h4  align="center">Access History 📡 on web (Saved data on Server) </h4 >
+  <h4  align="center">DualTrack 💕 on web (Compare Two Person)</h4 >
   <h4  align="center">Desktop Notification 🔔</h4 >
  <h4 align="center">Cross Platform Notification 📲 💻  e.g. Android,Macbook,Linux,Windows (No need Install App)</h4 >
   <h4  align="center">Concurrent Multiple Contacts 👪 Tracking </h4 >
