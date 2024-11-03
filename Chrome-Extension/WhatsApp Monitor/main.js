@@ -17,6 +17,26 @@ function save(user,t1,t2,t){
   
 }
 
+(function() {
+    function simulateMouseMove() {
+        var event = new MouseEvent('mousemove', {
+            view: window,
+            bubbles: true,
+            cancelable: true,
+            clientX: window.innerWidth / 2,
+            clientY: window.innerHeight / 2
+        });
+
+        document.dispatchEvent(event);
+    }
+
+    function keepActive() {
+        setInterval(simulateMouseMove, 30000); // Simulate activity every 30 seconds
+    }
+
+    keepActive();
+})();
+
 
 
 

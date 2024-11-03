@@ -219,31 +219,74 @@ chrome.storage.local.get('save_interval', function (result4) {
 
 
 
+function isElementPresentById(id) {
+    return document.getElementById(id) !== null;
+}
 
 
 
 
+function exec_after_delay(){
 
-var btn = document.createElement("BUTTON");   
-btn.innerHTML = '<img src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/csv_download.jpg" />';
-
-btn.id="download";                 
-document.querySelector('header').appendChild(btn);
-
-
-/*
-var img=document.createElement("IMG");
-img.id="download"
-img.src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/csv_download.jpg"
-document.querySelector("#side > header").appendChild(img);
-*/
-
-var img=document.createElement("IMG");
-img.src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/64.png"
-document.querySelector('header').appendChild(img);
+    const element_present =document.querySelector('div[aria-label="Status"]').parentElement.parentElement;
+    if(element_present && !(isElementPresentById('download')))
+    {
 
 
-document.getElementById('download').addEventListener('click', dcsv2);
+
+        var elementHeight = "30px";
+
+        var btn = document.createElement("BUTTON");
+        var btnImage = document.createElement("IMG");
+
+
+        btnImage.src = "https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/csv_download.jpg";
+
+        btnImage.style.height = elementHeight;
+        btn.appendChild(btnImage);
+        btn.id="download";
+        element_present.appendChild(btn);
+
+
+        /*
+        var img=document.createElement("IMG");
+        img.id="download"
+        img.src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/csv_download.jpg"
+        document.querySelector("#side > header").appendChild(img);
+        */
+
+        var img=document.createElement("IMG");
+        img.src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/icon_gray.png"
+        img.style.height = elementHeight;
+        img.addEventListener("click", function() {
+            chrome.runtime.sendMessage({ action: "open_popup" });
+        });
+        element_present.appendChild(img);
+
+
+
+        console.log('background online.js loaded successfully');
+
+
+
+        document.getElementById('download').addEventListener('click', dcsv2);
+
+    }
+
+    else{
+        setTimeout(exec_after_delay,60000);
+    }
+
+
+
+
+}
+
+setTimeout(exec_after_delay,20000);
+
+
+
+
 
 
 
@@ -288,8 +331,43 @@ chrome.storage.sync.get('numarray', function (data) {
       link.click();
       document.body.removeChild(link);
     };
-    
-   
+
+
+
+/*
+chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+    chrome.scripting.executeScript(
+        {
+            target: {tabId: tab.id},
+            files: ['websocket.js'],
+            // function: () => {}, // files or function, both do not work.
+        })
+})
+
+
+chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+    chrome.scripting.executeScript(
+        {
+            target: {tabId: tab.id},
+            files: ['protobuf.js'],
+            // function: () => {}, // files or function, both do not work.
+        })
+})
+
+
+
+
+chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+    chrome.scripting.executeScript(
+        {
+            target: {tabId: tab.id},
+            files: ['main.js'],
+            // function: () => {}, // files or function, both do not work.
+        })
+})
+
+
+  */
 
 
 

@@ -78,8 +78,27 @@
 <script src="bts/jq.js"></script>
 	<link rel="stylesheet" href="bts/bts.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .blink {
+      animation: blinker 1s linear infinite;
+    }
 
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
 
+    .green {
+      color: green;
+    }
+
+    .red {
+      color: red;
+    }
+  </style>
 
 
 <link rel="stylesheet" href="bts/bts_theme.css">
@@ -164,7 +183,7 @@
   </p>
 </div>
 <br>
-<labelclass="btn btn-secondary">
+<label class="btn btn-secondary">
   Auto Save: <i class="fas fa-file-csv" title="Auto Save CSV"></i>
 <input type="number" id="interval" name="interval" min="5 " step="5" default="0"> Minute
 </label>
@@ -203,9 +222,7 @@
 <div class="alert-info" align="center"> 
 
 <h3>
-  Favourite Contacts 
-
-
+  Favourite Contacts (Auto Open Chats)
 </h3>
 
 
@@ -221,11 +238,16 @@
 
 
 
-
-
 <div class="alert alert-success" role="alert" align="center">
-<a href="https://wpmonitor.online/dashboard"  class="alert-link">Whatsapp Monitor Online History</a>
+  <a href="https://wpmonitor.online/dashboard" class="alert-link">
+    TrackWapp Web Server
+  </a>
 </div>
+<div align="center">
+  Server health: <i id="server-status-icon" class="fas fa-circle"></i> <span id="server-status-text"></span>
+</div>
+
+<script src="js/server.js"></script>
 
 
 
@@ -233,7 +255,7 @@
 <center>
 
 <br><br>
-<h3 align="center">Chrome Version 3.2 (1 May 2024)</h3>
+<h3 align="center">Chrome Version 3.3 (10 November 2024)</h3>
 
 
 
@@ -241,7 +263,7 @@
 
 
 <h2>Please support us by star for continue this project Thank You</h2>
-	<h2 align="center"><a href="https://github.com/rizwansoaib/whatsapp-monitor">About Online Monitor</a>
+	<h2 align="center"><a href="https://github.com/rizwansoaib/whatsapp-monitor">About TrackWapp</a>
 		
 		</h2>
 

@@ -1,7 +1,7 @@
 
 var openChat = phone => {
   var link = document.createElement("a");
-  link.setAttribute("href", `whatsapp://send?phone=${phone}`);
+  link.setAttribute("href", `https://wa.me/${phone}`);
   document.body.append(link);
   link.click();
   document.body.removeChild(link);

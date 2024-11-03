@@ -266,7 +266,7 @@ function new_key(){
     const baseUrl = "https://notify.run/api/register_channel";
 
     req.open("POST", baseUrl, true);
-    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+   // req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     req.send();
 
     req.onreadystatechange = function() { // Call a function when the state changes.
