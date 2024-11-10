@@ -1,7 +1,7 @@
 <p align="center">
 
 
-<img src="https://user-images.githubusercontent.com/29729380/78868276-3ef64f00-7a60-11ea-8231-9cf08908cdf6.png" >
+<img src="https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/refs/heads/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/trackwapp.png" >
 
  [![](https://img.shields.io/badge/Browser%20Extension-WhatsApp%20Online%20Monitor-green)](https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/)
      [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
