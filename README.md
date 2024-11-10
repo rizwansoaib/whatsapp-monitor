@@ -29,7 +29,7 @@ This project is tested with BrowserStack
  <h4  align="center">Online History 📜 Download in CSV and auto save csv</h4 >
   <h4  align="center">Access History 📡 on web (Saved data on Server) </h4 >
   <h4  align="center">DualTrack 💕 on web (Compare Two Person)</h4 >
-  <h4  align="center">Desktop Notification 🔔</h4 >
+  <h4  align="center">Desktop Notification 🔔 and Sound Alert</h4 >
  <h4 align="center">Cross Platform Notification 📲 💻  e.g. Android,Macbook,Linux,Windows (No need Install App)</h4 >
   <h4  align="center">Concurrent Multiple Contacts 👪 Tracking </h4 >
   <h4  align="center">Add Favourite Contacts Auto Open Chats</h4 >
