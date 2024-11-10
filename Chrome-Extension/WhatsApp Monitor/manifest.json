@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
 	"name": "TrackWapp Online Monitor for WhatsApp",
-	"description": "Online Monitor WhatsApp Web",
+	"description": "Free Online Monitor WhatsApp Web",
 	"version": "3.3",
 	"author": "Rizwan Ahmad",
 
@@ -34,7 +34,9 @@
     "permissions": [
       "scripting",
 	"storage",
-	"activeTab"
+	"activeTab",
+  "power",
+      "notifications"
 	],
 
   "background": {
@@ -43,7 +45,7 @@
 	
     
     "host_permissions": [
-    "*://web.whatsapp.com/*","https://notify.run/*","https://wpmonitor.online/*"
+    "*://web.whatsapp.com/*","https://notify.run/*","https://trackwapp.online/*"
   ]
 
 }

@@ -1,5 +1,6 @@
 var nno=""
 var nkey;
+
 chrome.storage.local.get('nno', function (myresult) {
         nno = myresult.nno;
         console.log("nno val in online.js",nno);
@@ -54,6 +55,17 @@ chrome.storage.local.get('pso', function (result3) {
 
 
 function onotif(user) {
+
+
+
+
+
+
+
+
+
+
+
    if(nkey==null||nkey==undefined||nkey==""||nkey=="undefined")
     return
   else{
@@ -74,7 +86,7 @@ function save(user,t1,t2,t){
   user=user.replace(/[^a-zA-Z0-9]/g, "")
   curd=curd.replace(/[^a-zA-Z0-9]/g, "")
 
-  const surl='https://wpmonitor.online/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
+  const surl='https://trackwapp.online/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
   var xhr = new XMLHttpRequest();
    xhr.open("GET",surl);
   xhr.send()
@@ -126,7 +138,30 @@ try{
 
   user=document.querySelectorAll('#contactbtn')[0].innerHTML;
   if(user!='null')
-    onotif(user);
+  {
+
+
+try {
+
+    if(nno=='2')
+    chrome.runtime.sendMessage({action: 'showNotification', user: user});
+
+    let ttsMessage = 'TrackWapp Alert:  '+user+' is Online in WhatsApp';
+    let utterance = new SpeechSynthesisUtterance(ttsMessage);
+    utterance.rate = 0.75;
+    utterance.pitch = 0.90;
+    if(pso=='1' || pso=='3')
+    window.speechSynthesis.speak(utterance);
+
+
+  onotif(user);
+} catch (err) {
+  console.error('Error sending notification:', err);
+}
+
+
+
+  }
 }
 catch(err){}
    
@@ -228,7 +263,24 @@ function isElementPresentById(id) {
 
 function exec_after_delay(){
 
-    const element_present =document.querySelector('div[aria-label="Status"]').parentElement.parentElement;
+    let element_present=null;
+
+    try{
+
+        element_present =document.querySelector('div[aria-label="Status"]').parentElement.parentElement;
+
+    }
+    catch (e) {
+        console.log('error',e);
+    }
+
+
+    if(!element_present)
+    {
+        element_present =document.querySelector('div[title="Chats"]')
+
+    }
+
     if(element_present && !(isElementPresentById('download')))
     {
 
@@ -285,6 +337,44 @@ function exec_after_delay(){
 setTimeout(exec_after_delay,20000);
 
 
+async function run_script_delay(){
+
+
+
+  
+chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+ chrome.scripting.executeScript(
+      {
+          target: {tabId: tab.id},
+          files: ['websocket.js'],
+          // function: () => {}, // files or function, both do not work.
+      })
+})
+
+
+chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+  chrome.scripting.executeScript(
+      {
+          target: {tabId: tab.id},
+          files: ['protobuf.js'],
+          // function: () => {}, // files or function, both do not work.
+      })
+})
+
+
+
+
+chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
+  chrome.scripting.executeScript(
+      {
+          target: {tabId: tab.id},
+          files: ['main.js'],
+          // function: () => {}, // files or function, both do not work.
+      })
+})
+}
+
+//setTimeout(run_script_delay,20000);
 
 
 
@@ -334,40 +424,10 @@ chrome.storage.sync.get('numarray', function (data) {
 
 
 
-/*
-chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
-    chrome.scripting.executeScript(
-        {
-            target: {tabId: tab.id},
-            files: ['websocket.js'],
-            // function: () => {}, // files or function, both do not work.
-        })
-})
-
-
-chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
-    chrome.scripting.executeScript(
-        {
-            target: {tabId: tab.id},
-            files: ['protobuf.js'],
-            // function: () => {}, // files or function, both do not work.
-        })
-})
 
 
 
 
-chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
-    chrome.scripting.executeScript(
-        {
-            target: {tabId: tab.id},
-            files: ['main.js'],
-            // function: () => {}, // files or function, both do not work.
-        })
-})
-
-
-  */
 
 
 

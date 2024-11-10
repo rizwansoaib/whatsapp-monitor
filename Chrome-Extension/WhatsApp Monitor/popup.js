@@ -48,10 +48,10 @@ update_numarrray();
 
 function start(mnkey,save_interval) {
 
-	b.innerText='Cancel';
+	//b.innerText='Cancel';
 	//console.log(b.innerText);
 
-	b.className="btn-danger";
+	//b.className="btn-danger";
 
 	//alert("stop set");
 
@@ -201,8 +201,8 @@ function get()
     
 	//alert(b.innerText);
 	console.log("nkey val popup.js",mnkey);
-	if(b.innerText=='OK'){start(mnkey,save_interval);}
-	else{stop();b.innerText='OK';b.className="btn-success";}
+	if(b.innerText=='save'){start(mnkey,save_interval);}
+	else{stop();b.innerText='save';b.className="btn-success";}
        
 
 }

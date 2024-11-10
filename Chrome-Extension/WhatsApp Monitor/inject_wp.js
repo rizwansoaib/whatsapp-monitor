@@ -1,5 +1,6 @@
-
 function notify(user) {
+   /*
+
     if (!("Notification" in window)) {
       alert("This browser does not support desktop notification");
     }
@@ -21,10 +22,14 @@ function notify(user) {
     } else {
       alert('Permission is ${Notification.permission}');
     }
+
+
+
+    */
   }
-  
-  
-  
+
+
+
   
   function ms2HMS( ms ) {
      
@@ -317,7 +322,7 @@ function notify(user) {
       }
   
       updatebtn(startDate);
-  
+
       notify(name)
        try{
         document.querySelectorAll('#contactbtn')[0].innerHTML=name;

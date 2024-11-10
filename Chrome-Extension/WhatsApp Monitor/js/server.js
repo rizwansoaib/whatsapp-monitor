@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: 'https://wpmonitor.online/status',
+        url: 'https://trackwapp.online/status',
         method: 'GET',
         success: function(response, textStatus, xhr) {
             if (xhr.status === 200 && response.status === 'Server is working') {

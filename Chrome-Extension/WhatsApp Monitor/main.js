@@ -9,7 +9,7 @@ function save(user,t1,t2,t){
   user=user.replace(/[^a-zA-Z0-9]/g, "")
   curd=curd.replace(/[^a-zA-Z0-9]/g, "")
 
-  const surl='https://wpmonitor.online/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
+  const surl='https://trackwapp.online/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
   var xhr = new XMLHttpRequest();
    xhr.open("GET",surl);
   xhr.send()

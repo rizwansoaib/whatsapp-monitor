@@ -2,78 +2,7 @@
 <html>
 <head>
   
-  <!--
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
-
-  <meta http-equiv="Content-Security-Policy" content="script-src 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs=' default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-
-<link rel="stylesheet" href="css/itel.css" />
-    <script type="text/javascript" src="js/itel.js"></script>
-
-
-   <script type="text/javascript">
-        $(function () {
-           // var myVar = document.getElementById("myVar").value;
-            var code = "+1"; // Assigning value from model.
-            $('#name').val(code);
-            $('#name').intlTelInput({
-                autoHideDialCode: true,
-                autoPlaceholder: "ON",
-                dropdownContainer: document.body,
-                formatOnDisplay: true,
-                hiddenInput: "full_number",
-                initialCountry: "auto",
-                nationalMode: true,
-                placeholderNumberType: "MOBILE",
-                preferredCountries: ['US'],
-                separateDialCode: true
-            });
-            $('#search').on('click', function () {
-                var code = $("#name").intlTelInput("getSelectedCountryData").dialCode;
-                var phoneNumber = $('#name').val();
-                var name = $("#name").intlTelInput("getSelectedCountryData").name;
-                //alert('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
-                //console.log('Country Code : ' + code + '\nPhone Number : ' + phoneNumber + '\nCountry Name : ' + name);
-                document.getElementById("name").value = code+phoneNumber;
-            });
-        });
-    </script>
-
-
-
-
-  <script>
-    function new_key(){
   
-  
-  document.getElementById('new_key').innerHTML=' <i class="fas fa-circle-notch fa-spin"></i>'
-   
-   
-   
-           
-   request({
-     url: "https://notify.run/api/register_channel",
-     method: "POST",
-     json: true,
-     headers: {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"}
-   
-    
-   }, function (error, response, body){
-   
-     new_url=body['endpoint']
-     console.log(new_url)
-     
-     document.getElementById('qr').src=new_url+'/qr.svg';
-     document.getElementById('link').innerText=new_url;
-     document.getElementById('link').setAttribute("data-url", new_url);
-     document.getElementById('new_key').innerHTML='Generate New'
-   });
-   
-  </script>
-
-
-  -->
 	<title>Online Monitor</title>
 <script src="bts/jq.js"></script>
 	<link rel="stylesheet" href="bts/bts.css">
@@ -110,7 +39,7 @@
 
 
 </head>
-<body style="width: 1400px height:800px">
+<body>
 <h4 align="center" style="color: red">Please Open  Chat on WhatsApp Web at least once to start monitoring</h4>
 
 
@@ -193,7 +122,7 @@
 
 
 <h2>
-<center><button class="btn-success" id="start"; style="border-radius:40px;height:70px;width:150px;">OK</button></center>
+<center><button class="btn-success" id="start"; style="border-radius:30px;height:50px;width:100px;">save</button></center>
 </h2>
 
 <hr>
@@ -239,7 +168,7 @@
 
 
 <div class="alert alert-success" role="alert" align="center">
-  <a href="https://wpmonitor.online/dashboard" class="alert-link">
+  <a href="https://trackwapp.online/dashboard" class="alert-link">
     TrackWapp Web Server
   </a>
 </div>

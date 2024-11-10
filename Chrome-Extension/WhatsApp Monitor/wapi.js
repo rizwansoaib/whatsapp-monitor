@@ -1,5 +1,5 @@
 //Version_JS;Version_TInjectMin;Version_CEF4Min;
-//3.0.1.0;1.0.0.9;78.3.0
+//3.0.2.0;1.0.0.9;78.3.0
 
 function getAllGroupContacts(Contacts) {
 	SetConsoleMessage("GetAllGroupContacts", JSON.stringify(Contacts));	
@@ -157,7 +157,7 @@ const newMakeStore = () => {
 			{ id: "State", conditions: (module) => (module.STATE && module.STREAM) ? module : null },
 			{ id: "_Presence", conditions: (module) => (module.setPresenceAvailable && module.setPresenceUnavailable) ? module : null },
 			{ id: "WapDelete", conditions: (module) => (module.sendConversationDelete && module.sendConversationDelete.length == 2) ? module : null },
-			{ id: 'FindChat', conditions: (module) => (module && module.findChat) ? module : null},
+			{ id: 'FindChat', conditions: (module) => (module && module.findOrCreateLatestChat) ? module : null},
 			{ id: "WapQuery", conditions: (module) => (module.queryExist) ? module : ((module.default && module.default.queryExist) ? module.default : null) },//Mike 28/10/2022
 			{ id: "WapQueryMD", conditions: (module) => (module.queryExists && module.queryPhoneExists) || (module.queryWidExists && module.queryPhoneExists) ? module : null}, //MD Mike 09/11/2021				
 			{ id: 'Perfil', conditions: (module) => module.__esModule === true && module.setPushname && !module.getComposeContents ? module : null},
@@ -304,7 +304,7 @@ const oldMakeStore = () => {
 				{ id: "State", conditions: (module) => (module.STATE && module.STREAM) ? module : null },
 				{ id: "_Presence", conditions: (module) => (module.setPresenceAvailable && module.setPresenceUnavailable) ? module : null },
 				{ id: "WapDelete", conditions: (module) => (module.sendConversationDelete && module.sendConversationDelete.length == 2) ? module : null },
-				{ id: 'FindChat', conditions: (module) => (module && module.findChat) ? module : null},
+				{ id: 'FindChat', conditions: (module) => (module && module.findOrCreateLatestChat) ? module : null},
 				{ id: "WapQuery", conditions: (module) => (module.queryExist) ? module : ((module.default && module.default.queryExist) ? module.default : null) },//Mike 28/10/2022
 				{ id: "WapQueryMD", conditions: (module) => (module.queryExists && module.queryPhoneExists) || (module.queryWidExists && module.queryPhoneExists) ? module : null}, //MD Mike 09/11/2021				
 				{ id: 'Perfil', conditions: (module) => module.__esModule === true && module.setPushname && !module.getComposeContents ? module : null},
@@ -451,14 +451,20 @@ const oldMakeStore = () => {
 
 
 const chooseFunction = () => {
-  versionString = (Debug || {}).VERSION;
+    versionString = (Debug || {}).VERSION;
   versionNumber = parseFloat(versionString);
   comparisonNumber = 2.3;
     return (versionNumber >= comparisonNumber) ? newMakeStore() : oldMakeStore()
 }
 
+
+
+
 chooseFunction();
- 
+
+
+
+
 window.WAPI = {};
 window._WAPI = {};
 
@@ -844,7 +850,7 @@ window.WAPI.getChat = function (id) {
 }
 
 window.WAPI.getChatByName = function(name, done) {
-    const found = window.Store.FindChat.findChat((chat) => chat.name === name);
+    const found = window.Store.FindChat.findOrCreateLatestChat((chat) => chat.name === name);
     if (done !== undefined) done(found);
     return found;
 };
@@ -906,7 +912,7 @@ window.WAPI.sendLinkWithAutoPreview = async function (chatId, url, text) {
 	const linkPreview =  await Store.WapQuery.queryLinkPreview(url)
 
     let queue = await Store.Contact.get(chatId);
-    const contact = await Store.FindChat.findChat(idUser)
+    const contact = await Store.FindChat.findOrCreateLatestChat(idUser)
     const newChat = await Object.assign(queue, contact);
 
     
@@ -1780,7 +1786,7 @@ window.WAPI.sendImage = function(imgBase64, chatid, filename, caption) {
     });
 	
     
-        return Store.FindChat.findChat(idUser).then((chat) => {
+        return Store.FindChat.findOrCreateLatestChat(idUser).then((chat) => {
                     var mediaBlob = window.WAPI.base64ImageToFile(imgBase64, filename);
             var mc = new Store.MediaCollection(chat);
             
@@ -1801,7 +1807,7 @@ window.WAPI.sendMessageToID = function(chatid, msgText) {
 
     console.log(idUser)
 
-    const teste = Store.FindChat.findChat(idUser)
+    const teste = Store.FindChat.findOrCreateLatestChat(idUser)
         .then(chatid => {
             console.log(teste)
             var mc = new Store.SendTextMsgToChat(chatid, msgText);
@@ -1927,7 +1933,7 @@ window.WAPI.sendVCard = async function (chatId, contactNumber, contactName) {
 
     let queue = Store.Chat.get(chatId)
 
-    const chat = await Store.FindChat.findChat(idUser)
+    const chat = await Store.FindChat.findOrCreateLatestChat(idUser)
 
     const newchat = Object.assign(chat, queue);
     
@@ -2058,7 +2064,7 @@ window.WAPI.sendMessageToID2 = function(id, msgText) {
     
     window.Store.WapQuery.queryExist(id).then(function(e) {
         if (e.status === 200) {
-            window.Store.FindChat.findChat(e.jid).then((chat) => {
+            window.Store.FindChat.findOrCreateLatestChat(e.jid).then((chat) => {
                 try {
                     window.Store.SendTextMsgToChat(chat, msgText);
                     return true;
@@ -2300,7 +2306,7 @@ window.WAPI.sendMessageOptions = async function (chatId, content, options = {}) 
 
     let queue = Store.Chat.get(chatId)
 
-    const newChat = await Store.FindChat.findChat(idUser)
+    const newChat = await Store.FindChat.findOrCreateLatestChat(idUser)
 
     const chat = Object.assign(newChat, queue);
     
