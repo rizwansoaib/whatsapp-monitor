@@ -15,7 +15,7 @@ This project is tested with BrowserStack
 
 
 
-<h1 align="center" > Whatsapp Monitor </h1>
+<h1 align="center" >Free Whatsapp Online Tracker</h1>
 <h2 align="center">WhatsApp Contact Online Monitoring Tool</h2>
 
 <h3 align="center">Free WhatsApp Online Tracker App for Browser Extension and get Notification in Your Devices</h3>
