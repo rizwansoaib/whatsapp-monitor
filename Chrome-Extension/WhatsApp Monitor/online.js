@@ -258,22 +258,36 @@ checkOnlineStatus();
 
 
 function dcsv2() {
-   console.log("Downloading History as CSV File")
-    var rows = document.body.querySelectorAll(' table' + ' tr');
-    var csv = [];
-    for (var i = 0; i < rows.length; i++) {
-        var row = [], cols = rows[i].querySelectorAll('td, th');
-        for (var j = 0; j < cols.length; j++) {
-            var data = cols[j].innerText.replace(/(\r\n|\n|\r)/gm, '').replace(/(\s\s)/gm, ' ')
-            row.push('"' + data + '"');
-        }
-        csv.push(row.join(';'));
-    }
-    var csv_string = csv.join('\n');
-
-   
-    var filename = `whatsapp-monitor_${new Date().toISOString().split('T')[0]}&&${new Date().toLocaleTimeString()}.csv`;
-    var link = document.createElement('a');
+    console.log("Downloading History as CSV File");
+    
+    // Use more efficient selector and convert to array once
+    const rows = Array.from(document.querySelectorAll('table tr'));
+    
+    // Pre-compile regex patterns for better performance
+    const newlineRegex = /(\r\n|\n|\r)/gm;
+    const whitespaceRegex = /(\s\s)/gm;
+    
+    // Use map for better performance than manual loop
+    const csv = rows.map(row => {
+        const cols = row.querySelectorAll('td, th');
+        return Array.from(cols).map(col => {
+            const data = col.innerText
+                .replace(newlineRegex, '')
+                .replace(whitespaceRegex, ' ');
+            return `"${data}"`;
+        }).join(';');
+    });
+    
+    const csv_string = csv.join('\n');
+    
+    // Use template literals for cleaner date formatting
+    const now = new Date();
+    const dateStr = now.toISOString().split('T')[0];
+    const timeStr = now.toLocaleTimeString().replace(/:/g, '-'); // Replace colons for filename compatibility
+    const filename = `whatsapp-monitor_${dateStr}_${timeStr}.csv`;
+    
+    // Create download link
+    const link = document.createElement('a');
     link.style.display = 'none';
     link.setAttribute('target', '_blank');
     link.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv_string));
@@ -281,6 +295,7 @@ function dcsv2() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+}
 
    
 
@@ -425,44 +440,40 @@ chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
 
 
 
-var numarray=[]
+var numarray = [];
 chrome.storage.sync.get('numarray', function (data) {
-        numarray = data.numarray;
-        if(numarray)
-        {
+    numarray = data.numarray;
+    if (numarray && numarray.length > 0) {
+        // Use async/await pattern for better control
+        openChatsSequentially(numarray);
+    }
+});
 
-          //console.log('start',numarray);
+// Optimized sequential chat opening with async/await
+async function openChatsSequentially(numbers) {
+    for (let i = 0; i < numbers.length; i++) {
+        await openChat(numbers[i]);
+        // Wait 5 seconds between chats
+        await new Promise(resolve => setTimeout(resolve, 5000));
+    }
+}
 
-
-
-
-
-        numarray.forEach(function(obj, index) {
-          setTimeout(function(){
-            openChat(obj)
-          }, 5000 * (index + 1));
-      });
-
+// Convert to async function for better error handling
+async function openChat(phone) {
+    return new Promise((resolve, reject) => {
+        try {
+            const link = document.createElement("a");
+            link.setAttribute("href", `whatsapp://send?phone=${phone}`);
+            document.body.append(link);
+            link.click();
+            document.body.removeChild(link);
+            resolve();
+        } catch(err) {
+            console.error('Error opening chat:', err);
+            reject(err);
         }
-
-            
     });
-
-
-
-
-
-
-
-    var openChat = phone => {
-
-     // console.log('opening chat...',phone);
-      var link = document.createElement("a");
-      link.setAttribute("href", `whatsapp://send?phone=${phone}`);
-      document.body.append(link);
-      link.click();
-      document.body.removeChild(link);
-    };
+}
 
 
 
