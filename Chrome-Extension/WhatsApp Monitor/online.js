@@ -128,8 +128,8 @@ function playsound()
         let url = chrome.runtime.getURL('open.mp3')
         cachedAudio = new Audio(url);
     }
-    // Clone and play to allow overlapping sounds if needed
-    cachedAudio.cloneNode().play().catch(err => console.log('Audio play failed:', err));
+    // Reuse the same audio element - Audio elements can be played multiple times
+    cachedAudio.play().catch(err => console.log('Audio play failed:', err));
 }
 
 // Cache DOM elements to avoid repeated queries
@@ -225,8 +225,10 @@ function checkOnlineStatus() {
 // Use MutationObserver for better performance instead of polling
 const observer = new MutationObserver(debounce(checkOnlineStatus, 1000));
 
-// Observe only the relevant parts of the DOM
-const targetNode = document.body;
+// Try to observe a more specific element instead of entire body for better performance
+// WhatsApp web typically uses specific container elements
+let targetNode = document.querySelector('#main') || document.querySelector('#app') || document.body;
+
 if (targetNode) {
     observer.observe(targetNode, { 
         childList: true, 
@@ -266,6 +268,7 @@ function dcsv2() {
     // Pre-compile regex patterns for better performance
     const newlineRegex = /(\r\n|\n|\r)/gm;
     const whitespaceRegex = /(\s\s)/gm;
+    const colonRegex = /:/g;
     
     // Use map for better performance than manual loop
     const csv = rows.map(row => {
@@ -283,7 +286,7 @@ function dcsv2() {
     // Use template literals for cleaner date formatting
     const now = new Date();
     const dateStr = now.toISOString().split('T')[0];
-    const timeStr = now.toLocaleTimeString().replace(/:/g, '-'); // Replace colons for filename compatibility
+    const timeStr = now.toLocaleTimeString().replace(colonRegex, '-'); // Replace colons for filename compatibility
     const filename = `whatsapp-monitor_${dateStr}_${timeStr}.csv`;
     
     // Create download link
@@ -299,12 +302,10 @@ function dcsv2() {
 
 
 chrome.storage.local.get('save_interval', function (result4) {
-        save_interval = parseInt(result4.save_interval);
-        if(save_interval>=1)
-        setInterval(dcsv2,save_interval*60000);
-
-        
-            
+        const save_interval = parseInt(result4.save_interval);
+        if (save_interval >= 1) {
+            setInterval(dcsv2, save_interval * 60000);
+        }
     });
 
 
