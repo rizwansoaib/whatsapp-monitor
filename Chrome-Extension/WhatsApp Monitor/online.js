@@ -297,32 +297,6 @@ function dcsv2() {
     document.body.removeChild(link);
 }
 
-   
-
-     /*
-
-  console.log(csv,csv_string);
-    // Save the CSV file.
-var blob = new Blob([csv], {type: 'text/csv'});
-var url = window.URL.createObjectURL(blob);
-var link = document.createElement('a');
-console.log(link,url);
-link.href = url;
-link.download = 'table.csv';
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link); 
-
- */
-
-
-}
-
-
-
-
-
-
 
 chrome.storage.local.get('save_interval', function (result4) {
         save_interval = parseInt(result4.save_interval);
