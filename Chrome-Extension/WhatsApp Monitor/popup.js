@@ -256,41 +256,79 @@ chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
 
 
 
+// Debounce function to prevent double-clicks on new_key button
+let newKeyDebounceTimer;
 function new_key(){
-  
-  
-    document.getElementById('new_key').innerHTML=' <i class="fas fa-circle-notch fa-spin"></i>'
-     
-     
+    // Prevent multiple rapid calls
+    if (newKeyDebounceTimer) {
+        return;
+    }
+    
+    const newKeyButton = document.getElementById('new_key');
+    newKeyButton.innerHTML = ' <i class="fas fa-circle-notch fa-spin"></i>';
+    newKeyButton.disabled = true;
+    
+    // Set debounce timer for 3 seconds
+    newKeyDebounceTimer = setTimeout(() => {
+        newKeyDebounceTimer = null;
+    }, 3000);
+    
     const req = new XMLHttpRequest();
     const baseUrl = "https://notify.run/api/register_channel";
 
     req.open("POST", baseUrl, true);
-   // req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    req.send();
+    req.timeout = 10000; // Add 10 second timeout
+    
+    req.ontimeout = function() {
+        console.error('Request timed out');
+        newKeyButton.innerHTML = 'Generate New';
+        newKeyButton.disabled = false;
+        clearTimeout(newKeyDebounceTimer);
+        newKeyDebounceTimer = null;
+    };
+    
+    req.onerror = function() {
+        console.error('Request failed');
+        newKeyButton.innerHTML = 'Generate New';
+        newKeyButton.disabled = false;
+        clearTimeout(newKeyDebounceTimer);
+        newKeyDebounceTimer = null;
+    };
 
-    req.onreadystatechange = function() { // Call a function when the state changes.
-        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-           
-            var body = JSON.parse(req.responseText || null);
-            new_url=body['endpoint']
-            console.log(new_url)
-            
-
-            chrome.storage.sync.set({"nkey": new_url}, function() {
-            document.getElementById('qr').src=new_url+'/qr.svg';
-            document.getElementById('link').innerText=new_url;
-            document.getElementById('link').setAttribute("data-url", new_url);
-            document.getElementById('link').setAttribute("href", new_url);
-            document.getElementById('new_key').innerHTML='Generate New'
-        
-        
-              });
-
+    req.onreadystatechange = function() {
+        if (this.readyState === XMLHttpRequest.DONE) {
+            if (this.status === 200) {
+                try {
+                    var body = JSON.parse(req.responseText || '{}');
+                    var new_url = body['endpoint'];
+                    console.log(new_url);
+                    
+                    if (new_url) {
+                        chrome.storage.sync.set({"nkey": new_url}, function() {
+                            document.getElementById('qr').src = new_url + '/qr.svg';
+                            document.getElementById('link').innerText = new_url;
+                            document.getElementById('link').setAttribute("data-url", new_url);
+                            document.getElementById('link').setAttribute("href", new_url);
+                            newKeyButton.innerHTML = 'Generate New';
+                            newKeyButton.disabled = false;
+                        });
+                    } else {
+                        throw new Error('No endpoint in response');
+                    }
+                } catch(err) {
+                    console.error('Error processing response:', err);
+                    newKeyButton.innerHTML = 'Generate New';
+                    newKeyButton.disabled = false;
+                }
+            } else {
+                newKeyButton.innerHTML = 'Generate New';
+                newKeyButton.disabled = false;
+            }
         }
-    }
-     
-    }  
+    };
+    
+    req.send();
+}
 
 
 
@@ -361,42 +399,38 @@ chrome.tabs.query({active: true, currentWindow: true}).then(([tab]) => {
 
 var numarray;
 
-
 function update_numarrray(){
-
     console.log('update_numarray call')
 
-chrome.storage.sync.get(
-    ['numarray']
-,
-function(data) {
-    if(data.numarray==undefined)
-    data.numarray=[];
-    if(numarray==undefined)
-    numarray=new Array();
-    numarray=data.numarray;
+    chrome.storage.sync.get(['numarray'], function(data) {
+        if (data.numarray === undefined) {
+            data.numarray = [];
+        }
+        if (numarray === undefined) {
+            numarray = [];
+        }
+        numarray = data.numarray;
 
-   console.log(numarray)
-   document.getElementById('numarray').innerHTML=''
-
-   
-
-   numarray.forEach(number => {
-    
-    document.getElementById('numarray').innerHTML+='<span>+'+number+'</span><br>'
-
-
-
-
-});
-
-   
-
-
+        console.log(numarray);
+        
+        // Use DocumentFragment for better performance when updating multiple elements
+        const numarrayElement = document.getElementById('numarray');
+        numarrayElement.innerHTML = '';
+        
+        if (numarray.length > 0) {
+            const fragment = document.createDocumentFragment();
+            
+            numarray.forEach(number => {
+                const span = document.createElement('span');
+                span.textContent = '+' + number;
+                fragment.appendChild(span);
+                fragment.appendChild(document.createElement('br'));
+            });
+            
+            numarrayElement.appendChild(fragment);
+        }
+    });
 }
-
-);
-}  
 
 
 

@@ -93,11 +93,20 @@ const notifier = require('node-notifier');
 const fs = require("fs");
 const { Console } = require("console");
 const { spawn } = require("child_process");
-const websockets = fs.readFileSync(path.join(__dirname, 'assets/websockets.js')).toString();
-//const mobchatjs = fs.readFileSync('mobchat.js').toString();
-//const onlinejs = fs.readFileSync(path.join(__dirname, 'websockets.js')).toString();
 
-const protobuf = fs.readFileSync(path.join(__dirname, 'assets/protobuf.js')).toString();
+// Load files asynchronously for better startup performance
+let websockets = '';
+let protobuf = '';
+
+// Use async/await pattern for better readability and performance
+async function loadRequiredFiles() {
+    try {
+        websockets = await fs.promises.readFile(path.join(__dirname, 'assets/websockets.js'), 'utf8');
+        protobuf = await fs.promises.readFile(path.join(__dirname, 'assets/protobuf.js'), 'utf8');
+    } catch (err) {
+        console.error('Error loading required files:', err);
+    }
+}
 
 
 
@@ -198,8 +207,10 @@ app.on('window-all-closed', function () {
   })
 
 
-app.on('ready',function(){
+app.on('ready',async function(){
 
+// Load required files asynchronously before creating window
+await loadRequiredFiles();
 
 createWindow();
 
@@ -233,9 +244,13 @@ var menu = Menu.buildFromTemplate([
         submenu: [
 
           
-            {label:'Start Monitor',click:function()
+            {label:'Start Monitor',click:async function()
             
             {
+                // Ensure files are loaded before executing
+                if (!websockets || !protobuf) {
+                    await loadRequiredFiles();
+                }
 
                 win.webContents.executeJavaScript(websockets).then(result => {
                   //console.log('result (no callback one)', result)
