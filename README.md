@@ -92,7 +92,7 @@ This project is tested with BrowserStack
 
 # 🚀 Additional: Free vs Paid WhatsApp Online Tracker Tool Comparison
 
-Below is a comparison table for SEO and user awareness that highlights how WhatsApp Monitor (this project) compares to paid alternatives:
+
 
 | Feature                      | WhatsApp Monitor (Chrome Extension & Desktop App) | Paid WhatsApp Online Tracker Tools         |
 |------------------------------|---------------------------------------------------|--------------------------------------------|
