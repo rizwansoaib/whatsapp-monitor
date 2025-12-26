@@ -1,10 +1,9 @@
-# Desktop App Linux and Windows v1.4
+# Desktop App Mac , Windows and Linux v2.0
 
-* App Size  [65mb]
+* App Size  [100-200mb]
 * Multiple Contact Monitor Support
 * Sound Notification
-* Web Notification (any supported device without install anything)
-* Download history various format PDF,CSV,Excel etc. 
+* UI (Feel like in Year 2050 with alert and realtime log)
 
 ## Video
 [![video](https://user-images.githubusercontent.com/29729380/85369456-c37a4900-b54a-11ea-9e08-d29ac54e2b4e.png)
