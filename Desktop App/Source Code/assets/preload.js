@@ -12,21 +12,21 @@ const {
 // the ipcRenderer without exposing the entire object
 contextBridge.exposeInMainWorld(
     "api", {
-        send: (channel, data) => {
-            // whitelist channels
-            let validChannels = ["toMain","online","number","data","offnum","offline","imgsrc","whatsapp_username","profile_data","contact_data"];
-            if (validChannels.includes(channel)) {
-                ipcRenderer.send(channel, data);
-            }
-        },
-        receive: (channel, func) => {
-            let validChannels = ["fromMain"];
-            if (validChannels.includes(channel)) {
-                // Deliberately strip event as it includes `sender` 
-                ipcRenderer.on(channel, (event, ...args) => func(...args));
-            }
+    send: (channel, data) => {
+        // whitelist channels
+        let validChannels = ["toMain", "online", "number", "data", "offnum", "offline", "imgsrc", "whatsapp_username", "profile_data", "contact_data", "first", "focus-window", "get_noti_link"];
+        if (validChannels.includes(channel)) {
+            ipcRenderer.send(channel, data);
+        }
+    },
+    receive: (channel, func) => {
+        let validChannels = ["fromMain"];
+        if (validChannels.includes(channel)) {
+            // Deliberately strip event as it includes `sender` 
+            ipcRenderer.on(channel, (event, ...args) => func(...args));
         }
     }
+}
 );
 
 

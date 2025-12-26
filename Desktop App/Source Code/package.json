@@ -1,6 +1,7 @@
 {
-  "name": "WPMonitor",
-  "version": "1.4.0",
+  "name": "trackwapp",
+  "productName": "TrackWapp",
+  "version": "2.0.0",
   "main": "main.js",
   "homepage": "https://github.com/rizwansoaib/whatsapp-monitor",
   "author": {
@@ -13,10 +14,11 @@
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder --linux",
-    "dist-win": "electron-builder --win"
+    "dist-win": "electron-builder --win",
+    "build-all": "electron-builder --mac --x64 --arm64 --win --x64 --linux --x64"
   },
   "build": {
-    "icon": "assests/logo.png",
+    "icon": "assets/logo.png",
     "asar": true,
     "asarUnpack": [
       "assets/logo.png",
@@ -24,7 +26,14 @@
       "assets/websockets.js",
       "assets/protobuf.js"
     ],
-    "appId": "com.whatsappmonitor.v1.4",
+    "appId": "com.trackwapp.app",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "assets/logo.png"
+    },
     "linux": {
       "icon": "assets/logo.png",
       "target": [
@@ -35,7 +44,6 @@
     "win": {
       "target": [
         "nsis",
-        "msi",
         "zip"
       ],
       "icon": "assets/logo.ico"
@@ -44,21 +52,19 @@
       "installerIcon": "assets/logo.ico",
       "installerHeaderIcon": "assets/logo.ico",
       "deleteAppDataOnUninstall": true,
-
       "oneClick": false,
       "perMachine": false,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true
-
     }
   },
   "devDependencies": {
-    "electron": "^17.0.0",
-    "electron-builder": "^22.14.13"
+    "electron": "^39.2.7",
+    "electron-builder": "^26.0.12"
   },
   "dependencies": {
-    "electron-store": "^8.0.1",
+    "electron-store": "^8.2.0",
     "http": "^0.0.1-security",
     "node-notifier": "^10.0.1",
     "request": "^2.88.2"

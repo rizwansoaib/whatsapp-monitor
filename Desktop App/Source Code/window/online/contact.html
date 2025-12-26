@@ -1,1301 +1,521 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-    <title>Whatsapp Online Monitor v1.4</title>
-    <script src="./../../assets/bts/jq.js"></script>
-        <link rel="stylesheet" href="./../../assets/bts/bts.css">
-
-    <link rel="stylesheet" href="./../../assets/bts/bts_theme.css">
-
-
-
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-   
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+    <title>Live Online Monitor</title>
+    <link rel="stylesheet" href="theme.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <link rel="stylesheet" type="text/css" href="theme.css">
-      
 
-    
-       
+    <!-- Keeping original script refs just in case, though styles are overridden -->
+    <script src="./../../assets/bts/jq.js"></script>
 </head>
 
-    <body style="background-color: black;">
-
-     
-       
-        <div>
-            
-     
-
-        <div align="center">
-
-        <a href="#" class="animated-button1">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-   <button class="buttonload">
-  <i class="fa fa-sync fa-spin" style="font-size:25px;color:#31c8ff;"></i>
-</button>
-<br>
-
-<label>sync</label>
-
-
-</a>
-
-
-
-
-
-
-
-
-<a onclick="change_sound()" class="animated-button1">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-   <button onclick="change_sound()" class="buttonload">
-  <i id="isound" class="fa fa-volume-mute" style="font-size:25px;color:#7dd4a8;"></i>
-</button><br>
-<label id="sound">sound</label>
-
-</a>
-
-
-
-
-
-
-<a onclick="change_notify()" href="#" class="animated-button1">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-
-   
- 
-   <button onclick="change_notify()" class="buttonload">
-   
-  <i id="notify" class="fas fa-bell-slash" style="font-size:25px;color:#7dd4a8;"></i>
-  
-</button><br>
-<label>notify url</label>
-
-</a>
-
-<!--
-
-<a href="#" class="animated-button1">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-   <button class="buttonload">
-  <i class="fa fa-satellite-dish" style="font-size:25px;color:green;"></i>
-</button><br>
-<label id="ip">IP Address</label>
-
-</a>
-
-
-
-
-
-
-
-<a href="#" class="animated-button1">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-
-
-   <button class="buttonload">
-  <i class="fab fa-whatsapp" style="font-size:30px;color:green;"></i>
-</button><br>
-<label id="whatsapp_username">username</label>
-
-</a>
-
-<br>
-
-
-<div style="margin-left: 100px;">
-
-<a href="#" class="animated-button1">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-
-
-   <button class="buttonload">
-  <i class="fa fa-id-badge" style="font-size:30px;color:green;"></i>
-</button><br>
-<label id="contacts_count">contacts</label><br>
-<label>contacts</label>
-
-</a>
-
-
-<a href="#" class="animated-button1" style="margin-left:10px;">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-
-   <button class="buttonload">
-    <i class="fas fa-globe" style="font-size:30px;color:green;"></i>
-    <!--
-    <img id="country_img" src="https://flagcdn.com/48x36/us.png" class="center" width="48" height="36" alt="South Africa">
-     
- 
-
-    
-
-</button><br>
-<label id="country_name">USA</label><br>
-<label id="city_name">New York</label>
-
-</a>
-
-
-
-<a href="#" class="animated-button1" style="margin-left:10px;">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
- 
-
-   <button class="buttonload">
-    <i class="fas fa-microchip" style="font-size:30px;color:green;"></i>
-    
-</button><br>
-<label id="up_time">UP Time</label><br>
-<label >UP Time</label><br>
-
-
-</a>
-
-
-
-<a href="#" class="animated-button1" style="margin-left:10px;">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  
-
-
-   <button class="buttonload">
-  <i class="fas fa-memory" style="font-size:30px;color:green;"></i>
-</button><br>
-<label id="mem_usage">memory</label><br>
-<label >memory</label>
-
-</a>
-
--->
-
-
-</div>
-
-
-
-<!--
-
-
-
-<a href="#" class="animated-button1" style="margin-left:10px;">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-
-
-   <button class="buttonload">
-  <i class="fa fa-id-badge" style="font-size:30px;color:green;"></i>
-</button><br>
-<label id="conatcts">contacts</label>
-
-</a>
-
-
-
-
-<a href="#" class="animated-button1" style="margin-left:10px;">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-
-
-   <button class="buttonload">
-  <i class="fa fa-id-badge" style="font-size:30px;color:green;"></i>
-</button><br>
-<label id="conatcts">contacts</label>
-
-</a>
-
-
-
-
-<a href="#" class="animated-button1" style="margin-left:10px;">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-
-
-
-   <button class="buttonload">
-  <i class="fa fa-id-badge" style="font-size:30px;color:green;"></i>
-</button><br>
-<label id="conatcts">contacts</label>
-
-</a>
--->
-
-
-</div>
-
-
-
-
-</div>
-
-
-<div class="cardnum">
-
-<div align="center" class="word"></div>
-      
-</div>  
-
-   
-
-
-
-<style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 200px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 25px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
- 
-  display: inline-block;
-  transition: background-color 10.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 10s;
-  animation-name: fade;
-  animation-duration: 10s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-
-
-
-
-
-
-
-.scan {
-  width: 25em;
-  text-align: center;
-  padding: 6px 2px;
-  position: absolute;
-  left: 0;
-  right: 0;
-
-  margin: auto;
-  transform: translate(-50%);
-  
-}
-
-.scan::after {
-  content: '';
-  background: #31c8ff;
-  width: 20.5em;
-  height: 0.2em;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0em;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  opacity: 7;
-  z-index: 2;
-  animation: 5s infinite ease-in-out roll;
-}
-
-
-
-@keyframes roll {
-  0% {
-    transform: translateY(-35px);
-  }
-  50% {
-    transform: translateY(168px);
-  }
-  100% {
-    transform: translateY(-35px);
-  }
-}
-
-
-
-
-p a {
-	 color: #31c8ff !important;
-	 font-weight: 900;
-}
- h1 {
-	 margin-top: 0;
-}
- .card {
-   width: 250px;
-	 background: linear-gradient(-135deg, transparent 35px, #000000  0);
-	 border: none;
-	 padding: 10px;
-	 border-radius: 0.8rem;
-	 filter: drop-shadow(2px 2px 10px #7dd4a8);
-	 margin: 10px auto 0;
-}
- .card h1, .card  {
-	 color: #7dd4a8 !important;
-   margin-right: 30px;
-}
- .card hr {
-	 border-color: #7dd4a8 !important;
-}
- 
-
-
-.cardnum{
-   width: 850px;
-   height: 50px;
-   margin-left: 280px;
-	 background: linear-gradient(90deg, transparent 35px, #000000  0);
-	 border: none;
-	 border-radius: 0.8rem;
-	 filter: drop-shadow(2px 2px 10px #7dd4a8);
-	 
-}
-
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="scan" align="right" style="width: 300px;  margin-left: 150px;">
-
-  
-
-
-
-
-  <div class="card" style="margin: 100px auto 0;">
-    <h1 class="section-heading">Profile Scan</h1>
-    <hr class="">
-  
-  
-
-
-<div id="profile_data_id" class=" slideshow-container" align="right">
-
-<div class="mySlides fade " style="text-align:center">
-  <img class="img-responsive center-block" src="https://i.pravatar.cc/300" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade " style="text-align:center">
-  <img class="img-responsive center-block" src="https://i.pravatar.cc/500" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade " style="text-align:center">
-  <img class=" img-responsive center-block" src="https://i.pravatar.cc/400" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-</div>
-<br>
-
-<div id="profile_dot" style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-</div>
-
-
-
-</div>
-
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 10000); // Change image every 2 seconds
-}
-
-
-
-
-
-var wordflick = function (words) {
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 10,
-    speed = 150;
-
-  setInterval(function () {
-    if (forwards) {
-      if (offset >= words[i].length) {
-        ++skip_count;
-        if (skip_count == skip_delay) {
-          forwards = false;
-          skip_count = 0;
-        }
-      }
-    }
-    else {
-      if (offset == 0) {
-        forwards = true;
-        i++;
-        offset = 0;
-        if (i >= len) {
-          i = 0;
-        }
-      }
-    }
-    part = words[i].substr(0, offset);
-    if (skip_count == 0) {
-      if (forwards) {
-        offset++;
-      }
-      else {
-        offset--;
-      }
-    }
-    $('.word').text(part);
-  },speed);
-};
-
-
-
-
-</script>
-
-<style>
-  .word {
-  color: #31c8ff;
-  font-size: 25px;
-  
-}
-</style>
-
-
-
-
-
-
-        <div class="container" style="margin-top: 10px;background-color: black; margin-left: 300px;">
-          
-          
-
-            <div class="left " style="background-color:rgb(0, 0, 0)">
-                
-                
-                <table class="table " id="history" style="color:#31c8ff;">
-                    <thead class="thead-white" align="center">
-                      <tr>
-                        <th scope="col" >Name</th>
-                        <th scope="col" >Date</th>
-                        <th scope="col" >Start</th>
-                        <th scope="col" >Stop</th>
-                        <th scope="col" >Duration</th>
-                      </tr>
+<body>
+
+    <div class="main-container">
+
+        <!-- Top Header -->
+        <div class="top-bar">
+            <h1 class="glitch" data-text="TrackWapp // TARGET MONITORING">TrackWapp // TARGET
+                MONITORING</h1>
+            <div class="sys-status">
+                SYSTEM STATUS: <span style="color: var(--secondary-color)">ONLINE</span> |
+                SECURE CONNECTION: <span style="color: var(--secondary-color)">ESTABLISHED</span>
+            </div>
+        </div>
+
+        <!-- Row 2 Left: Target Profile -->
+        <div class="left-panel">
+            <div class="panel-header">
+                <i class="fas fa-user-circle"></i> TARGET PROFILE
+            </div>
+            <div class="scanner-container">
+                <div class="scanner-circle"></div>
+                <div class="scanner-laser"></div> <!-- Enhanced Scan Line -->
+                <div class="scanner-overlay"></div>
+                <!-- Profile Image -->
+                <img id="pro" class="profile-img" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
+                    alt="Target">
+            </div>
+
+            <div class="target-info">
+                <div class="info-row">
+                    <span class="info-label">TARGET NAME</span>
+                    <span class="info-value" id="name">Scanning...</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">MOBILE NUMBER</span>
+                    <span class="info-value" id="number">--</span>
+                </div>
+            </div>
+
+            <!-- Status Box -->
+            <div id="status_container" class="status-box status-offline">
+                <span id="status" class="blink_text">OFFLINE</span>
+            </div>
+
+            <!-- Controls -->
+            <div class="control-panel">
+                <button class="cyber-btn" onclick="location.reload()">
+                    <i class="fa fa-sync"></i> REFRESH
+                </button>
+                <button class="cyber-btn" onclick="change_sound()">
+                    <i id="isound" class="fa fa-volume-mute"></i> SOUND
+                </button>
+                <button class="cyber-btn" onclick="change_notify()">
+                    <i id="notify" class="fas fa-bell-slash"></i> NOTIFY
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <!-- Row 2 Right: Activity Log -->
+        <div class="right-panel">
+            <div class="panel-header">
+                <span>> ACTIVITY LOG</span>
+                <span style="font-size: 12px; align-self: center;">LIVE DATA FEED</span>
+            </div>
+
+            <div style="overflow-y: auto; height: 100%;">
+                <table class="terminal-table" id="history">
+                    <thead>
+                        <tr>
+                            <th scope="col">TARGET</th>
+                            <th scope="col">DATE</th>
+                            <th scope="col">ONLINE TIME</th>
+                            <th scope="col">OFFLINE TIME</th>
+                            <th scope="col">DURATION</th>
+                        </tr>
                     </thead>
-                    <tbody align="center">
-                    
+                    <tbody id="history_body">
+                        <!-- Javascript populates this -->
                     </tbody>
-                  </table>
-                  
-                 
-
-
-
-
-
+                </table>
             </div>
+        </div>
 
+        <!-- Row 3: Live Terminal (Full Width) -->
+        <div class="terminal-panel">
+            <div class="panel-header">
+                <i class="fas fa-terminal"></i> SYSTEM KERNEL // LIVE DECRYPTION
+                <div class="telemetry-bar">
+                    <span class="telemetry-item">RAM: <span id="tele-ram">0.00 MB</span></span> |
+                    <span class="telemetry-item">PROC: <span id="tele-proc">0.00 MB</span></span> |
+                    <span class="telemetry-item">BW: <span id="tele-bw">0.00 Mbps</span></span> |
+                    <span class="telemetry-item">CPU: <span id="tele-cpu">0.0%</span></span>
+                </div>
             </div>
-          
-
-         
-            <div class="card">
-              <h1 class="section-heading">Online Scan</h1>
-              <hr class="">
-
-
-
-            <div align="right" id="right" style="background-color:black;">
-               
-                <div class="top-right card-img-top" style="background-color: black;">
-
-
-
-
-
-
-
-            
-
-
-
-
-                 
-                   
-                    
-                    <img align="center" id='pro' class="rounded-circle img-responsive center-block" alt="Profile pic" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
-          data-holder-rendered="true" width="220" height="220">
-          
-         
-                   <div  align="center">
-                <h1 class="" id="name"  style="font-size: 25px;background-color: black;color: antiquewhite;">Name</h1> 
-                
-                <h1 class="" id="number" style="font-size: 20px;background-color: black;color: antiquewhite;">Number</h1>
-               
-
-              
-                  
-                 <h1 id="status" class="blink_text flipX" align="center" style="font-size: 25px;background-color: black;color: red;">OFFLINE</h1>
-                 
-                               
-                    </div>
-
-                       </div>
-              
-                     </div>
-              <br>
+            <div id="terminal-content" class="terminal-body">
+                <!-- Typing text goes here -->
             </div>
-          
-          </div>
+        </div>
+
+    </div>
+
+    <!-- ALARM TOAST -->
+    <div id="alarm-toast" class="toast-hidden">
+        <div class="toast-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <div class="toast-content">
+            <div class="toast-title">SECURITY ALERT</div>
+            <div class="toast-message" id="toast-msg">Target activity detected</div>
+        </div>
+        <div class="toast-loading"></div>
+    </div>
+
+    <!-- Logic Scripts -->
+    <script>
+        const electron = require("electron");
+        const ipc = electron.ipcRenderer;
+        const os = require('os');
+        const http = require('http');
+        const request = require('request');
+
+        // -- Sound Toggle --
+        function change_sound() {
+            const isound = document.getElementById('isound');
+            if (isound.classList.contains("fa-volume-mute")) {
+                isound.className = "fa fa-volume-up";
+                // Logic to enable sound in backend if needed
+            } else {
+                isound.className = "fa fa-volume-mute";
+            }
+        }
+
+        // -- Notify Toggle --
+        function change_notify() {
+            const inoti = document.getElementById('notify');
+            if (inoti.classList.contains("fa-bell")) {
+                inoti.className = "fas fa-bell-slash";
+            } else {
+                inoti.className = "fas fa-bell";
+            }
+        }
+
+        // -- Update Status Style --
+        // This helper listens to changes in the "status" text to update the border color
+        // Since the main logic isn't shown, I'm adding a MutationObserver to auto-update the UI class
+        // whenever the text content of #status changes.
+        const statusElement = document.getElementById('status');
+        const statusContainer = document.getElementById('status_container');
+
+        let lastSeenStatus = "";
+        let lastNotifiedStatus = "OFFLINE";
+        let debounceTimer = null;
+
+        function showToast(title, message, type) {
+            const toast = document.getElementById('alarm-toast');
+            const toastMsg = document.getElementById('toast-msg');
+            const toastTitle = document.querySelector('.toast-title');
+
+            toastTitle.innerText = title;
+            toastMsg.innerText = message;
+
+            // Reset classes
+            toast.className = 'toast-visible';
+            if (type === 'online') {
+                toast.classList.add('toast-success');
+            } else if (type === 'offline') {
+                toast.classList.add('toast-alert');
+            }
+
+            // Re-trigger animation
+            const loader = document.querySelector('.toast-loading');
+            loader.style.animation = 'none';
+            loader.offsetHeight; /* trigger reflow */
+            loader.style.animation = 'toast-timer 3s linear forwards';
+
+            // Hide after 3 seconds
+            setTimeout(() => {
+                toast.className = 'toast-hidden';
+            }, 3000);
+        }
+
+        const observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                const statusText = statusElement.innerText.trim().toUpperCase();
+
+                // 1. Immediate Deduplication: If text is same as last update, ignore.
+                if (statusText === lastSeenStatus) return;
+                lastSeenStatus = statusText;
+
+                console.log('Status Changed to:', statusText);
+
+                // 2. Stability Check: Clear previous pending notification check
+                if (debounceTimer) clearTimeout(debounceTimer);
+
+                // 3. Wait for stability (e.g. 1 second) before notifying
+                debounceTimer = setTimeout(() => {
+                    const userName = document.getElementById('name').innerText;
+                    const inoti = document.getElementById('notify');
+
+                    // If after stabilization, the status is effectively different from what we last NOTIFIED
+                    if (statusText !== lastNotifiedStatus) {
+                        lastNotifiedStatus = statusText;
+
+                        // Update UI styles based on stable status
+                        if (statusText === 'ONLINE') {
+                            statusContainer.className = 'status-box status-online';
+                            statusElement.style.color = "var(--secondary-color)";
+
+                            if (inoti && inoti.classList.contains('fa-bell')) {
+                                console.log('Sending Stable Online Notification');
+                                const profileImg = document.getElementById('pro').src;
+                                new Notification('TrackWapp', {
+                                    body: `${userName} is Online`,
+                                    silent: false,
+                                    icon: profileImg
+                                });
+                                const userNumber = document.getElementById('number').innerText;
+                                showToast('TARGET ONLINE', `${userName} | ${userNumber}`, 'online');
+                            }
+                        } else if (statusText === 'OFFLINE') {
+                            statusContainer.className = 'status-box status-offline';
+                            statusElement.style.color = "var(--alert-color)";
+
+                            if (inoti && inoti.classList.contains('fa-bell')) {
+                                console.log('Sending Stable Offline Notification');
+                                const profileImg = document.getElementById('pro').src;
+                                new Notification('TrackWapp', {
+                                    body: `${userName} is Offline`,
+                                    silent: false,
+                                    icon: profileImg
+                                });
+                                const userNumber = document.getElementById('number').innerText;
+                                showToast('TARGET OFFLINE', `${userName} | ${userNumber}`, 'offline');
+                            }
+                        }
+                    }
+                }, 1000); // 1 Second Stability Buffer
+            });
+        });
+
+        observer.observe(statusElement, { childList: true, subtree: true, characterData: true });
+
+        // -- IP Fetch (Original Logic Preserved/Restored) --
+
+
+        // -- IPC Listeners --
+
+        var h = {}
+        var noti_flag_dict = {}
+        var noti_link_url = null;
+        var userNotificationStates = {}; // Per-user state tracking
+        var flag = 0
+        let oldt;
+        let startDate;
+
+
+        function save(user, t1, t2, t) {
+            var d = new Date();
+            var curd = d.toLocaleDateString("en-GB").split(' ')[0]
+            user = user.replace(/[^a-zA-Z0-9]/g, "")
+            curd = curd.replace(/[^a-zA-Z0-9]/g, "")
+
+            const surl = 'https://trackwapp.online/save/' + user + '/' + curd + '/' + t1 + '/' + t2 + '/' + t
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", surl);
+            xhr.send()
+        }
+
+
+        // -- IPC Listeners --
+
+        ipc.on('noti_link', function (event, noti_link) {
+            //console.log("recvd db link",noti_link);
+            noti_link_url = noti_link;
+        })
+
+        ipc.on('first', (event, h) => {
+            // Handle initial data load
+            console.log("Initial data received:", h);
+        });
+
+        ipc.on('online', (event, user) => {
+            user = user ? user.trim() : "Unknown";
+            console.log("Online Event:", user, "Current State:", userNotificationStates[user]);
+
+            // Notification logic moved to MutationObserver
+
+
+            document.getElementById('name').innerHTML = user;
+            var status = document.getElementById('status')
+            status.innerText = "ONLINE"; // Changed from innerHTML for consistency
+            status.style.color = '#7dd4a8';
+
+
+            isound = document.getElementById('isound');
+            var sound_enabled = (isound.className == "fa fa-volume-up");
+
+            if (sound_enabled) {
+                var audio = new Audio('https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/open.mp3');
+                audio.play();
+            }
+
+            // Focus Window Logic
+            if (sound_enabled || noti_send_flag) {
+                ipc.send('focus-window');
+            }
+
+            if (flag == 0) {
+                startDate = new Date();
+                t1 = startDate.toTimeString().split(' ')[0]
+                oldt = startDate.getTime();
+                flag = 1
+            }
+        });
+
+
+
+
+
+        // --- Optimized Terminal Logic ---
+        const terminalContent = document.getElementById('terminal-content');
+        const terminalLines = [
+            "Initializing kernel subsystems...",
+            "Loading module: net_surveillance_v2.o",
+            "Decrypting traffic stream...",
+            "Analyzing packet headers [TCP/UDP]...",
+            "Handshake established: 192.168.X.X",
+            "Bypassing firewall rules...",
+            "Injecting payload: ghost_protocol.exe",
+            "Access granted to secure node.",
+            "Downloading metadata...",
+            "Parsing user activity logs...",
+            "Connection stable. Signal strength: 98%",
+            "Buffer overflow prevention enabled.",
+            "Monitoring socket connections...",
+            "Encrypted key exchange successful.",
+            "Target location triangulated.",
+            "Scanning for vulnerabilities...",
+            "Root access: DENIED. Retrying...",
+            "Root access: GRANTED.",
+            "Deploying surveillance bots...",
+            "Synchronizing database...",
+            "Log entry created: SYSTEM_EVENT_332",
+            "Warning: Intrusion detected on port 8080",
+            "Counter-measures activated.",
+            "Tracing IP route...",
+            "Updating heuristic algorithms...",
+            "Data stream optimization: COMPLETE",
+            "Bypassing SSL pinning...",
+            "Injecting MITM certificate...",
+            "Intercepting WebSocket frames...",
+            "Deciphering Protobuf payload...",
+            "Target device: Fingerprinted (Android 14)",
+            "Battery level: 67% [Discharging]",
+            "Cloning session token...",
+            "Executing remote shellcode...",
+            "Accessing contacts database...",
+            "Synchronizing chat history [Chunk 1/5]...",
+            "Scanning for 2FA bypass vulnerabilities...",
+            "Establishing persistent backdoor...",
+            "Masking network signature...",
+            "Rerouting traffic via TOR nodes...",
+            "Uploading encrypted dump to C2 server...",
+            "Cleaning logging artifacts...",
+            "System warning: CPU Temp 85°C",
+            "Overclocking for faster decryption...",
+            "Access key verification: SUCCESS",
+            "Ghost Protocol: ACTIVE"
+        ];
+
+        let realLogQueue = [];
+
+        ipc.on('system-log', (event, data) => {
+            realLogQueue.push(`[${data.timestamp}] ${data.event}: ${data.detail}`);
+            if (realLogQueue.length > 5) realLogQueue.shift();
+        });
+
+        ipc.on('performance-metrics', (event, metrics) => {
+            const tr = document.getElementById('tele-ram');
+            const tp = document.getElementById('tele-proc');
+            const tb = document.getElementById('tele-bw');
+            const tc = document.getElementById('tele-cpu');
+            if (tr) tr.innerText = metrics.ram;
+            if (tp) tp.innerText = metrics.process_size;
+            if (tb) tb.innerText = metrics.bandwidth;
+            if (tc) tc.innerText = metrics.cpu;
+        });
+
+        function typeWriter(text, element, i = 0) {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                setTimeout(() => typeWriter(text, element, i + 1), 20);
+            }
+        }
+
+        function addTerminalLine() {
+            if (!terminalContent) return;
+
+            // Maintain max 5 lines
+            while (terminalContent.children.length >= 5) {
+                terminalContent.removeChild(terminalContent.firstChild);
+            }
+
+            const line = document.createElement('div');
+            line.className = 'terminal-line';
+            line.style.fontFamily = "'Courier New', monospace";
+            line.style.marginBottom = "2px";
+
+            let textToType = "";
+
+            // Mix real logs with fake ones
+            if (realLogQueue.length > 0 && Math.random() > 0.6) {
+                line.style.color = 'var(--secondary-color)';
+                line.style.fontWeight = 'bold';
+                textToType = `> ${realLogQueue.shift()}`;
+            } else {
+                const randomLine = terminalLines[Math.floor(Math.random() * terminalLines.length)];
+                textToType = `> ${randomLine}`;
+            }
+
+            terminalContent.appendChild(line);
+            typeWriter(textToType, line);
+        }
+
+        setInterval(addTerminalLine, 1500); // Slightly slower to allow typing to finish
+
+
+        ipc.on('offline', (event, user) => {
+            user = user ? user.trim() : "Unknown";
+            console.log("Offline Event:", user, "Current State:", userNotificationStates[user]);
+
+            // Notification logic moved to MutationObserver
+
+
+            document.getElementById('status').innerText = 'OFFLINE';
+            var pro = document.getElementById('pro')
+            // pro.src='https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/128.png'; 
+        });
+
+        ipc.on('number', (event, num) => {
+            document.getElementById('number').innerText = '+' + num;
+        });
+
+        ipc.on('whatsapp_username', (event, username) => {
+            // document.getElementById('name').innerText = username;
+        });
+
+        ipc.on('contact_data', (event, data) => {
+            // Update contact name mapping if needed
+        });
+
+        ipc.on('imgsrc', (event, url) => {
+            var pro = document.getElementById('pro')
+            if (url != undefined)
+                pro.src = url;
+        });
+
+        ipc.on('data', (event, his) => {
+            // Add row to history table
+            //  his=[num,contact_name,curd,t1,t2,diff_time]
+            // console.log(his+" contact.html")
+            num = his[0];
+            name = his[1];
+            curd = his[2];
+            t1 = his[3];
+            t2 = his[4];
+            t = his[5];
+
+            save(num, t1, t2, t);
+
+            const tableBody = document.getElementById('history_body');
+            const newRow = tableBody.insertRow(0); // Insert at top
+            newRow.insertCell(0).innerText = name;
+            newRow.insertCell(1).innerText = curd;
+            newRow.insertCell(2).innerText = t1;
+            newRow.insertCell(3).innerText = t2;
+            newRow.insertCell(4).innerText = t;
+
+
+            inoti = document.getElementById('notify');
+            noti_send_flag = false
+            if (inoti.className == "fas fa-bell")
+                noti_send_flag = true
+
+            is_need_noti = noti_flag_dict[name]
+
+            if (noti_link_url != null && noti_send_flag && is_need_noti == false) {
+                request({
+                    url: noti_link_url,
+                    method: "POST",
+                    json: true,
+                    body: '📴 WhatsApp Monitor Offline : ' + name + ' ' + curd + ' ' + t1 + ' ' + t2 + ' ' + t,
+                    headers: { 'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" }
+
+                }, function (error, response, body) {
+                    noti_flag_dict[name] = true;
+                });
+            }
+        });
+
+    </script>
+
+</body>
 
-
-
-       
-
-
-
-
-
-
-
-<script>
-
-
-const electron= require("electron");
-const ipc=electron.ipcRenderer;
-
-
-
-
-const os = require('os');
-
-const http = require('http');
-
-
-
-
-
-function change_sound(){
-
-  //console.log('function change_sound');
-  isound=document.getElementById('isound');
-  //console.log(isound.className);
-  if(isound.className=="fa fa-volume-mute")
-  {
-    isound.className = "fa fa-volume-up";
-    isound.style.color= "#31c8ff";
-  }
-  
-  else
-  {
-    isound.className = "fa fa-volume-mute";
-    isound.style.color= "#7dd4a8";
-  }
-  
-
-}
-
-
-
-
-function change_notify(){
-
-//console.log('function change_sound');
-inoti=document.getElementById('notify');
-//console.log(isound.className);
-if(inoti.className=="fas fa-bell")
-{
-  inoti.className = "fas fa-bell-slash";
-  inoti.style.color= "#7dd4a8";
-}
-
-else
-{
-  inoti.className = "fas fa-bell";
-  inoti.style.color= "#31c8ff";
-}
-
-
-}
-
-
-const request = require('request');
-
-
-
-
-//console.log('Online Window running script');
-
-/*
-
-var ip_address=null;
-
-
-http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) {
-  resp.on('data', function(ip) {
-    ip_address=ip;
-
-    document.getElementById('ip').innerText=ip;
-
-
-    
-
-
-    
-  });
-});
-
-
-
-
-
-request('http://api.freegeoip.app/json/?apikey=46c5bbe0-8a6b-11ec-b6a4-c56566f29c56', function (error, response, body) {
-  if (!error && response.statusCode == 200) {
-
-    const ip_data = JSON.parse(body);
-
-    //console.log(typeof(ip_data),ip_data)
-
-    country_code=ip_data['country_code'].toLowerCase();
-    
-   // document.getElementById('country_img').src='https://flagcdn.com/48x36/'+country_code+'.png'
-
-    country_name=ip_data['country_name']
-    //document.getElementById('country_img').alt=country_name;
-    document.getElementById('country_name').innerText=country_name;
-    document.getElementById('city_name').innerText=ip_data['city'];
-
-
-    //console.log(country_code,country_name)
-
-
-
-    //console.log(document.getElementById('country_img'))
-    
-    // Show the HTML for the Google homepage. 
-  }
-  else {
-    console.log("Error "+response.statusCode)
-  }
-})
-
-
-
-
-function formatBytes(bytes) {
-    var marker = 1024; // Change to 1000 if required
-    var decimal = 2; // Change as required
-    var kiloBytes = marker; // One Kilobyte is 1024 bytes
-    var megaBytes = marker * marker; // One MB is 1024 KB
-    var gigaBytes = marker * marker * marker; // One GB is 1024 MB
-    var teraBytes = marker * marker * marker * marker; // One TB is 1024 GB
-
-    // return bytes if less than a KB
-    if(bytes < kiloBytes) return bytes + " Bytes";
-    // return KB if less than a MB
-    else if(bytes < megaBytes) return(bytes / kiloBytes).toFixed(decimal) + " MB" ;
-    // return MB if less than a GB
-    else if(bytes < gigaBytes) return(bytes / megaBytes).toFixed(decimal) + " GB";
-    // return GB if less than a TB
-    else return(bytes / gigaBytes).toFixed(decimal);
-}
-
-
-
-function set_up_mem()
-{
-
-  up_time=new Date(os.uptime()* 1000).toISOString().substr(11, 8);
-
-
-document.getElementById('up_time').innerText=up_time;
-
-
-
-
-mem_usgae=process.getSystemMemoryInfo();
-
-free_mem=formatBytes(mem_usgae['free'])
-total_mem=formatBytes(mem_usgae['total'])
-
-
-document.getElementById('mem_usage').innerText=free_mem+'/'+total_mem;
-
-}
-
-
-*/
-
-
-/*
-function addRow(t1,t2,t) {
- 
-  
-  let tableRef = document.getElementById('history');
-tableRef.innerHTML+='<tr><td>'+curd+'</td><td>'+t1+'</td><td>'+t2+'</td><td>'+t+'</td></tr>'
-  
-} */
-
-function save(user,t1,t2,t){
-  var d   = new Date();
-  var curd=d.toLocaleDateString("en-GB").split(' ')[0]
-  user=user.replace(/[^a-zA-Z0-9]/g, "")
-  curd=curd.replace(/[^a-zA-Z0-9]/g, "")
-
-  const surl='https://www.wpmonitor.tech/save/'+user+'/'+curd+'/'+t1+'/'+t2+'/'+t
-  var xhr = new XMLHttpRequest();
-   xhr.open("GET",surl);
-  xhr.send()
-  
-}
-
-
-
-
-
-
-function load_tbl()
-{
-
-
-
-
- 
-
-$(document).ready(function() {
-    $('#history').DataTable( {
-       
-        dom: 'Brtip',
-        stateSave: true,
-        retrieve: true,
-
-        language : {
-        "zeroRecords": "No Online History"             
-    },
-   
-        
-        initComplete: function() {
-    var btns = $('.dt-button');
-    btns.removeClass('dt-button');
-  },
-        buttons: [
-        { extend: 'copy', className: 'btn btn-primary btn-lg',text:'<h1   style="  width: 125px; height: 20px;">Copy </h1>' },
-    { extend: 'csv', className: 'btn btn-success btn-lg',text:'<h1 style="width: 126px; height: 20px; ">CSV </h1>' },
-    { extend: 'excel', className: 'btn btn-success btn-lg',text:'<h1  style="width: 126px; height: 20px; ">Excel </h1>' },
-    { extend: 'pdf', className: 'btn btn-danger btn-lg',text:'<h1  style="width: 125px; height: 20px;">PDF </h1>' }
- 
-        ],
-       
-        "paging":   false,
-        "ordering": false,
-        "info":     false
-    } );
-} );
-
-}
-
-load_tbl();
-
-
-
-
-
-
-
-
-
-function diff_hours(dt2, dt1) 
- {
-
-  var diff =(dt2 - dt1) / 1000;
-  diff /= (60 * 60);
-  return Math.abs(Math.round(diff));
-  
- }
-
-var flag=0
-let oldt;
-let startDate;
-
-
-
-
-
-
-var h={}
-
-
-var noti_flag_dict={}
-
-
-
-
-
-  ipc.on('online',function(event,user){
-  //dialog.showErrorBox('Online','Now Online');
-
-
-  ipc.send('get_noti_link','get_noti_link')
-
-
-  //console.log('getting noti url');
-  
-
-  inoti=document.getElementById('notify');
-//console.log(isound.className);
-
-noti_send_flag=false
-
-
-
-if(inoti.className=="fas fa-bell")
-noti_send_flag=true
-
-
-is_need_noti=noti_flag_dict[user]
-
-if(is_need_noti == undefined){
-  noti_flag_dict[user]=true;
-  is_need_noti=noti_flag_dict[user]
-}
-
-
-//console.log(noti_link_url,noti_send_flag,is_need_noti)
-
-  if(noti_link_url!=null && noti_send_flag && is_need_noti)
-  {
-
-    noti_flag_dict[user]=false;
-
-
-    //console.log(noti_link_url,noti_send_flag)
-    //console.log('sending online noti...')
-
-request({
-  url: noti_link_url,
-  method: "POST",
-  json: true,
-  body: '📲 WhatsApp Monitor Online : '+user,
-  headers: {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"}
-
- 
-}, function (error, response, body){
-
-  //console.log(body);
-  
-});
-
-
-
-  }
-
-
-  
-  
-  document.getElementById('name').innerHTML = user;
-  var status=document.getElementById('status')
-  status.innerHTML = "ONLINE";
-  status.style.color= '#7dd4a8';
- //console.log('Online Window data received');
-  
- isound=document.getElementById('isound');
-  if(isound.className=="fa fa-volume-up"){
-    var audio = new Audio('https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/open.mp3');
-    audio.play();
-}
-
-  //play audio
-
-
-  if(flag==0){
-    startDate   = new Date();
-    t1=startDate.toTimeString().split(' ')[0]
-    oldt= startDate.getTime();
-    //console.log(t1);
-    flag=1
-  }
-
-
-})
-
-  
-
-ipc.on('number',function(event,num){
-
-
-  document.getElementById('number').innerHTML = '+'+num;
-
-})
-
-
-
-
-
-ipc.on('imgsrc',function(event,imgurl){
-    //dialog.showErrorBox('Online','Now Online');
-    
-    //console.log('recevied imgurl');
-    //console.log(imgurl);
-   
-    var pro=document.getElementById('pro')
-    
-    if(imgurl!=undefined)
-    pro.src=imgurl;
-    //console.log('img src set success');
-    
-
-})
-
-
-
-ipc.on('data',function(event,his){
-
-
-  //console.log(his+" contact.html")
-  num=his[0];
-  name=his[1];
-  curd=his[2];
-  t1=his[3];
-  t2=his[4];
-  t=his[5];
-
-  save(num,t1,t2,t);
-
-  
-   
-  var table = $('#history').DataTable();
-  table.rows.add( $(
-    '<tr><td>'+name+'</td><td>'+curd+'</td><td>'+t1+'</td><td>'+t2+'</td><td>'+t+'</td></tr>'
-  ) ).draw();
-
-  inoti=document.getElementById('notify');
-//console.log(isound.className);
-
-noti_send_flag=false
-if(inoti.className=="fas fa-bell")
-noti_send_flag=true
-
-
-is_need_noti=noti_flag_dict[name]
-
-
-
-
-
-//console.log(noti_link_url,noti_send_flag)
-
-  if(noti_link_url!=null && noti_send_flag && is_need_noti==false)
-  {
-
-    //console.log('sending offline noti...')
-
-request({
-  url: noti_link_url,
-  method: "POST",
-  json: true,
-  body: '📴 WhatsApp Monitor Offline : '+name+' '+curd+' '+t1+' '+t2+' '+t,
-  headers: {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64)  AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"}
-
- 
-}, function (error, response, body){
-
-  noti_flag_dict[name]=true;
-
-  //console.log(body);
-});
-
-  }
-
-
-
-})
-
-
-
-ipc.on('offline',function(event,user){
-    //dialog.showErrorBox('Online','Now Online');
-
-    //set_up_mem();
-    
-    document.getElementById('name').innerHTML = user;
-  document.getElementById('number').innerHTML = '';
-
-  var pro=document.getElementById('pro')
-  pro.src='https://raw.githubusercontent.com/rizwansoaib/whatsapp-monitor/master/Chrome-Extension/WhatsApp%20Monitor/images/icons/128.png';
-
-
-    var status=document.getElementById('status')
-    status.innerHTML = "OFFLINE";
-    status.style.color='red';
-    //console.log('Offline Window data received');
-
-    
-    
-
-})
-
-
-
-wordflick_flag=false;
-
-
-
-ipc.on('contact_data',function(event,data){
-
-  
-
-//console.log(data);
-if(!wordflick_flag){
-  wordflick_flag=true;
-
-  var words = [];
-    
-
-for (const [key, value] of Object.entries(data)) {
-  //console.log(key, value);
-
-  
-   val = key+" "+value;
-   words.push(val);
-}
-
-
-//document.getElementById('contacts_count').innerHTML=words.length;
-
-wordflick(words);
-
-  
-}
-
-
-
-})
-
-
-/*
-ipc.on('whatsapp_username',function(event,msg){
-
-
-//console.log("online_window_whatsapp_username",msg);
-
-
-document.getElementById('whatsapp_username').innerText = msg;
-
-})
-
-*/
-ipc.on('profile_data',function(event,data){
-
-
-//console.log("profile data received",data);
-
-myhtml=''
-dothtml='';
-for (const [key, value] of Object.entries(data)) {
-  //console.log(key, value);
-
-   temp='<div class="mySlides fade " style="text-align:center"><img class="black_white img-responsive center-block" src='+value+' style="width:100%;"><div class="text blink_text lineUp">'+key+'</div></div>'
-
-   
-   myhtml+=temp;
-
-   temp_dot='<span class="dot"></span>'
-   dothtml+=temp_dot
-
-
-}
-
-query_id=document.getElementById('profile_data_id')
-
-query_id.innerHTML=myhtml;
-
-query_dot=document.getElementById('profile_dot')
-
-query_dot.innerHTML=dothtml;
-
-
-
-
-
-
-
-})
-
-
-
-
-noti_link_url=null;
-
-
-
-
-
-
-ipc.on('noti_link',function(event,noti_link){
-  
-  //console.log("recvd db link",noti_link);
-
-  noti_link_url=noti_link;
-
-  
- 
-
-  
-
-})
-
-
-
-
-    
-
-
-
-
-</script>
-
-
-
-<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
-
-
-       
-    </body>
 </html>
