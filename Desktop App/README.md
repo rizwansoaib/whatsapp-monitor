@@ -23,16 +23,19 @@ npm start
 
 
 ## Windows
-Download [Setup.exe](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor%20Setup%201.4.0.exe) and install 
+Download [Setup.exe](https://github.com/rizwansoaib/whatsapp-monitor/releases/download/desktop-v2.0/TrackWapp.Setup.2.0.0.exe) and install 
+
+## MAC
+Download [TrackWapp.dmg](https://github.com/rizwansoaib/whatsapp-monitor/releases/download/desktop-v2.0/TrackWapp-2.0.0.dmg) and install 
 
 ## Linux 
 
 
-Method1. Download [WhatsApp-Monitor.deb](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor_1.4.0_amd64.deb) for installation open terminal and run in Downloaded Directory
+Method1. Download [WhatsApp-Monitor.deb]([https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor_1.4.0_amd64.deb](https://github.com/rizwansoaib/whatsapp-monitor/releases/download/desktop-v2.0/trackwapp_2.0.0_amd64.deb)) for installation open terminal and run in Downloaded Directory
 
                       sudo dpkg -i WhatsApp-Monitor_1.4.0_amd64.deb
         
-Method2. Download AppImage [WhatsApp-Monitor.AppImage](https://github.com/rizwansoaib/files/raw/master/WhatsApp-Monitor-1.4.0.AppImage) and open without install
+Method2. Download AppImage [WhatsApp-Monitor.AppImage](https://github.com/rizwansoaib/whatsapp-monitor/releases/download/desktop-v2.0/TrackWapp-2.0.0-arm64.AppImage) and open without install
 
                         sudo chmod +x WhatsApp-Monitor-1.4.0.AppImage
                         ./WhatsApp-Monitor-1.4.0.AppImage
