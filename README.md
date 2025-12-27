@@ -46,6 +46,21 @@ This project is tested with BrowserStack
 <a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"> &nbsp&nbsp&nbsp&nbsp      &nbsp&nbsp Firefox Add on</a>
 </h4>
 
+## Download
+
+<p align="center">
+  <a href="https://github.com/rizwansoaib/whatsapp-monitor/releases/download/desktop-v2.0/TrackWapp.Setup.2.0.0.exe">
+    <img src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" height="50">
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/rizwansoaib/whatsapp-monitor/releases/download/desktop-v2.0/TrackWapp-2.0.0.dmg">
+    <img src="https://img.shields.io/badge/Download-macOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS" height="50">
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/rizwansoaib/whatsapp-monitor/releases/download/desktop-v2.0/trackwapp_2.0.0_amd64.deb">
+    <img src="https://img.shields.io/badge/Download-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Download for Linux" height="50">
+  </a>
+</p>
 
 
 # Introduction
