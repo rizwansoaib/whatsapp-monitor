@@ -46,7 +46,7 @@ This project is tested with BrowserStack
 <a href="https://addons.mozilla.org/en-US/firefox/addon/whatsapp-online-monitor/"> &nbsp&nbsp&nbsp&nbsp      &nbsp&nbsp Firefox Add on</a>
 </h4>
 
-## Download
+## Download Desktop App
 
 <p align="center">
   <a href="https://github.com/rizwansoaib/whatsapp-monitor/releases/download/desktop-v2.0/TrackWapp.Setup.2.0.0.exe">
