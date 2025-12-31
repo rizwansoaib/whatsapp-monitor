@@ -48,6 +48,10 @@ This project is tested with BrowserStack
 
 ## Download Desktop App
 
+## Video
+[![video](https://user-images.githubusercontent.com/29729380/85369456-c37a4900-b54a-11ea-9e08-d29ac54e2b4e.png)
+](https://www.youtube.com/watch?v=oDPMrvz2YhI)
+
 <p align="center">
   <a href="https://github.com/rizwansoaib/whatsapp-monitor/releases/download/desktop-v2.0/TrackWapp.Setup.2.0.0.exe">
     <img src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows" height="50">
