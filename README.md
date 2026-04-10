@@ -13,6 +13,83 @@ This project is tested with BrowserStack
 </p>
 
 
+⚠️ Project Discontinued Notice
+
+📢 Status Update
+
+This repository is no longer actively maintained.
+
+After careful consideration, I have made the decision to discontinue development and support for this project. This means that no further updates, feature enhancements, bug fixes, or security patches will be released moving forward.
+
+---
+
+💭 A Personal Note
+
+What started as an idea grew into something meaningful—supported, used, and appreciated by many. Over time, this project became more than just code; it became a shared effort between contributors, users, and supporters who believed in its purpose.
+
+I am deeply grateful for:
+
+- Every contribution made through pull requests and issues
+- Every user who trusted and used this project
+- Every message of encouragement and feedback
+
+Your support has truly meant a lot.
+
+---
+
+📊 About Previous Support & Donations
+
+In the past, this project required ongoing infrastructure support, including hosting costs. Community contributions helped sustain these efforts and allowed the project to remain accessible.
+
+I remain committed to the principle of transparency and appreciate everyone who contributed financially or helped spread the word. Your support directly enabled the project to operate for as long as it did.
+
+---
+
+📦 Current State of the Repository
+
+- 🛑 Development: Stopped
+- 🛠 Maintenance: No longer active
+- 🐛 Issue Support: Closed / Not monitored
+- 🔐 Security Updates: Not guaranteed
+
+This repository will remain publicly available for:
+
+- Educational purposes
+- Reference implementations
+- Personal or experimental forks
+
+---
+
+⚠️ Important Notice for Users
+
+If you are currently using this project in production or in any critical environment, it is strongly recommended to:
+
+- Consider migrating to an actively maintained alternative
+- Avoid relying on this project for long-term or security-sensitive use
+- Fork and maintain your own version if needed
+
+---
+
+🔄 For Contributors & Developers
+
+You are welcome to:
+
+- Fork the repository and continue development independently
+- Build upon the existing codebase for your own projects
+- Adapt and reuse components under the applicable license
+
+If you choose to continue the vision of this project, I genuinely wish you success.
+
+---
+
+🤝 Final Words
+
+Every project has its lifecycle, and this marks the closing chapter of this one.
+
+While development has come to an end, the journey, learning, and community built around it will always remain valuable.
+
+Thank you for being part of this journey.
+
 
 
 <h1 align="center" >Free Whatsapp Online Tracker</h1>
